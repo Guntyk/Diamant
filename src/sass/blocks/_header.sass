@@ -1,0 +1,58 @@
+.header
+    position: fixed
+    width: 100%
+    z-index: 3
+    min-height: 80px
+    background-color: #fff
+    box-shadow: 0px 0px 10px rgb(190, 190, 190)
+    img
+        margin-top: 5px
+        height: 70px
+    &__row
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &__content
+        &:hover
+            .header__calls
+                opacity: 1
+                transform: translateX(10px) translateY(-40px)
+        img
+            margin-top: 3px
+    &__calls
+        transition: 0.6s
+        opacity: 0
+        position: absolute
+        min-height: 215px
+        min-width: 251px
+        background-color: #fff
+        box-shadow: 1px 1px 30px rgba(0, 0, 0, 0.5)
+        border-radius: 15px
+        transform: translateX(10px) translateY(-215px)
+        z-index: -5
+    &__wrapper
+        position: relative
+        margin-top: 50px
+        a
+            padding-left: 20px
+            text-decoration: none
+            color: #223344
+            font-weight: 400
+            font-size: 17px
+            line-height: 50px
+            &:hover
+                font-weight: 700
+        li
+            list-style-type: none
+            margin-left: 40px
+            &::before
+                content: url(../icons/phone.svg)
+    &__element
+        position: absolute
+        height: 40px
+        width: 300px
+        background-color: #fff
+        z-index: -4
+        transform: translateY(-12px) translateX(-15px)
+    a
+        text-decoration: none
