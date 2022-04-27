@@ -30,7 +30,6 @@
         left: 15px
         transform-style: preserve-3d
         object-fit: cover
-        transform: perspective(1000px) rotateY(0deg)
         h3
             margin-top: 10px
             font-weight: 600
@@ -52,7 +51,6 @@
         background-color: #002ead
         height: 272px
         transform-style: preserve-3d
-        transform: perspective(1000px) rotateY(180deg) translateZ(-1px)
         p
             transform-style: preserve-3d
             font-weight: 500
@@ -85,13 +83,11 @@
     .item
         position: relative
         transform-style: preserve-3d
+        perspective: 1000px
         .carousel__card
             transform-style: preserve-3d
             &_active
-                .carousel__front
-                    transform: perspective(1000px) rotateY(-180deg)
-                .carousel__back
-                    transform: perspective(1000px) rotateY(0deg)
+                transform: rotateY(180deg)
                     
 // ==========Arrows Start=========
 .owl-nav
