@@ -1,0 +1,26 @@
+.selector
+    margin-top: 39px
+    background-color: #002ead
+    color: #fff
+    font-weight: 500
+    font-size: 20px
+    &__menu
+        display: flex
+        justify-content: center
+        list-style-type: none
+    &__item
+        margin: 48px 0
+        border-right: 2px ridge white
+        cursor: pointer
+        &:first-child
+            border-left: 2px ridge white
+        &:hover
+            text-decoration: underline
+        &_active
+            text-decoration: underline
+    &:first-child
+        padding: 0 48px
+    &:nth-child(2)
+        padding: 0 70px
+    &:last-child
+        padding: 0 41px
