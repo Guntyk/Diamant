@@ -14,15 +14,12 @@ $('ul.selector__menu').on('click', 'li:not(.selector__item_active)', function() 
 });
 //* =====Selector Menu Start=====
 //! =====Click on Carousel Cards Start=====
-// $('div.owl-carousel').on('click', 'div:not(.carousel__card_active)', function() {
-// 	$(this)
-// 		.addClass('carousel__card_active').siblings().removeClass('carousel__card_active')
-// 		// .closest('body').find('div.carousel__card').removeClass('carousel__card_active').eq($(this).index()).addClass('carousel__card');
-// });
-const card = document.querySelector('.carousel__card');
-card.addEventListener('click', function(){
-    card.classList.toggle('active');
-});
+document.addEventListener("click", function (e) {
+    const card = e.target.closest(".card__inner")
+    if (card){
+      card.classList.toggle('is-flipped');
+    } 
+  });
 //! =====Click on Carousel Cards End=====
 //* =====Responsive Cards Start=====
 VanillaTilt.init(document.querySelectorAll(".dancer__item"), {
