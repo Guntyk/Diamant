@@ -9,7 +9,7 @@
         line-height: 49px
         text-align: center
 .owl-stage-outer
-    margin: 0 auto
+    margin: 0 25px
     padding: 65px 0
 
 .card
@@ -21,7 +21,7 @@
 .card__inner
     width: 100%
     height: 100%
-    transition: transform 0.5s
+    transition: 0.5s
     transform-style: preserve-3d
     cursor: pointer
     position: relative
@@ -29,8 +29,12 @@
     border-radius: 18px
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5)
     text-shadow: 2px 2px 3px black
+    transition: .4s
+    &:hover
+        transform: rotateY(15deg)
 
 .card__name
+    display: block
     margin-top: -10px
     font-weight: 600
     font-size: 20px
@@ -40,7 +44,7 @@
 .card__descr
     margin: 5px
     font-weight: 500
-    font-size: 15px
+    font-size: 17px
     line-height: 25px
     text-align: center
 
@@ -53,10 +57,6 @@
     object-fit: cover
     overflow: hidden
 
-.card__content
-    width: 100%
-    height: 100%
-
 .card__face
     color: #fff
     position: absolute
@@ -64,37 +64,35 @@
     height: 100%
     backface-visibility: hidden
     border-radius: 18px
-
+    background: linear-gradient(45deg, #8E2DE2 0%, #4A00E0 75%)
 .card__face--front
-    background-color: #002ead
     padding: 0 auto
 
 .card__face--front h2
     font-size: 32px
 
 .card__face--back
-    background-color: #002ead
     transform: rotateY(180deg)
     overflow: hidden
-
-.card__face--back::before
-    content: ""
-    position: absolute
-    width: 100%
-    height: 100%
-    background: linear-gradient(#04f, #bebebe)
-    clip-path: circle(45% at right 25%)
-    z-index: -1
-
-.card__face--back::after
-    content: ""
-    position: absolute
-    width: 100%
-    height: 100%
-    background: linear-gradient(#fff, #04f)
-    clip-path: circle(25% at left 80%)
-    transform: translateY(-272px)
-    z-index: -1
+    &::before
+        content: ""
+        position: absolute
+        width: 100%
+        height: 100%
+        background: linear-gradient(#ce29d1, #0013e9 90%)
+        clip-path: circle(45% at right 25%)
+        border-radius: 18px
+        z-index: -1
+    &::after
+        content: ""
+        position: absolute
+        top: 0
+        width: 100%
+        height: 100%
+        background: linear-gradient(#0013e9 40%, #ce29d1)
+        clip-path: circle(25% at left 80%)
+        border-radius: 18px
+        z-index: -1
 
 .card__face--back p
     padding: 25px
