@@ -13,14 +13,18 @@ $('ul.selector__menu').on('click', 'li:not(.selector__item_active)', function() 
 		.closest('body').find('section.block__content').removeClass('block__content_active').eq($(this).index()).addClass('block__content_active');
 });
 //* =====Selector Menu Start=====
-//! =====Click on Carousel Cards Start=====
+//TODO =====Click on Carousel Cards Start=====
 document.addEventListener("click", function (e) {
     const card = e.target.closest(".card__inner")
     if (card){
       card.classList.toggle('is-flipped');
     } 
   });
-//! =====Click on Carousel Cards End=====
+const social = document.querySelector(".social");
+social.addEventListener('click' , function (e) {
+  e.stopPropagation();
+  });
+//TODO =====Click on Carousel Cards End=====
 //* =====Responsive Cards Start=====
 VanillaTilt.init(document.querySelectorAll(".dancer__item"), {
     max: 10,
