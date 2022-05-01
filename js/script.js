@@ -36,33 +36,68 @@ VanillaTilt.init(document.querySelectorAll(".dancer__item_last"), {
 });
 //* =====Responsive Cards End=====
 //* =====Carousel Start=====
-const prevIcon = '<img src="./icons/arrows/arrow_left.svg" alt="prev">';
-const nextIcon = '<img src="./icons/arrows/arrow_right.svg" alt="next">';
-$('.owl-carousel').owlCarousel({
-    loop:true,
-    margin:10,
-    nav:true,
-    dots:false,
-    mouseDrag:false,
-    touchDrag:false,
-    slideBy:3,
-    navText: [
-        prevIcon,
-        nextIcon
-    ],
-    responsive:{
-        0:{
-            items:1
-        },
-        600:{
-            items:3
-        },
-        1000:{
-            items:3
-        }
-    }
+// const prevIcon = '<img src="./icons/arrows/arrow_left.svg" alt="prev">';
+// const nextIcon = '<img src="./icons/arrows/arrow_right.svg" alt="next">';
+new Swiper('.staff-slider', {
+    effect: 'slide',
+    // coverflowEffect: {
+    //     slideShadows: false
+    // },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev'
+    },
+    mousewheel: {
+        eventsTarget: ".staff-slider"
+    },
+    keyboard: {
+        enabled: true,
+        onlyInViewport: true,
+        pageUpDown: true,
+    },
+    slidesPerView: 3,
+    slidesPerGroup: 3,
+    loop: true,
+    simulateTouch: false,
+    spaceBetween: 100,
+    speed: 1000,
+    preloadImages: false,
+    lazy: {
+        loadOnTransitionStart: true,
+        loadPrevNext: false,
+    },
+    watchSlidesProgress: true,
+    watchSlidesVisibility: true,
 });
-//* =====Carousel End=====
+
+new Swiper('.comment-slider', {
+    effect: 'cards',
+    cardsEffect: {
+        slideShadows: false
+    },
+    pagination: {
+        el: ".swiper-pagination",
+        dynamicBullets: true,
+        clickable: true
+    },
+    keyboard: {
+        enabled: true,
+        onlyInViewport: true,
+        pageUpDown: true,
+    },
+    touchRatio: 2,
+    speed: 500,
+    initialSlide: 2,
+    grabCursor: true
+});
+// * =====Carousel End=====
+//* =====Gallery Start=====
+jQuery(document).ready(($)=>{
+    // документ загружен!
+    $('.element-1').lightGallery({
+    });
+});
+//* =====Gallery End=====
 // $('ul.footer__menu').on('click', 'li:not(.footer__item_active)', function() {
 // 	$(this)
 // 		.addClass('footer__item_active').siblings().removeClass('footer__item_active')
