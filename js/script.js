@@ -47,16 +47,16 @@ new Swiper('.staff-slider', {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev'
     },
-    mousewheel: {
-        eventsTarget: ".staff-slider"
+    pagination: {
+        el: ".swiper-pagination",
+        dynamicBullets: true,
+        clickable: true
     },
     keyboard: {
         enabled: true,
         onlyInViewport: true,
         pageUpDown: true,
     },
-    slidesPerView: 3,
-    slidesPerGroup: 3,
     loop: true,
     simulateTouch: false,
     spaceBetween: 100,
@@ -68,6 +68,21 @@ new Swiper('.staff-slider', {
     },
     watchSlidesProgress: true,
     watchSlidesVisibility: true,
+    breakpoints: {
+        320: {
+            speed: 600,
+            slidesPerView: 1,
+            slidesPerGroup: 1,
+        },
+        480: {
+            slidesPerView: 2,
+            slidesPerGroup: 2,
+        },
+        992: {
+            slidesPerView: 3,
+            slidesPerGroup: 3,
+        }
+    },
 });
 
 new Swiper('.comment-slider', {
@@ -88,7 +103,16 @@ new Swiper('.comment-slider', {
     touchRatio: 2,
     speed: 500,
     initialSlide: 2,
-    grabCursor: true
+    grabCursor: true,
+    breakpoints: {
+        320: {
+            touchRatio: 1,
+        },
+        480: {
+        },
+        992: {
+        }
+    }
 });
 // * =====Carousel End=====
 //* =====Gallery Start=====
@@ -98,6 +122,17 @@ jQuery(document).ready(($)=>{
     });
 });
 //* =====Gallery End=====
+// *=====Scroll Container Start=====
+var swiper = new Swiper(".mySwiper", {
+    direction: "vertical",
+    slidesPerView: "auto",
+    freeMode: true,
+    scrollbar: {
+      el: ".swiper-scrollbar",
+    },
+    mousewheel: true,
+  });
+// *=====Scroll Container End=====
 // $('ul.footer__menu').on('click', 'li:not(.footer__item_active)', function() {
 // 	$(this)
 // 		.addClass('footer__item_active').siblings().removeClass('footer__item_active')
