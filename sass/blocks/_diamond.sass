@@ -1,29 +1,53 @@
 .diamond
     text-align: center
-    color: #223344
     margin-bottom: 120px
     &__title
-        margin: 85px 0 75px 0
+        margin: 85px 0 100px 0
         font-weight: 700
         font-size: 40px
         line-height: 82px
         color: #fff
-        width: 100%
         background: linear-gradient(90deg, #4A00E0, #8E2DE2)
-        // box-shadow: 0px 0px 30px rgb(133, 133, 133)
-        // text-shadow: 2px 2px 3px black
     &__row
         display: flex
         justify-content: space-around
-        margin-bottom: 60px
+        margin-bottom: 150px
         &:last-child
             margin: 0 170px
-        img
-            width: 138px
     &__mark
+        width: 200px
+        position: relative
         font-weight: 600
         font-size: 20px
+        // color: #223344
+        color: #fff
+        border-radius: 18px
+        background: linear-gradient(90deg, #4A00E0, #8E2DE2)
+        img
+            z-index: -1
+            position: absolute
+            top: -130%
+            left: 10%
+            width: 160px
+        p
+            top: -50px
+            padding: 15px
+            position: absolute
+            visibility: hidden
+            border-radius: 18px
+            font-size: 16px
+            background: linear-gradient(90deg, #4A00E0, #8E2DE2)
+            transition: .2s
+        &:hover
+            h4
+                position: absolute
+                visibility: hidden
+            p
+                visibility: visible
+                transform: scale(1.05)
+            
+            
     &__photo
-        z-index: -1
+        z-index: -2
         position: absolute
         left: 0
