@@ -74,11 +74,7 @@ new Swiper('.staff-slider', {
             slidesPerView: 1,
             slidesPerGroup: 1,
         },
-        480: {
-            slidesPerView: 2,
-            slidesPerGroup: 2,
-        },
-        992: {
+        575: {
             slidesPerView: 3,
             slidesPerGroup: 3,
         }

@@ -477,6 +477,10 @@
             .container{
                 max-width: 960px;
             }
+            .selector {
+                max-width: 1199px;
+                font-size: 15px;
+            }
         }
         /* `lg` applies to large devices (tablets, less than 992px) */
         @media (max-width: 991.98px) { 
@@ -499,6 +503,17 @@
             .button {
                 width: 250px;
                 font-size: 17px;
+            }
+            .selector {
+                max-width: 991px;
+                font-size: 14px;
+                text-align: center;
+            }
+            .selector:first-child{
+                border-left: none;
+            }
+            .selector:last-child{
+                border-right: none;
             }
         }
         /*=====================================1============================================*/
@@ -535,6 +550,10 @@
             }
             .button>.down {
                 transform: translateY(0) translateX(7px)
+            }
+            .selector {
+                max-width: 767px;
+                font-size: 13px;
             }
         }
         /*====================================2=============================================*/
@@ -648,6 +667,73 @@
             .diamond__title {
                 margin-bottom: 0
             }
+            /* Selector */
+            .selector{
+                max-width: 575px;
+                font-size: 11px;
+            }
+            .selector:first-child{
+                padding: 0 28px 0 8px;
+                border-left: none;
+            }
+            .selector:nth-child(2){
+                padding: 0 28px 0 28px;
+            }
+            .selector:last-child{
+                padding: 0 0 0 28px;
+                border-right: none;
+            }
+            /* Dancers */
+            .dancer h2 {
+                position: absolute;
+                bottom: 17px;
+                left: 10px;
+            }
+            .dancer__content {
+                margin-top: 20px;
+            }
+            .dancer__item {
+                margin: 4px;
+                width: 141px;
+                height: 141px;
+                border-radius: 18px;
+                font-size: 14px;
+                line-height: 17px;
+                overflow: hidden;
+            }
+            .dancer__item:last-child {
+                margin-top: 4px;
+                width: 290px;
+            }
+            .dancer__item>img {
+                height: 141px;
+            }
+            .dancer__item:first-child>img {
+                transform: translateX(-100px);
+            }
+            .dancer__item:nth-child(2)>img {
+                transform: translateX(-80px);
+            }
+            .dancer__item:nth-child(3)>img {
+                transform: translateX(-45px);
+            }
+            .dancer__item:nth-child(4)>img {
+                transform: translateX(-45px);
+            }
+            .dancer__item:last-child>img {
+                transform: translateX(-80px);
+            }
+        }
+        @media (max-width: 360px) {
+            .selector:first-child{
+                padding: 0 15px 0 0;
+            }
+            .selector:nth-child(2){
+                padding: 0 15px;
+            }
+            .selector:last-child{
+                padding: 0 0 0 15px;
+            }
         }
         /* `xsm` applies to x-small devices (old mini phones like iPhone 5/5s/SE, equals to 320px) */
         @media (max-width: 320px) { 
@@ -760,34 +846,34 @@
                 <section class="block__content block__content_active dancer">
                     <div class="dancer__content">
                         <div class="dancer__item">
-                            <img src="img/block1.png" alt="1">
+                            <img src="img/block1.png" alt="1" class="background">
                             <h2>
                                 Бальні танці<br>для дітей
                             </h2>
                             <!--TODO <img src="icons/arrows/arrow_small.svg" alt="arrow" class="dancer__arrow"> -->
                         </div>
                         <div class="dancer__item">
-                            <img src="img/block2.png" alt="1">
+                            <img src="img/block2.png" alt="1" class="background">
                             <h2>
                                 Онлайн навчання
                             </h2>
                             <!--TODO <img src="icons/arrows/arrow_small.svg" alt="arrow" class="dancer__arrow"> -->
                         </div>
                         <div class="dancer__item">
-                            <img src="img/block3.png" alt="1">
+                            <img src="img/block3.png" alt="1" class="background">
                             <h2>
                                 Pro-Am для<br>дітей
                             </h2>
                             <!--TODO <img src="icons/arrows/arrow_small.svg" alt="arrow" class="dancer__arrow"> -->
                         </div>
                         <div class="dancer__item">
-                            <img src="img/block4.png" alt="1">
+                            <img src="img/block4.png" alt="1" class="background">
                             <h2>
                                 Pro-Am для<br>дорослих
                             </h2>
                             <!--TODO <img src="icons/arrows/arrow_small.svg" alt="arrow" class="dancer__arrow"> -->
                         </div>
-                        <div class="dancer__item_last">
+                        <div class="dancer__item">
                             <img src="img/block5.png" alt="1">
                             <h2>
                                 Спортивні бальні танці
@@ -896,6 +982,29 @@
                                 <div class="card__face card__face--back">
                                     <p class="card__descr">
                                         Талановитий, гарний, статний, чудовий і дуже СОРОМ'ЯЗЛИВИЙ
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card staff-slider__slide swiper-slide">
+                            <div class="card__inner">
+                                <div class="card__face card__face--front">
+                                    <div class="card__photo">
+                                        <img data-src="img/trainers/12.webp" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="swiper-lazy" alt="Image">
+                                        <div class="swiper-lazy-preloader"></div>
+                                    </div>
+                                    <h3 class="card__name">
+                                        Лариса Машина
+                                    </h3>
+                                    <p class="card__descr">
+                                        Президент клубу Діамант-Еліт, тренер старшої спортивної групи
+                                    </p>
+                                    <a target="_blank" href="//instagram.com/larysamashyna"><img class="social" src="icons/social/instagram_white.svg"></a>
+                                    <a target="_blank" href="//www.facebook.com/larysa.mashyna"><img class="social" src="icons/social/facebook_white.svg"></a>
+                                </div>
+                                <div class="card__face card__face--back">
+                                    <p class="card__descr">
+                                        Фіналістка міжнародних змагань з європейської та латиноамериканської програм, призер Чемпіонату України з 10-ти танців, суддя вищої категорії, тренерський стаж більше 25-ти років
                                     </p>
                                 </div>
                             </div>
@@ -1102,6 +1211,31 @@
                             <div class="card__inner">
                                 <div class="card__face card__face--front">
                                     <div class="card__photo">
+                                        <!-- <img data-src="img/trainers/9.webp" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="swiper-lazy" alt="Image"> -->
+                                        <div class="swiper-lazy-preloader"></div>
+                                    </div>
+                                    <h3 class="card__name">
+                                        Руслан Гітя
+                                    </h3>
+                                    <p class="card__descr">
+                                        Тренер початкових та спортивних груп. Філія - Вишенки
+                                    </p>
+                                    <!-- <a target="_blank" href="//www.instagram.com/pushkina_ju"><img class="social" src="icons/social/instagram_white.svg"></a>
+                                    <a target="_blank" href="//www.facebook.com/jylia.pushkina"><img class="social" src="icons/social/facebook_white.svg"></a> -->
+                                </div>
+                                <div class="card__face card__face--back">
+                                    <div class="card__content">
+                                        <p class="card__descr">
+                                            Займаюсь гармонійним розвитком дитини у спорті, розкриваючи унікальність кожного учня. Закінчив Національний університет фізичного виховання і спорту України. Стаж - 4 років. Діючий спортсмен, кандидат у майстри спорту, член збірної України зі спортивних танців.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card staff-slider__slide swiper-slide">
+                            <div class="card__inner">
+                                <div class="card__face card__face--front">
+                                    <div class="card__photo">
                                         <img data-src="img/trainers/10.webp" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="swiper-lazy" alt="Image">
                                         <div class="swiper-lazy-preloader"></div>
                                     </div>
@@ -1143,6 +1277,81 @@
                                     <div class="card__content">
                                         <p class="card__descr">
                                             Тренер танцорів Н - Д класів
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card staff-slider__slide swiper-slide">
+                            <div class="card__inner">
+                                <div class="card__face card__face--front">
+                                    <div class="card__photo">
+                                        <img data-src="img/trainers/14.webp" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="swiper-lazy" alt="Image">
+                                        <div class="swiper-lazy-preloader"></div>
+                                    </div>
+                                    <h3 class="card__name">
+                                        Ірина Терновенко
+                                    </h3>
+                                    <p class="card__descr">
+                                        Text
+                                    </p>
+                                    <a target="_blank" href="https://google.com"><img class="social" src="icons/social/instagram_white.svg"></a>
+                                    <a target="_blank" href="https://duckduckgo.com"><img class="social" src="icons/social/facebook_white.svg"></a>
+                                </div>
+                                <div class="card__face card__face--back">
+                                    <div class="card__content">
+                                        <p class="card__descr">
+                                            Text
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card staff-slider__slide swiper-slide">
+                            <div class="card__inner">
+                                <div class="card__face card__face--front">
+                                    <div class="card__photo">
+                                        <img data-src="img/trainers/13.webp" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="swiper-lazy" alt="Image">
+                                        <div class="swiper-lazy-preloader"></div>
+                                    </div>
+                                    <h3 class="card__name">
+                                        Ірина Цибанова
+                                    </h3>
+                                    <p class="card__descr">
+                                        Text
+                                    </p>
+                                    <a target="_blank" href="https://google.com"><img class="social" src="icons/social/instagram_white.svg"></a>
+                                    <a target="_blank" href="https://duckduckgo.com"><img class="social" src="icons/social/facebook_white.svg"></a>
+                                </div>
+                                <div class="card__face card__face--back">
+                                    <div class="card__content">
+                                        <p class="card__descr">
+                                            Text
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card staff-slider__slide swiper-slide">
+                            <div class="card__inner">
+                                <div class="card__face card__face--front">
+                                    <div class="card__photo">
+                                        <img data-src="img/trainers/15.webp" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="swiper-lazy" alt="Image">
+                                        <div class="swiper-lazy-preloader"></div>
+                                    </div>
+                                    <h3 class="card__name">
+                                        Марина Назаренко
+                                    </h3>
+                                    <p class="card__descr">
+                                        Text
+                                    </p>
+                                    <a target="_blank" href="https://google.com"><img class="social" src="icons/social/instagram_white.svg"></a>
+                                    <a target="_blank" href="https://duckduckgo.com"><img class="social" src="icons/social/facebook_white.svg"></a>
+                                </div>
+                                <div class="card__face card__face--back">
+                                    <div class="card__content">
+                                        <p class="card__descr">
+                                            Text
                                         </p>
                                     </div>
                                 </div>
