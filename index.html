@@ -477,15 +477,74 @@
             .container{
                 max-width: 960px;
             }
+            .staff-slider,
+            .comment-slider {
+                width: 1000px;
+            }
+            .staff-slider {
+                padding: 30px;
+            }
+            .swiper-button-prev,
+            .swiper-button-next {
+                visibility: hidden;
+            }
+            .swiper-pagination {
+                visibility: visible;
+            }
             .selector {
                 max-width: 1199px;
                 font-size: 15px;
+            }
+            .dancer__item:last-child {
+                margin: 15px 0;
+                border-radius: 18px;
+                overflow: hidden;
+            }
+            .dancer__item:last-child>img {
+                transform: translateX(-240px);
+            }
+            .location iframe{
+                width: 600px;
             }
         }
         /* `lg` applies to large devices (tablets, less than 992px) */
         @media (max-width: 991.98px) { 
             .container{
                 max-width: 720px;
+            }
+            .staff-slider,
+            .comment-slider {
+                width: 300px;
+            }
+            .staff-slider {
+                padding: 30px;
+            }
+            .swiper-button-prev,
+            .swiper-button-next {
+                visibility: hidden;
+            }
+            .swiper-pagination {
+                visibility: visible;
+            }
+            .comment>img {
+                padding-top: 20px;
+                width: 100px
+            }
+            .feedback .comment {
+                flex-direction: column;
+                width: 250px;
+                min-height: 300px;
+            }
+            .feedback__text {
+                text-align: center;
+            }
+            .feedback__name {
+                font-size: 18px;
+            }
+            .feedback__descr {
+                margin: 10px 0;
+                padding: 0 15px;
+                font-size: 16px;
             }
             .promo__wrapper {
                 top: 135px;
@@ -515,12 +574,35 @@
             .selector:last-child{
                 border-right: none;
             }
+            .location {
+                flex-wrap: wrap;
+            }
+            .location__wrapper {
+                margin: 0 auto 30px auto;
+                text-align: center;
+            }
+            .location iframe {
+                margin: 0 auto;
+            }
         }
         /*=====================================1============================================*/
         /* `md` applies to medium devices (landscape phones, less than 768px) */
         @media (max-width: 767.98px) { 
             .container{
                 max-width: 540px;
+            }
+            .staff-slider {
+                width: 300px;
+            }
+            .staff-slider {
+                padding: 30px;
+            }
+            .swiper-button-prev,
+            .swiper-button-next {
+                visibility: hidden;
+            }
+            .swiper-pagination {
+                visibility: visible;
             }
             .promo__wrapper {
                 top: 135px;
@@ -554,6 +636,28 @@
             .selector {
                 max-width: 767px;
                 font-size: 13px;
+            }
+            .dancer__item:last-child {
+                margin: 15px 0;
+                width: 600px;
+                border-radius: 18px;
+                overflow: hidden;
+            }
+            .dancer__item:last-child>img {
+                transform: translateX(-240px);
+            }
+            .staff {
+                margin-bottom: 100px;
+            }
+            .staff__title {
+                margin-top: 100px;
+            }
+            .location {
+                flex-wrap: wrap;
+            }
+            .location__wrapper {
+                margin: 0 auto 30px auto;
+                text-align: center;
             }
         }
         /*====================================2=============================================*/
@@ -722,6 +826,19 @@
             }
             .dancer__item:last-child>img {
                 transform: translateX(-80px);
+            }
+            .staff {
+                margin-bottom: 100px;
+            }
+            .staff__title {
+                margin-top: 100px;
+            }
+            .location {
+                flex-wrap: wrap;
+            }
+            .location__wrapper {
+                margin: 0 auto 30px auto;
+                text-align: center;
             }
         }
         @media (max-width: 360px) {
@@ -1459,7 +1576,7 @@
         </article>
     </main>
 
-    <footer>
+    <!-- <footer>
         <div class="container">
             <section class="footer__hero">
                 <a href="/">
@@ -1486,7 +1603,7 @@
                 <a href="//guntyk.github.io/" target="_blank" rel="nofollow noopener noreferrer">By Sate</a>
             </section>
         </div>
-    </aside>
+    </aside> -->
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>

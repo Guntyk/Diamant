@@ -74,7 +74,7 @@ new Swiper('.staff-slider', {
             slidesPerView: 1,
             slidesPerGroup: 1,
         },
-        575: {
+        992: {
             slidesPerView: 3,
             slidesPerGroup: 3,
         }
@@ -103,10 +103,6 @@ new Swiper('.comment-slider', {
     breakpoints: {
         320: {
             touchRatio: 1,
-        },
-        480: {
-        },
-        992: {
         }
     }
 });
