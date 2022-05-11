@@ -598,11 +598,15 @@
                 width: 100%;
                 text-align: center;
             }
+            .organizator__card {
+                justify-content: center;
+            }
             .organizator__wrapper {
                 flex-wrap: wrap;
+                justify-content: center;
             }
             .organizator__title {
-                margin-top: 50px;
+                margin: 50px 0;
             }
             .trainer img {
                 width: 400px;
@@ -692,12 +696,11 @@
             .staff__title {
                 margin-top: 100px;
             }
-            .location {
-                flex-wrap: wrap;
+            .organizator__card {
+                width: 100%;
             }
-            .location__wrapper {
-                margin: 0 auto 30px auto;
-                text-align: center;
+            .trainer img {
+                width: 250px;
             }
             .trainer__title {
                 font-size: 25px;
@@ -706,6 +709,13 @@
             .trainer__subtitle {
                 font-size: 16px;
                 line-height: 17px;
+            }
+            .location {
+                flex-wrap: wrap;
+            }
+            .location__wrapper {
+                margin: 0 auto 30px auto;
+                text-align: center;
             }
             .footer__logo{
                 height: auto;
@@ -866,20 +876,14 @@
                 width: 290px;
                 height: 141px;
             }
-            .staff {
-                margin-bottom: 100px;
+            .organizator__card {
+                width: 300px;
             }
-            .staff__title {
-                margin-top: 100px;
-            }
-            .location {
-                flex-wrap: wrap;
-            }
-            .location__wrapper {
-                margin: 0 auto 30px auto;
-                text-align: center;
+            .organizator__card>a>img {
+                width: 350px;
             }
             .trainer>.wrapper {
+                justify-content: center;
                 margin-top: 30px;
                 flex-wrap: wrap;
                 text-align: center;
@@ -897,9 +901,26 @@
                 font-size: 16px;
                 line-height: 17px;
             }
+            .trainer img {
+                width: 300px;
+            }
+            .staff {
+                margin-bottom: 100px;
+            }
+            .staff__title {
+                margin-top: 100px;
+            }
+            .location {
+                flex-wrap: wrap;
+            }
+            .location__wrapper {
+                margin: 0 auto 30px auto;
+                text-align: center;
+            }
+            
             footer .wrapper {
                 flex-wrap: wrap-reverse;
-
+                justify-content: center;
             }
             .footer__logo {
                 margin-top: 45px;
@@ -927,6 +948,12 @@
         /* `xsm` applies to x-small devices (old mini phones like iPhone 5/5s/SE, equals to 320px) */
         @media (max-width: 320px) { 
             /*without styles for container*/
+            .dancer__item {
+                width: 100%;
+            }
+            .organizator__card>a>img {
+                width: 300px;
+            }
         }
     </style>
     <title>Діамант Еліт</title>
