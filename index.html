@@ -14,7 +14,7 @@
     <meta name="theme-color" content="#5847bf">
     <meta name="description" content="Клуб бального танцю 'Діамант Еліт'">
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
-    <link rel="stylesheet" href="./css/lightgallery.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css">
     <link rel="stylesheet" href="./css/style.min.css" media="print" onload="this.media='all'">
     <style>
         /* cyrillic-ext */
@@ -455,6 +455,10 @@
         .mb55 {
             margin-bottom: 55px;
         }
+        .dancer__item:last-child {
+            width: 1110px;
+            height: 300px;
+        }
         /*===============COMMON END=================*/
         /*===============HEADER START=================*/
 
@@ -470,6 +474,9 @@
         @media (max-width: 1399.98px) { 
             .container{
                 max-width: 1140px;
+            }
+            .trainer {
+                width: 90%;
             }
         }
         /* `xl` applies to e-large devices (desktops, less than 1200px) */
@@ -497,11 +504,24 @@
             }
             .dancer__item:last-child {
                 margin: 15px 0;
-                border-radius: 18px;
-                overflow: hidden;
+                width: 540px;
             }
-            .dancer__item:last-child>img {
-                transform: translateX(-240px);
+            .organizator__wrapper {
+                width: 900px;
+            }
+            .organizator__title {
+                font-size: 35px;
+                line-height: 40px;
+            }
+            .trainer>.wrapper {
+                margin-top: 70px;
+            }
+            .trainer__wrapper {
+                margin-left: 50px;
+            }
+            .trainer__title {
+                font-size: 45px;
+                line-height: 55px;
             }
             .location iframe{
                 width: 600px;
@@ -556,7 +576,7 @@
                 line-height: 39px;
             }
             .promo__subtitle {
-                font-size: 20px;
+                font-size: 16px;
                 line-height: 21px;
             }
             .button {
@@ -574,6 +594,27 @@
             .selector:last-child{
                 border-right: none;
             }
+            .organizator {
+                width: 100%;
+                text-align: center;
+            }
+            .organizator__wrapper {
+                flex-wrap: wrap;
+            }
+            .organizator__title {
+                margin-top: 50px;
+            }
+            .trainer img {
+                width: 400px;
+            }
+            .trainer__title {
+                font-size: 35px;
+                line-height: 39px;
+            }
+            .trainer__subtitle {
+                font-size: 16px;
+                line-height: 21px;
+            }
             .location {
                 flex-wrap: wrap;
             }
@@ -583,6 +624,10 @@
             }
             .location iframe {
                 margin: 0 auto;
+            }
+            .footer__logo {
+                height: auto;
+                width: 421px;
             }
         }
         /*=====================================1============================================*/
@@ -638,13 +683,8 @@
                 font-size: 13px;
             }
             .dancer__item:last-child {
-                margin: 15px 0;
-                width: 600px;
-                border-radius: 18px;
-                overflow: hidden;
-            }
-            .dancer__item:last-child>img {
-                transform: translateX(-240px);
+                width: 510px;
+                height: 300px;
             }
             .staff {
                 margin-bottom: 100px;
@@ -658,6 +698,22 @@
             .location__wrapper {
                 margin: 0 auto 30px auto;
                 text-align: center;
+            }
+            .trainer__title {
+                font-size: 25px;
+                line-height: 29px;
+            }
+            .trainer__subtitle {
+                font-size: 16px;
+                line-height: 17px;
+            }
+            .footer__logo{
+                height: auto;
+                width: 300px;
+            }
+            .footer__menu>li {
+                font-size: 16px;
+                line-height: 20px;
             }
         }
         /*====================================2=============================================*/
@@ -728,7 +784,6 @@
             }
             .photo {
                 margin-top: 0;
-                /* margin-bottom: 200px; */
             }
             .promo__wrapper {
                 width: 383px;
@@ -803,29 +858,11 @@
                 border-radius: 18px;
                 font-size: 14px;
                 line-height: 17px;
-                overflow: hidden;
             }
             .dancer__item:last-child {
-                margin-top: 4px;
+                margin: 4px;
                 width: 290px;
-            }
-            .dancer__item>img {
                 height: 141px;
-            }
-            .dancer__item:first-child>img {
-                transform: translateX(-100px);
-            }
-            .dancer__item:nth-child(2)>img {
-                transform: translateX(-80px);
-            }
-            .dancer__item:nth-child(3)>img {
-                transform: translateX(-45px);
-            }
-            .dancer__item:nth-child(4)>img {
-                transform: translateX(-45px);
-            }
-            .dancer__item:last-child>img {
-                transform: translateX(-80px);
             }
             .staff {
                 margin-bottom: 100px;
@@ -839,6 +876,39 @@
             .location__wrapper {
                 margin: 0 auto 30px auto;
                 text-align: center;
+            }
+            .trainer>.wrapper {
+                margin-top: 30px;
+                flex-wrap: wrap;
+                text-align: center;
+            }
+            .trainer__wrapper {
+                text-align: center;
+                margin-left: 0;
+            }
+            .trainer__title {
+                margin-top: 30px;
+                font-size: 25px;
+                line-height: 29px;
+            }
+            .trainer__subtitle {
+                font-size: 16px;
+                line-height: 17px;
+            }
+            footer .wrapper {
+                flex-wrap: wrap-reverse;
+
+            }
+            .footer__logo {
+                margin-top: 45px;
+                width: 250px;
+                height: auto;
+            }
+            aside {
+                padding-top: 7.5px;
+            }
+            aside .none {
+                display: none;
             }
         }
         @media (max-width: 360px) {
@@ -880,9 +950,16 @@
                             <li><a href="tel:+380732029988" class="phone">+380732029988</a></li>
                         </ul> 
                     </div>
-                    <button class="mobile">
+                    <button data-fancybox data-src="#dialog-content" class="mobile">
                         <img src="icons/phone_white.svg" alt="phone" class="phone">
                     </button>
+                    <div id="dialog-content" style="display:none;" class="dialog">
+                        <ul class="button__wrapper">
+                            <li><a href="tel:+380505229988" class="phone">+380505229988</a></li>
+                            <li><a href="tel:+380680229988" class="phone">+380680229988</a></li>
+                            <li><a href="tel:+380732029988" class="phone">+380732029988</a></li>
+                        </ul> 
+                    </div>
                 </div>
             </div>
         </div>
@@ -899,7 +976,8 @@
                     </h1>
                     <p class="promo__subtitle">
                         Ми дружня професійна команда.<br>
-                        Ми робимо світ краще. Приєднуйся, рухайся, вдоконалюйся. Танцюй з нами та отримай<br>задоволення.
+                        Ми робимо світ краще. Приєднуйся, рухайся, вдоконалюйся.<br>
+                        Танцюй з нами та отримай задоволення.
                     </p>
                     <button class="button button__mt30">
                         Зателефонувати
@@ -963,39 +1041,37 @@
                 <section class="block__content block__content_active dancer">
                     <div class="dancer__content">
                         <div class="dancer__item">
-                            <img src="img/block1.png" alt="1" class="background">
+                            <!-- <img src="img/block1.png" alt="1" class="background"> -->
                             <h2>
                                 Бальні танці<br>для дітей
                             </h2>
-                            <!--TODO <img src="icons/arrows/arrow_small.svg" alt="arrow" class="dancer__arrow"> -->
+                            <!-- <img src="icons/arrows/arrow_small.svg" alt="arrow" class="dancer__arrow"> -->
                         </div>
                         <div class="dancer__item">
-                            <img src="img/block2.png" alt="1" class="background">
                             <h2>
                                 Онлайн навчання
                             </h2>
-                            <!--TODO <img src="icons/arrows/arrow_small.svg" alt="arrow" class="dancer__arrow"> -->
+                            <!-- <img src="icons/arrows/arrow_small.svg" alt="arrow" class="dancer__arrow"> -->
                         </div>
                         <div class="dancer__item">
-                            <img src="img/block3.png" alt="1" class="background">
+                            <!-- <img src="img/block3.png" alt="1" class="background"> -->
                             <h2>
                                 Pro-Am для<br>дітей
                             </h2>
-                            <!--TODO <img src="icons/arrows/arrow_small.svg" alt="arrow" class="dancer__arrow"> -->
+                            <!-- <img src="icons/arrows/arrow_small.svg" alt="arrow" class="dancer__arrow"> -->
                         </div>
                         <div class="dancer__item">
-                            <img src="img/block4.png" alt="1" class="background">
                             <h2>
                                 Pro-Am для<br>дорослих
                             </h2>
-                            <!--TODO <img src="icons/arrows/arrow_small.svg" alt="arrow" class="dancer__arrow"> -->
+                            <!-- <img src="icons/arrows/arrow_small.svg" alt="arrow" class="dancer__arrow"> -->
                         </div>
                         <div class="dancer__item">
-                            <img src="img/block5.png" alt="1">
+                            <!-- <img src="img/block5.png" alt="1"> -->
                             <h2>
                                 Спортивні бальні танці
                             </h2>
-                            <!--TODO <img src="icons/arrows/arrow_big.svg" alt="arrow" class="dancer__arrow dancer__arrow_big"> -->
+                            <!-- <img src="icons/arrows/arrow_big.svg" alt="arrow" class="dancer__arrow dancer__arrow_big"> -->
                         </div>
                     </div>
                 </section>
@@ -1006,38 +1082,63 @@
                     <div class="organizator__wrapper">
                         <div class="organizator__content">
                             <div class="organizator__card">
-                                <div class="element-1">
-                                    <a href="./img/halls/pozniaky/1.jpg">
-                                        <img src="./img/halls/pozniaky/1.jpg" alt="">
-                                    </a>
-                                    <a href="./img/halls/pozniaky/2.jpg" class="none">
-                                        <img src="./img/halls/pozniaky/2.jpg" alt="">
-                                    </a>
-                                    <a href="./img/halls/pozniaky/3.jpg" class="none">
-                                        <img src="./img/halls/pozniaky/3.jpg" alt="">
-                                    </a>
-                                    <a href="./img/halls/pozniaky/4.jpg" class="none">
-                                        <img src="./img/halls/pozniaky/4.jpg" alt="">
-                                    </a>
-                                    <a href="./img/halls/pozniaky/5.jpg" class="none">
-                                        <img src="./img/halls/pozniaky/5.jpg" alt="">
-                                    </a>
-                                    <a href="./img/halls/pozniaky/6.jpg" class="none">
-                                        <img src="./img/halls/pozniaky/6.jpg" alt="">
-                                    </a>
-                                    <a href="./img/halls/pozniaky/7.jpg" class="none">
-                                        <img src="./img/halls/pozniaky/7.jpg" alt="">
-                                    </a>
-                                </div>
-                                <p class="organizator__address mb55">
-                                    м. Либідська Залізничне шосе 3
-                                </p>
+                                <a href="./img/halls/lubidsky/1.jpg" data-fancybox="gallery1">
+                                    <img src="./img/halls/lubidsky/1.jpg" alt="1" class="gallery-photo">
+                                </a>
+                                <a href="./img/halls/lubidsky/2.jpg" data-fancybox="gallery1">
+                                    <img src="./img/halls/lubidsky/2.jpg" alt="2" class="gallery-photo hide">
+                                </a>
+                                <a href="./img/halls/lubidsky/3.jpg" data-fancybox="gallery1">
+                                    <img src="./img/halls/lubidsky/3.jpg" alt="3" class="gallery-photo hide">
+                                </a>
+                                <a href="./img/halls/lubidsky/4.jpg" data-fancybox="gallery1">
+                                    <img src="./img/halls/lubidsky/4.jpg" alt="4" class="gallery-photo hide">
+                                </a>
+                                <a href="https://goo.gl/maps/ykHk92aBg5vsnDkF7" target="_blank" rel="nofollow noopener noreferrer" class="organizator__address mb55">
+                                    м. Київ, Залізничне шосе 3
+                                </a>
+                                <!-- <button data-fancybox data-src="#dialog-content">
+                                    Детальніше
+                                </button>
+                                <div id="dialog-content" style="display:none;">
+                                    <p>
+                                        Text
+                                    </p>
+                                </div> -->
                             </div>
                             <div class="organizator__card">
-                                <img src="img/organizators2.jpg" alt="2">
-                                <p class="organizator__address">
-                                    м. Позняки вул. Руденко 6а
-                                </p>
+                                <a href="./img/halls/pozniaky/1.jpg" data-fancybox="gallery">
+                                    <img src="./img/halls/pozniaky/1.jpg" alt="1" class="gallery-photo">
+                                </a>
+                                <a href="./img/halls/pozniaky/2.jpg" data-fancybox="gallery">
+                                    <img src="./img/halls/pozniaky/2.jpg" alt="2" class="gallery-photo hide">
+                                </a>
+                                <a href="./img/halls/pozniaky/3.jpg" data-fancybox="gallery">
+                                    <img src="./img/halls/pozniaky/3.jpg" alt="3" class="gallery-photo hide">
+                                </a>
+                                <a href="./img/halls/pozniaky/4.jpg" data-fancybox="gallery">
+                                    <img src="./img/halls/pozniaky/4.jpg" alt="4" class="gallery-photo hide">
+                                </a>
+                                <a href="./img/halls/pozniaky/5.jpg" data-fancybox="gallery">
+                                    <img src="./img/halls/pozniaky/5.jpg" alt="5" class="gallery-photo hide">
+                                </a>
+                                <a href="./img/halls/pozniaky/6.jpg" data-fancybox="gallery">
+                                    <img src="./img/halls/pozniaky/6.jpg" alt="6" class="gallery-photo hide">
+                                </a>
+                                <a href="./img/halls/pozniaky/7.jpg" data-fancybox="gallery">
+                                    <img src="./img/halls/pozniaky/7.jpg" alt="7" class="gallery-photo hide">
+                                </a>
+                                <a href="https://goo.gl/maps/wtovPVVdX8m9jffa6" target="_blank" rel="nofollow noopener noreferrer" class="organizator__address">
+                                    м. Київ, вул. Руденко 6а
+                                </a>
+                                <!-- <button data-fancybox data-src="#dialog-content">
+                                    Детальніше
+                                </button>
+                                <div id="dialog-content" style="display:none;">
+                                    <p>
+                                        Text
+                                    </p>
+                                </div> -->
                             </div>
                         </div>
                         <div class="organizator__reasons">
@@ -1054,20 +1155,22 @@
                     </div>
                 </section>
                 <section class="block__content trainer">
-                    <img src="img/trainers.jpg" alt="couple">
-                    <div class="trainer__wrapper">
-                        <h4>
-                            Запрошуємо<br>
-                            вас до<br>
-                            співпраці
-                        </h4>
-                        <p class="trainer__subtitle">
-                            Проводьте групові та індивідуальні<br>
-                            заняття в наших залах
-                        </p>
-                        <button class="button button__mt30">
-                            Зателефонувати
-                        </button>
+                    <div class="wrapper">
+                        <img src="img/trainers/trainers.jpg" alt="couple">
+                        <div class="trainer__wrapper">
+                            <h4 class="trainer__title">
+                                Запрошуємо<br>
+                                вас до<br>
+                                співпраці
+                            </h4>
+                            <p class="trainer__subtitle">
+                                Проводьте групові та індивідуальні<br>
+                                заняття в наших залах
+                            </p>
+                            <button class="button button__mt30">
+                                Зателефонувати
+                            </button>
+                        </div>
                     </div>
                 </section>
             </div>
@@ -1084,7 +1187,7 @@
                             <div class="card__inner">
                                 <div class="card__face card__face--front">
                                     <div class="card__photo">
-                                        <img data-src="img/trainers/1.webp" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="swiper-lazy" alt="Image">
+                                        <img data-src="img/portrait/1.webp" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="swiper-lazy" alt="Image">
                                         <div class="swiper-lazy-preloader"></div>
                                     </div>
                                     <h3 class="card__name">
@@ -1107,7 +1210,7 @@
                             <div class="card__inner">
                                 <div class="card__face card__face--front">
                                     <div class="card__photo">
-                                        <img data-src="img/trainers/12.webp" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="swiper-lazy" alt="Image">
+                                        <img data-src="img/portrait/12.webp" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="swiper-lazy" alt="Image">
                                         <div class="swiper-lazy-preloader"></div>
                                     </div>
                                     <h3 class="card__name">
@@ -1130,7 +1233,7 @@
                             <div class="card__inner">
                                 <div class="card__face card__face--front">
                                     <div class="card__photo">
-                                        <img data-src="img/trainers/2.webp" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="swiper-lazy" alt="Image">
+                                        <img data-src="img/portrait/2.webp" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="swiper-lazy" alt="Image">
                                         <div class="swiper-lazy-preloader"></div>
                                     </div>
                                     <h3 class="card__name">
@@ -1153,7 +1256,7 @@
                             <div class="card__inner">
                                 <div class="card__face card__face--front">
                                     <div class="card__photo">
-                                        <img data-src="img/trainers/3.webp" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="swiper-lazy" alt="Image">
+                                        <img data-src="img/portrait/3.webp" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="swiper-lazy" alt="Image">
                                         <div class="swiper-lazy-preloader"></div>
                                     </div>
                                     <h3 class="card__name">
@@ -1178,7 +1281,7 @@
                             <div class="card__inner">
                                 <div class="card__face card__face--front">
                                     <div class="card__photo">
-                                        <img data-src="img/trainers/4.webp" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="swiper-lazy" alt="Image">
+                                        <img data-src="img/portrait/4.webp" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="swiper-lazy" alt="Image">
                                         <div class="swiper-lazy-preloader"></div>
                                     </div>
                                     <h3 class="card__name">
@@ -1187,8 +1290,8 @@
                                     <p class="card__descr">
                                         Тренер дорослі та ProAm
                                     </p>
-                                    <!-- <a target="_blank" href="#"><img class="social" src="icons/social/instagram_white.svg"></a>
-                                    <a target="_blank" href="#"><img class="social" src="icons/social/facebook_white.svg"></a> -->
+                                    <a target="_blank" href="//www.instagram.com/sanich2000/"><img class="social" src="icons/social/instagram_white.svg"></a>
+                                    <a target="_blank" href="//www.facebook.com/berezci"><img class="social" src="icons/social/facebook_white.svg"></a>
                                 </div>
                                 <div class="card__face card__face--back">
                                     <div class="card__content">
@@ -1203,7 +1306,7 @@
                             <div class="card__inner">
                                 <div class="card__face card__face--front">
                                     <div class="card__photo">
-                                        <img data-src="img/trainers/5.webp" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="swiper-lazy" alt="Image">
+                                        <img data-src="img/portrait/5.webp" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="swiper-lazy" alt="Image">
                                         <div class="swiper-lazy-preloader"></div>
                                     </div>
                                     <h3 class="card__name">
@@ -1228,7 +1331,7 @@
                             <div class="card__inner">
                                 <div class="card__face card__face--front">
                                     <div class="card__photo">
-                                        <img data-src="img/trainers/6.webp" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="swiper-lazy" alt="Image">
+                                        <img data-src="img/portrait/6.webp" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="swiper-lazy" alt="Image">
                                         <div class="swiper-lazy-preloader"></div>
                                     </div>
                                     <h3 class="card__name">
@@ -1253,7 +1356,7 @@
                             <div class="card__inner">
                                 <div class="card__face card__face--front">
                                     <div class="card__photo">
-                                        <img data-src="img/trainers/7.webp" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="swiper-lazy" alt="Image">
+                                        <img data-src="img/portrait/7.webp" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="swiper-lazy" alt="Image">
                                         <div class="swiper-lazy-preloader"></div>
                                     </div>
                                     <h3 class="card__name">
@@ -1278,7 +1381,7 @@
                             <div class="card__inner">
                                 <div class="card__face card__face--front">
                                     <div class="card__photo">
-                                        <img data-src="img/trainers/8.webp" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="swiper-lazy" alt="Image">
+                                        <img data-src="img/portrait/8.webp" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="swiper-lazy" alt="Image">
                                         <div class="swiper-lazy-preloader"></div>
                                     </div>
                                     <h3 class="card__name">
@@ -1303,7 +1406,7 @@
                             <div class="card__inner">
                                 <div class="card__face card__face--front">
                                     <div class="card__photo">
-                                        <img data-src="img/trainers/9.webp" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="swiper-lazy" alt="Image">
+                                        <img data-src="img/portrait/9.webp" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="swiper-lazy" alt="Image">
                                         <div class="swiper-lazy-preloader"></div>
                                     </div>
                                     <h3 class="card__name">
@@ -1328,7 +1431,7 @@
                             <div class="card__inner">
                                 <div class="card__face card__face--front">
                                     <div class="card__photo">
-                                        <!-- <img data-src="img/trainers/9.webp" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="swiper-lazy" alt="Image"> -->
+                                        <img data-src="img/portrait/16.webp" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="swiper-lazy" alt="Image">
                                         <div class="swiper-lazy-preloader"></div>
                                     </div>
                                     <h3 class="card__name">
@@ -1337,8 +1440,8 @@
                                     <p class="card__descr">
                                         Тренер початкових та спортивних груп. Філія - Вишенки
                                     </p>
-                                    <!-- <a target="_blank" href="//www.instagram.com/pushkina_ju"><img class="social" src="icons/social/instagram_white.svg"></a>
-                                    <a target="_blank" href="//www.facebook.com/jylia.pushkina"><img class="social" src="icons/social/facebook_white.svg"></a> -->
+                                    <a target="_blank" href="//www.instagram.com/ruslangitia/"><img class="social" src="icons/social/instagram_white.svg"></a>
+                                    <a target="_blank" href="//www.facebook.com/profile.php?id=100038626413634"><img class="social" src="icons/social/facebook_white.svg"></a>
                                 </div>
                                 <div class="card__face card__face--back">
                                     <div class="card__content">
@@ -1353,7 +1456,7 @@
                             <div class="card__inner">
                                 <div class="card__face card__face--front">
                                     <div class="card__photo">
-                                        <img data-src="img/trainers/10.webp" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="swiper-lazy" alt="Image">
+                                        <img data-src="img/portrait/10.webp" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="swiper-lazy" alt="Image">
                                         <div class="swiper-lazy-preloader"></div>
                                     </div>
                                     <h3 class="card__name">
@@ -1378,7 +1481,7 @@
                             <div class="card__inner">
                                 <div class="card__face card__face--front">
                                     <div class="card__photo">
-                                        <img data-src="img/trainers/11.webp" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="swiper-lazy" alt="Image">
+                                        <img data-src="img/portrait/11.webp" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="swiper-lazy" alt="Image">
                                         <div class="swiper-lazy-preloader"></div>
                                     </div>
                                     <h3 class="card__name">
@@ -1403,7 +1506,7 @@
                             <div class="card__inner">
                                 <div class="card__face card__face--front">
                                     <div class="card__photo">
-                                        <img data-src="img/trainers/14.webp" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="swiper-lazy" alt="Image">
+                                        <img data-src="img/portrait/14.webp" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="swiper-lazy" alt="Image">
                                         <div class="swiper-lazy-preloader"></div>
                                     </div>
                                     <h3 class="card__name">
@@ -1412,8 +1515,8 @@
                                     <p class="card__descr">
                                         Text
                                     </p>
-                                    <a target="_blank" href="https://google.com"><img class="social" src="icons/social/instagram_white.svg"></a>
-                                    <a target="_blank" href="https://duckduckgo.com"><img class="social" src="icons/social/facebook_white.svg"></a>
+                                    <!-- <a target="_blank" href="https://google.com"><img class="social" src="icons/social/instagram_white.svg"></a>
+                                    <a target="_blank" href="https://duckduckgo.com"><img class="social" src="icons/social/facebook_white.svg"></a> -->
                                 </div>
                                 <div class="card__face card__face--back">
                                     <div class="card__content">
@@ -1428,7 +1531,7 @@
                             <div class="card__inner">
                                 <div class="card__face card__face--front">
                                     <div class="card__photo">
-                                        <img data-src="img/trainers/13.webp" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="swiper-lazy" alt="Image">
+                                        <img data-src="img/portrait/13.webp" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="swiper-lazy" alt="Image">
                                         <div class="swiper-lazy-preloader"></div>
                                     </div>
                                     <h3 class="card__name">
@@ -1437,8 +1540,8 @@
                                     <p class="card__descr">
                                         Text
                                     </p>
-                                    <a target="_blank" href="https://google.com"><img class="social" src="icons/social/instagram_white.svg"></a>
-                                    <a target="_blank" href="https://duckduckgo.com"><img class="social" src="icons/social/facebook_white.svg"></a>
+                                    <!-- <a target="_blank" href="https://google.com"><img class="social" src="icons/social/instagram_white.svg"></a>
+                                    <a target="_blank" href="https://duckduckgo.com"><img class="social" src="icons/social/facebook_white.svg"></a> -->
                                 </div>
                                 <div class="card__face card__face--back">
                                     <div class="card__content">
@@ -1453,7 +1556,7 @@
                             <div class="card__inner">
                                 <div class="card__face card__face--front">
                                     <div class="card__photo">
-                                        <img data-src="img/trainers/15.webp" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="swiper-lazy" alt="Image">
+                                        <img data-src="img/portrait/15.webp" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="swiper-lazy" alt="Image">
                                         <div class="swiper-lazy-preloader"></div>
                                     </div>
                                     <h3 class="card__name">
@@ -1462,8 +1565,8 @@
                                     <p class="card__descr">
                                         Text
                                     </p>
-                                    <a target="_blank" href="https://google.com"><img class="social" src="icons/social/instagram_white.svg"></a>
-                                    <a target="_blank" href="https://duckduckgo.com"><img class="social" src="icons/social/facebook_white.svg"></a>
+                                    <!-- <a target="_blank" href="https://google.com"><img class="social" src="icons/social/instagram_white.svg"></a>
+                                    <a target="_blank" href="https://duckduckgo.com"><img class="social" src="icons/social/facebook_white.svg"></a> -->
                                 </div>
                                 <div class="card__face card__face--back">
                                     <div class="card__content">
@@ -1497,7 +1600,7 @@
             </div>
         </article>
 
-        <article class="feedback">
+        <!-- <article class="feedback">
             <div class="container">
                 <h4 class="feedback__title">
                     Відгуки
@@ -1573,14 +1676,14 @@
                     <div class="swiper-pagination"></div>
                 </div>
             </div>
-        </article>
+        </article> -->
     </main>
 
-    <!-- <footer>
+    <footer>
         <div class="container">
-            <section class="footer__hero">
+            <div class="wrapper">
                 <a href="/">
-                    <img src="icons/logo/diamant_elite7.png" alt="logo">
+                    <img src="icons/logo/diamant_elite7.png" alt="logo" class="footer__logo"> 
                 </a>
                 <nav class="footer">
                     <ul class="footer__menu">
@@ -1591,7 +1694,7 @@
                         <li class="footer__item"><a href="#staff">Наша команда</a></li>
                     </ul>
                 </nav>
-            </section>
+            </div>
         </div>
     </footer>
 
@@ -1603,13 +1706,12 @@
                 <a href="//guntyk.github.io/" target="_blank" rel="nofollow noopener noreferrer">By Sate</a>
             </section>
         </div>
-    </aside> -->
+    </aside>
 
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script type="text/javascript" src="js/vanilla-tilt.js"></script>
-    <script src="./js/lightgallery-all.min.js"></script>
-    <script src="./js/lightgallery.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

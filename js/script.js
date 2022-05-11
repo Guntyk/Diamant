@@ -6,14 +6,14 @@ function activeLink(){
 }
 list.forEach((item) =>
 item.addEventListener('click',activeLink));
-//* =====Selector Menu Start=====
+//!=====Selector Menu Start=====
 $('ul.selector__menu').on('click', 'li:not(.selector__item_active)', function() {
 	$(this)
 		.addClass('selector__item_active').siblings().removeClass('selector__item_active')
 		.closest('body').find('section.block__content').removeClass('block__content_active').eq($(this).index()).addClass('block__content_active');
 });
-//* =====Selector Menu Start=====
-//TODO =====Click on Carousel Cards Start=====
+//!=====Selector Menu Start=====
+//!=====Click on Carousel Cards Start=====
 document.addEventListener("click", function (e) {
     const card = e.target.closest(".card__inner")
     if (card){
@@ -24,8 +24,8 @@ const social = document.querySelector(".social");
 social.addEventListener('click' , function (e) {
   e.stopPropagation();
   });
-//TODO =====Click on Carousel Cards End=====
-//* =====Responsive Cards Start=====
+//!=====Click on Carousel Cards End=====
+//!=====Responsive Cards Start=====
 VanillaTilt.init(document.querySelectorAll(".dancer__item"), {
     max: 10,
     speed: 1000,
@@ -34,15 +34,12 @@ VanillaTilt.init(document.querySelectorAll(".dancer__item_last"), {
     max: 5,
     speed: 1000,
 });
-//* =====Responsive Cards End=====
-//* =====Carousel Start=====
+//!=====Responsive Cards End=====
+//!=====Carousel Start=====
 // const prevIcon = '<img src="./icons/arrows/arrow_left.svg" alt="prev">';
 // const nextIcon = '<img src="./icons/arrows/arrow_right.svg" alt="next">';
 new Swiper('.staff-slider', {
     effect: 'slide',
-    // coverflowEffect: {
-    //     slideShadows: false
-    // },
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev'
@@ -106,25 +103,21 @@ new Swiper('.comment-slider', {
         }
     }
 });
-// * =====Carousel End=====
-//* =====Gallery Start=====
-jQuery(document).ready(($)=>{
-    // документ загружен!
-    $('.element-1').lightGallery({
-    });
-});
-//* =====Gallery End=====
-// *=====Scroll Container Start=====
-var swiper = new Swiper(".mySwiper", {
-    direction: "vertical",
-    slidesPerView: "auto",
-    freeMode: true,
-    scrollbar: {
-      el: ".swiper-scrollbar",
-    },
-    mousewheel: true,
-  });
-// *=====Scroll Container End=====
+//!=====Carousel End=====
+//!=====Gallery Start=====
+
+//!=====Gallery End=====
+//!=====Scroll Container Start=====
+// var swiper = new Swiper(".mySwiper", {
+//     direction: "vertical",
+//     slidesPerView: "auto",
+//     freeMode: true,
+//     scrollbar: {
+//       el: ".swiper-scrollbar",
+//     },
+//     mousewheel: true,
+//   });
+//!=====Scroll Container End=====
 // $('ul.footer__menu').on('click', 'li:not(.footer__item_active)', function() {
 // 	$(this)
 // 		.addClass('footer__item_active').siblings().removeClass('footer__item_active')

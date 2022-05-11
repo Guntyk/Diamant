@@ -11,10 +11,21 @@
     &__item
         position: relative
         margin: 15px
-        max-width: 540px
-        max-height: 299px
+        width: 540px
+        height: 299px
         cursor: pointer
         transition: 0.4s
+        border-radius: 18px
+        &:nth-child(1)
+            background: linear-gradient(90deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url(../img/dancers/kids.jpg) no-repeat 50% / cover border-box
+        &:nth-child(2)
+            background: linear-gradient(90deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url(../img/dancers/online.jpg) no-repeat 50% / cover border-box
+        &:nth-child(3)
+            background: linear-gradient(90deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url(../img/dancers/online.jpg) no-repeat 50% / cover border-box
+        &:nth-child(4)
+            background: linear-gradient(90deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url(../img/dancers/proamad.jpg) no-repeat 50% / cover border-box
+        &:nth-child(5)
+            background: linear-gradient(90deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url(../img/dancers/ballroom.jpg) no-repeat 50% / cover border-box
         &:hover
             .dancer__arrow
                 transform: translateY(0px)
@@ -38,6 +49,8 @@
     margin: 0 auto
     min-height: 742px
     margin-bottom: 150px
+    &__card 
+        width: 600px
     &__title
         font-weight: 700
         font-size: 40px
@@ -46,13 +59,18 @@
             margin: 79px 0
             text-align: center
     &__wrapper
+        max-width: 100%
         display: flex
         justify-content: space-between
     &__address
-        margin: 15px 0 0 60px
+        margin-top: 15px
+        margin-left: 80px
         font-weight: 600
         font-size: 20px
         line-height: 24px
+        cursor: pointer
+        &:hover
+            text-decoration: underline
     &__reasons
         margin: auto 0
         ul
@@ -64,12 +82,22 @@
                 font-weight: 600
                 font-size: 22px
                 line-height: 27px
+.gallery-photo
+    width: 450px
+    border-radius: 18px
+.hide
+    display: none
 
 .trainer
-    margin: 155px 0
-    margin-left: 50px
-    min-height: 660px
-    h4
+    width: 80%
+    margin: 0 auto
+    .wrapper
+        max-width: 100%
+        margin-top: 100px
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &__title
         font-weight: 700
         font-size: 56px
         line-height: 68px
@@ -78,10 +106,14 @@
         font-weight: 600
         font-size: 20px
         line-height: 24px
-    &__wrapper
-        margin-top: 131px
-        margin-right: 200px
-        float: right
+    img
+        border-radius: 18px
+        width: 527px
+        height: auto
+
+.cuople
+    height: 547px
+    width: 660px
 
 .block
     color: #223344
