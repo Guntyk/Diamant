@@ -72,6 +72,9 @@
 .card__face--back
     transform: rotateY(180deg)
     overflow: hidden
+    display: flex
+    align-items: center
+    justify-content: center
     &::before
         content: ""
         position: absolute
@@ -93,7 +96,7 @@
         z-index: -1
 
 .card__face--back p
-    padding: 25px
+    padding: 0 25px
 
 .card__inner.is-flipped
     transform: rotateY(180deg)
