@@ -16,7 +16,7 @@
         width: 540px
         height: 299px
         cursor: pointer
-        transition: 0.4s
+        transition: .3s
         border-radius: 18px
         &:nth-child(1)
             background: linear-gradient(90deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url(../img/dancers/kids.webp) no-repeat 50% / cover border-box
@@ -30,6 +30,7 @@
             background: linear-gradient(90deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url(../img/dancers/ballroom.jpg) no-repeat 50% / cover border-box
             margin-bottom: 30px
         &:hover
+            transform: scale(1.03)
             .dancer__arrow
                 transform: translateY(0px)
                 opacity: 1
@@ -92,14 +93,43 @@
                 line-height: 24px
                 &:last-child
                     margin-bottom: 50px
+    &__info
+        display: flex
+        justify-content: space-between
 .gallery-photo
     width: 630px
 .hide
     display: none
+.details
+    display: none
+.details.more
+    display: inline
+.read-more-btn
+    background-color: #dbdbdb
+    border-radius: 18px
+    cursor: pointer
+    border: none
+    transition: .2s
+    font-size: 14px
+    padding: 5px 10px
+    &:hover
+        transform: scale(1.02)
+.details1
+    display: none
+.details1.more
+    display: inline
+.read-more-btn1
+    background-color: #dbdbdb
+    border-radius: 18px
+    cursor: pointer
+    border: none
+    transition: .2s
+    font-size: 14px
+    padding: 5px 10px
+    &:hover
+        transform: scale(1.02)
 
 .trainer
-    width: 80%
-    margin: 0 auto
     .wrapper
         max-width: 100%
         display: flex
@@ -115,13 +145,9 @@
         font-size: 20px
         line-height: 24px
     img
-        // border-radius: 18px
-        width: 527px
-        height: auto
-
-.cuople
-    height: 547px
-    width: 660px
+        left: 0
+        // width: 527px
+        // height: auto
 
 .block
     color: #223344

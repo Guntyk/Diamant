@@ -14,30 +14,28 @@ $('ul.selector__menu').on('click', 'li:not(.selector__item_active)', function() 
 });
 //!=====Selector Menu Start=====
 //!=====Click on Carousel Cards Start=====
-document.addEventListener("click", function (e) {
-    const card = e.target.closest(".card__inner")
-    if (card){
-      card.classList.toggle('is-flipped');
-    } 
-  });
-const social = document.querySelector(".social");
-social.addEventListener('click' , function (e) {
-  e.stopPropagation();
-  });
+// document.addEventListener("click", function (e) {
+//     const card = e.target.closest(".card__inner")
+//     if (card){
+//       card.classList.toggle('is-flipped');
+//     } 
+//   });
+// const social = document.querySelector(".social");
+// social.addEventListener('click' , function (e) {
+//   e.stopPropagation();
+//   });
 //!=====Click on Carousel Cards End=====
 //!=====Responsive Cards Start=====
-VanillaTilt.init(document.querySelectorAll(".dancer__item"), {
-    max: 10,
-    speed: 1000,
-});
-VanillaTilt.init(document.querySelectorAll(".dancer__item_last"), {
-    max: 5,
-    speed: 1000,
-});
+// VanillaTilt.init(document.querySelectorAll(".dancer__item"), {
+//     max: 10,
+//     speed: 1000,
+// });
+// VanillaTilt.init(document.querySelectorAll(".dancer__item_last"), {
+//     max: 5,
+//     speed: 1000,
+// });
 //!=====Responsive Cards End=====
 //!=====Carousel Start=====
-// const prevIcon = '<img src="./icons/arrows/arrow_left.svg" alt="prev">';
-// const nextIcon = '<img src="./icons/arrows/arrow_right.svg" alt="next">';
 new Swiper('.staff-slider', {
     effect: 'slide',
     navigation: {
@@ -104,9 +102,38 @@ new Swiper('.comment-slider', {
     }
 });
 //!=====Carousel End=====
-//!=====Gallery Start=====
+//!=====More Button Start=====
+const readMoreBtn = document.querySelector('.read-more-btn');
+const readMoreBtn1 = document.querySelector('.read-more-btn1');
+const details = document.querySelector('.details');
+const details1 = document.querySelector('.details1');
 
-//!=====Gallery End=====
+readMoreBtn.addEventListener('click', (e)=>{
+    details.classList.toggle('more');
+    if(readMoreBtn.innerText === "Детальніше...")
+    {
+        readMoreBtn.innerText = "Сгорнути";
+    }else {
+        readMoreBtn.innerText ="Детальніше..."; 
+    }
+});
+readMoreBtn1.addEventListener('click', (e)=>{
+    details1.classList.toggle('more');
+    if(readMoreBtn1.innerText === "Детальніше...")
+    {
+        readMoreBtn1.innerText = "Сгорнути";
+    }else {
+        readMoreBtn1.innerText ="Детальніше..."; 
+    }
+});
+document.addEventListener("click", function (e) {
+    const flip = e.target.closest(".descr-btn");
+    const card = e.target.closest('.card__inner');
+    if (flip){
+        card.classList.toggle('is-flipped');
+    } 
+});
+//!=====More Button End=====
 //!=====Location Start=====
 $('ul.location__list').on('click', 'li:not(.location__mark_active)', function() {
 	$(this)
