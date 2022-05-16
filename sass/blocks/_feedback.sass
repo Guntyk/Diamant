@@ -1,4 +1,5 @@
 .feedback
+    padding: 50px 0 100px 0
     color: #223344
     &__title
         text-align: center
@@ -16,24 +17,27 @@
         box-shadow: 0px 4px 32px 0px #0000001F
         background-color: #fff
         padding: 0 30px
-        // img
-            // width: 122px
-            // height: auto
-        //     margin: 0 31px 0 24px
-        //     max-width: 122px
+        overflow: hidden
     &__photo
-        // background-color: red
-        background: url(../img/feedback/1.webp) no-repeat 50% / cover border-box
         overflow: hidden
         width: 122px
         height: 122px
         border-radius: 50%
+        img
+            width: 122px
+            height: auto
+    &__text
+        display: flex
+        width: 390px
+        flex-wrap: wrap
+    &__stats
+        font-size: 14px
+        margin: 6px 0 0 10px
     &__name
         font-weight: 600
         font-size: 20px
     &__descr
         width: 390px
-        margin-top: 10px
         font-weight: 500
         font-size: 17px
         line-height: 21px

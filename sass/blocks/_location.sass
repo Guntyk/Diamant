@@ -1,14 +1,15 @@
 .location
     display: flex
     justify-content: space-between
-    align-items: center
+    // align-items: center
     min-height: 403px
-    margin-bottom: 60px
+    padding: 50px 0
     color: #223344
+    background-color: #F8F8F8
     &__title
         font-weight: 700
         font-size: 40px
-        line-height: 49px
+        line-height: 48px
     &__list
         list-style-type: disc
         font-weight: 400
@@ -16,8 +17,10 @@
         line-height: 30px
         margin: 20px 0 0 20px
         cursor: pointer
-        li:hover
-            text-decoration: underline
+        li
+            // margin: 24px 0 0 20px
+            &:hover
+                text-decoration: underline
     &__map
         display: none
         border: 3px solid

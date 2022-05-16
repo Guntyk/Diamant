@@ -1,3 +1,5 @@
+.block
+    background-color: #F8F8F8
 .dancer
     color: #fff
     font-weight: 600
@@ -7,7 +9,7 @@
         display: flex
         justify-content: center
         flex-wrap: wrap
-        margin-top: 30px
+        padding-top: 50px
     &__item
         position: relative
         margin: 15px
@@ -26,6 +28,7 @@
             background: linear-gradient(90deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url(../img/dancers/proamad.webp) no-repeat 50% / cover border-box
         &:nth-child(5)
             background: linear-gradient(90deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url(../img/dancers/ballroom.jpg) no-repeat 50% / cover border-box
+            margin-bottom: 30px
         &:hover
             .dancer__arrow
                 transform: translateY(0px)
@@ -45,48 +48,52 @@
         left: 35px
 
 .organizator
-    width: 1056px
-    margin: 0 auto
-    min-height: 742px
-    margin-bottom: 150px
     &__card 
-        width: 450px
-        display: flex
-        flex-wrap: wrap
+        width: 630px
+        height: auto
+        padding-bottom: 50px
     &__title
         font-weight: 700
         font-size: 40px
         line-height: 49px
-        &_main
-            margin: 79px 0
-            text-align: center
+        padding: 50px 0
+        text-align: center
+    &__subtitle
+        font-weight: 700
+        font-size: 24px
+        line-height: 28px
     &__wrapper
-        max-width: 100%
         display: flex
+        flex-direction: column-reverse
+    &__content
+        display: flex
+        flex-direction: row
         justify-content: space-between
     &__address
-        margin: 15px auto 0 auto
-        // margin-top: 15px
+        margin-top: -15px
         font-weight: 600
-        font-size: 20px
+        font-size: 15px
         line-height: 24px
+    .href
+        font-weight: 500
         cursor: pointer
         &:hover
             text-decoration: underline
     &__reasons
         margin: auto 0
         ul
-            margin-top: 25px
+            margin-top: 24px
             li
                 list-style-type: disc
-                margin-bottom: 15px
-                margin-left: 22px
+                margin-bottom: 20px
+                margin-left: 35px
                 font-weight: 600
-                font-size: 22px
-                line-height: 27px
+                font-size: 20px
+                line-height: 24px
+                &:last-child
+                    margin-bottom: 50px
 .gallery-photo
-    width: 450px
-    border-radius: 18px
+    width: 630px
 .hide
     display: none
 
@@ -95,7 +102,6 @@
     margin: 0 auto
     .wrapper
         max-width: 100%
-        margin-top: 100px
         display: flex
         justify-content: space-between
         align-items: center
@@ -109,7 +115,7 @@
         font-size: 20px
         line-height: 24px
     img
-        border-radius: 18px
+        // border-radius: 18px
         width: 527px
         height: auto
 
