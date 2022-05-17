@@ -57,6 +57,7 @@ new Swiper('.staff-slider', {
     spaceBetween: 100,
     speed: 1000,
     preloadImages: false,
+    initialSlide: 6,
     lazy: {
         loadOnTransitionStart: true,
         loadPrevNext: false,
