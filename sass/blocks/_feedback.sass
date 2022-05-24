@@ -18,15 +18,26 @@
         background-color: #fff
         padding: 0 30px
         overflow: hidden
+        transition: .6s
+    .more
+        height: 500px
+        .dots
+            display: none
+        .comment-details
+            display: inline
+    .comment-details
+        display: none
     &__photo
         overflow: hidden
         width: 122px
         height: 122px
         border-radius: 50%
+        margin: 27px 0
         img
             width: 122px
             height: auto
     &__text
+        margin: 40px 0
         display: flex
         width: 390px
         flex-wrap: wrap
@@ -41,3 +52,13 @@
         font-weight: 500
         font-size: 17px
         line-height: 21px
+.swiper-slide
+    transition: .6s
+.swiper-slide-active
+    transition: .6s
+.swiper-slide>.comment
+    height: 176px
+    transition: .6s
+.swiper-slide-active>.comment
+    height: auto
+    transition: .6s
