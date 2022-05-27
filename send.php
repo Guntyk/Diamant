@@ -1,3 +1,12 @@
+<?php
+define('url', "https://api.telegram.org/bot5331027047:AAFXDxilUP-OW4WLMaFHJsQegjZ96gBLNkE/");
+$name = $_POST['name'];
+$tel = $_POST['tel'];
+$chat_id = '1133429141';
+$message = urlencode("Name: " . $name . "\nPhone: " . $tel);
+$answer_obj = json_decode(file_get_contents(url . "sendmessage?text=" . $message . "&chat_id=" . $chat_id . "&parse_mode=HTML"))
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -486,23 +495,17 @@
             }
             .staff-slider,
             .comment-slider {
-                width: 800px;
+                width: 1000px;
             }
             .staff-slider {
-                padding: 30px 0;
+                padding: 30px;
             }
             .swiper-button-prev,
             .swiper-button-next {
                 visibility: hidden;
             }
-            .card {
-                margin-right: 10px;
-            }
-            .card__name {
-                text-align: center;
-            }
-            .card__descr {
-                margin: 3px 10px;
+            .swiper-pagination {
+                visibility: visible;
             }
             .selector {
                 max-width: 1199px;
@@ -519,14 +522,8 @@
                 font-size: 35px;
                 line-height: 40px;
             }
-            .organizator__card {
-                width: 430px;
-            }
-            .gallery-photo {
-                width: 430px;
-            }
-            .trainer>.wrapper>img {
-                width: 600px;
+            .trainer>.wrapper {
+                margin-top: 70px;
             }
             .trainer__wrapper {
                 margin-left: 50px;
@@ -537,15 +534,6 @@
             }
             .location iframe{
                 width: 600px;
-            }
-            .advantages__wrapper:last-child {
-                margin-left: 30px;
-            }
-            .advantages__text:first-child {
-                width: 120px;
-            }
-            .advantages__text>span {
-                margin-left: 0px;
             }
         }
         /* `lg` applies to large devices (tablets, less than 992px) */
@@ -567,84 +555,69 @@
             .swiper-pagination {
                 visibility: visible;
             }
-            .header__calls {
-                width: 230px;
+            .comment>img {
+                padding-top: 20px;
+                width: 100px
             }
-            .header__wrapper>li {
-                margin-left: 25px;
+            .feedback .comment {
+                flex-direction: column;
+                width: 250px;
+                min-height: 300px;
+            }
+            .feedback__text {
+                text-align: center;
+            }
+            .feedback__name {
+                font-size: 18px;
+            }
+            .feedback__descr {
+                margin: 10px 0;
+                padding: 0 15px;
+                font-size: 16px;
             }
             .promo__wrapper {
-                margin-right: 50px;
+                top: 135px;
+                width: 450px;
+                margin: 90px 50px 0 0;
             }
             .promo__title {
-                font-size: 30px;
+                font-size: 35px;
                 line-height: 39px;
             }
             .promo__subtitle {
                 font-size: 16px;
                 line-height: 21px;
             }
-            .advantages {
-                padding: 40px 0;
-            }
-            .advantages__wrapper:first-child {
-                min-width: 200px;
-            }
-            .advantages__wrapper:last-child {
-                margin-left: 40px;
-            }
-            .advantages__title {
-                margin-bottom: 30px;
-                font-size: 30px;
-            }
-            .advantages__text {
-                font-size: 16px;
-            }
-            .advantages__text>span {
-                font-size: 25px;
-                line-height: 24px;
-            }
-            .advantages__mark {
-                margin-bottom: 20px;
-            }
-            .advantages__mark>h5 {
-                margin-bottom: 0;
-                font-size: 20px;
-            }
-            .advantages__addition {
-                font-size: 16px;
-            }
             .button {
                 width: 250px;
                 font-size: 17px;
             }
             .selector {
-                padding: 50px 0 25px 0;
-                font-size: 16px;
+                max-width: 991px;
+                font-size: 14px;
                 text-align: center;
+            }
+            .selector:first-child{
+                border-left: none;
+            }
+            .selector:last-child{
+                border-right: none;
             }
             .organizator {
                 width: 100%;
+                text-align: center;
             }
             .organizator__card {
                 justify-content: center;
             }
             .organizator__wrapper {
-                width: 100%;
                 flex-wrap: wrap;
                 justify-content: center;
             }
             .organizator__title {
-                padding: 50px 0;
+                margin: 50px 0;
             }
-            .organizator__content {
-                width: 100%;
-            }
-            .organizator__card,
-            .gallery-photo {
-                width: 350px;
-            }
-            .trainer>.wrapper>img {
+            .trainer img {
                 width: 400px;
             }
             .trainer__title {
@@ -656,7 +629,6 @@
                 line-height: 21px;
             }
             .location {
-                padding-top: 40px;
                 flex-wrap: wrap;
             }
             .location__wrapper {
@@ -669,44 +641,6 @@
             .location__list {
                 list-style-type: none;
                 margin-left: 0;
-            }
-            .feedback .comment {
-                flex-direction: column;
-                width: 250px;
-                min-height: 396px;
-            }
-            .feedback__text {
-                margin: 0 0 20px 0;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                text-align: center;
-            }
-            .feedback__name {
-                font-size: 18px;
-            }
-            .feedback__descr {
-                margin: 10px 0;
-                padding: 0 15px;
-                width: 230px;
-                font-size: 16px;
-            }
-            .form {
-                padding-top: 50px;
-            }
-            .send {
-                flex-direction: column-reverse;
-                align-items: center;
-            }
-            .form__text {
-                margin: 0 0 24px 0;
-                text-align: center;
-            }
-            .form__subtitle {
-                margin-top: 10px;
-            }
-            form {
-                align-items: center;
             }
             .footer__logo {
                 height: auto;
@@ -901,21 +835,30 @@
                 margin-top: 23px;
             }
             /* Diamonds */
-            .advantages__row {
-                flex-direction: column-reverse;
-                align-items: center;
-                text-align: center;
+            .diamond__row {
+                margin-bottom: 0;
+                flex-wrap: wrap;
             }
-            .advantages__wrapper:last-child {
-                margin: 0 0 30px 0;
+            .diamond__mark {
+                margin: 90px 0;
             }
-            .advantages__text:first-child {
-                width: auto;
+            .second>img {
+                left: 20px;
+            }
+            .third>img {
+                left: -7px;
+            }
+            .second,
+            .third {
+                padding: 0 10px;
+            }
+            .diamond__title {
+                margin-bottom: 0
             }
             /* Selector */
             .selector{
                 max-width: 575px;
-                font-size: 14px;
+                font-size: 11px;
             }
             .selector:first-child{
                 padding: 0 28px 0 8px;
@@ -935,7 +878,7 @@
                 left: 10px;
             }
             .dancer__content {
-                padding-top: 20px;
+                margin-top: 20px;
             }
             .dancer__item {
                 margin: 4px;
@@ -950,33 +893,16 @@
                 width: 290px;
                 height: 141px;
             }
-            .organizator__title {
-                padding: 0 0 20px 0;
-                font-size: 30px;
-            }
-            .organizator__subtitle {
-                font-size: 20px;
-            }
-            .organizator__reasons>ul>li {
-                margin-bottom: 5px;
-                font-size: 16px;
-            }
-            .organizator__content {
-                flex-direction: column;
-            }
             .organizator__card {
-                width: 400px;
+                width: 300px;
             }
-            .gallery-photo {
-                width: 400px;
-            }
-            .trainer {
-                width: 100%;
-                padding-bottom: 30px;
+            .organizator__card>a>img {
+                width: 350px;
             }
             .trainer>.wrapper {
-                align-items: center;
-                flex-direction: column;
+                justify-content: center;
+                margin-top: 30px;
+                flex-wrap: wrap;
                 text-align: center;
             }
             .trainer__wrapper {
@@ -992,73 +918,30 @@
                 font-size: 16px;
                 line-height: 17px;
             }
-            .trainer>.wrapper>img {
-                width: 100%;
+            .trainer img {
+                width: 300px;
             }
             .staff {
-                padding: 0;
-                margin: 30px 0;
+                margin-bottom: 100px;
             }
             .staff__title {
-                margin: 0;
-                font-size: 30px;
+                margin-top: 100px;
             }
             .location {
                 flex-wrap: wrap;
-            }
-            .location__title {
-                font-size: 30px;
-            }
-            .location__list {
-                margin-top: 5px;
             }
             .location__wrapper {
                 margin: 0 auto 30px auto;
                 text-align: center;
             }
-            .feedback {
-                padding: 50px 0;
-            }
-            .feedback__title {
-                font-size: 30px;
-            }
-            .feedback__text {
-                width: 100%;
-            }
-            .feedback__stats {
-                margin: 0;
-            }
-            .feedback__descr {
-                width: 100%;
-                padding: 0 10px;
-                margin-top: 5px;
-                font-size: 14px;
-            }
-            .feedback .comment {
-                margin: 30px;
-                padding: 0;
-                min-height: 396px;
-            }
-            .form__title {
-                font-size: 30px;
-            }
-            .form__subtitle {
-                margin-top: 0;
-                font-size: 18px;
-            }
-            form>input {
-                max-width: 290px;
-                border-radius: 18px;
-            }
             footer .wrapper {
                 flex-wrap: wrap-reverse;
                 justify-content: center;
             }
-            .logo__footer {
-                width: 370px;
-            }
-            .footer ul {
-                text-align: center;
+            .footer__logo {
+                margin-top: 45px;
+                width: 250px;
+                height: auto;
             }
             aside {
                 padding-top: 7.5px;
@@ -1151,44 +1034,49 @@
             </div>
         </article>
     
-        <article id="advantages" class="advantages">
+        <article class="diamond">
+            <h4 class="diamond__title">
+                Чому ми?
+            </h4>
             <div class="container">
-                <h4 class="advantages__title">
-                    Наші переваги
-                </h4>
-                <div class="advantages__row">
-                    <div class="advantages__wrapper">
-                        <p class="advantages__text">
-                            майже <span>20 років</span><br>успішного викладання
-                        </p>
-                        <p class="advantages__addition">
-                            / День народження клубу<br>7 березня 2003 /
-                        </p>
+                <section class="diamond__row">
+                    <div class="diamond__mark">
+                        <img src="icons/diamond.svg" alt="Diamond">
+                        <h4>Досвід</h4>
+                        <p>20 років на ринку. День народження клубу: 7 березня 2003 року.</p>
                     </div>
-                    <div class="advantages__wrapper">
-                        <div class="advantages__mark">
-                            <h5>Професійність</h5>
-                            <p class="advantages__text">Відповідна освіта викладачів та постійне підвищення кваліфікації.</p>
-                        </div>
-                        <div class="advantages__mark">
-                            <h5>Виховання</h5>
-                            <p class="advantages__text">Нашою метою являється – не лише навчити правильно рухатись, а дотикнутись до виховання багатогранної душі в особистості.</p>
-                        </div>
-                        <div class="advantages__mark">
-                            <h5>Індивідуальний підхід</h5>
-                            <p class="advantages__text">Це незмінне правило нашої роботи. Кожна людина важлива для нас!</p>
-                        </div>
+                    <div class="diamond__mark">
+                        <img src="icons/diamond.svg" alt="Diamond">
+                        <h4>Професійність</h4>
+                        <p>Відповідна освіта та досвід кожного. Регулярна участь у навчаннях та майстер-класах.</p>
                     </div>
-                </div>
+                    <div class="diamond__mark">
+                        <img src="icons/diamond.svg" alt="Diamond">
+                        <h4>Виховання</h4>
+                        <p>Мета: не тільки навчити правильно рухатись, а доторкнутися до виховання багатогранної душі.</p>
+                    </div>
+                </section>
+                <section class="diamond__row">
+                    <div class="diamond__mark second">
+                        <img src="icons/diamond.svg" alt="Diamond">
+                        <h4>Індивідуальність</h4>
+                        <p>Кожна людина важлива для нас. Правило нашої роботи - індивідуальний підхід. </p>
+                    </div>
+                    <div class="diamond__mark third">
+                        <img src="icons/diamond.svg" alt="Diamond">
+                        <h4>Реабілітація</h4>
+                        <p>Наше кредо - реабілітація особистості через рухи під музику.</p>
+                    </div>
+                </section>
             </div>
         </article>
 
         <article id="selector" class="selector">
             <nav>
                 <ul class="selector__menu">
-                    <li class="selector__item selector__item_active"><div>Танцюристам та батькам</div></li>
-                    <li class="selector__item"><div>Організаторам заходів</div></li>
-                    <li class="selector__item"><div>Тренерам та хореографам</div></li>
+                    <li class="selector selector__item selector__item_active"><div>Танцюристам та батькам</div></li>
+                    <li class="selector selector__item"><div>Організаторам заходів</div></li>
+                    <li class="selector selector__item"><div>Тренерам та хореографам</div></li>
                 </ul>
             </nav>
         </article>
@@ -1279,7 +1167,7 @@
                                         <p>Зал №1 — 168 м²</p>
                                         <p>Зал №2 — 72 м²</p>
                                         <p>Зал №3 — 36 м²</p>
-                                        <p>Зал №4 - 17 м²</p>
+                                        <p>Зал №4 - ? м²</p>
                                         <p>Роздягальні, туалети, кофейня, лаунж-зона, WI-FI</p>
                                     </span>
                                 </div>
@@ -1867,8 +1755,8 @@
                 <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4165.147632223963!2d30.834275472337662!3d50.28853143766903!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4eb185db15ac3%3A0x5f48f16973fa9517!2sRevnivs%CA%B9ka%20Zahal%CA%B9noosvitnya%20Shkola%20I-Iii%20Stupeniv!5e0!3m2!1sru!2sua!4v1652352010524!5m2!1sru!2sua" width="700" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="location__map"></iframe> -->
             </div>
         </article>
-        
-        <article id="feedback" class="feedback">
+
+        <article class="feedback">
             <div class="container">
                 <h4 class="feedback__title">
                     Відгуки
@@ -1888,7 +1776,7 @@
                                         Мама тацюристки
                                     </p>
                                     <p class="feedback__descr">
-                                        Тренерський склад високої кваліфікації, дитина з радістю відвідує заняття, спортивні збори, бере участь у турнірах.
+                                        Тренерський склад високої кваліфікації, дитина з радістю і цікавістю відвідує заняття, спортивні збори, бере участь у турнірах.
                                     </p>
                                 </div>
                             </div>
@@ -1934,17 +1822,17 @@
                 </div>
             </div>
         </article>
-        
+
         <article class="form">
-            <div class="container send">
+            <div class="container form">
                 <form action="./send.php" method="POST">
-                    <input type="text" name="name" placeholder="Ім'я">
-                    <input type="phone" name="tel" placeholder="Номер телефону">
-                    <button type="submit" class="button">Надіслати</button>
+                    <input type="text" name="name">
+                    <input type="phone" name="tel">
+                    <button type="submit">Send</button>
                 </form>
                 <div class="form__text">
-                    <h4 class="form__title">Зворотній зв'язок</h4>
-                    <p class="form__subtitle">Ми передзвонимо та детально відповімо на усі ваші запитання</p>
+                    <h4>Маєте питання?</h4>
+                    <p>Ми передзвонимо та детально відповімо на усі ваші запитання</p>
                 </div>
             </div>
         </article>
@@ -1956,15 +1844,13 @@
                 <nav class="footer">
                     <ul class="footer__menu">
                         <li class="main"><a href="#">Головна</a></li>
-                        <li class="footer__item"><a href="#advantages">Переваги</a></li>
                         <ul class="footer__menu__selector">
                             <li class="footer__item"><a href="#selector">Танцюристам та батькам</a></li>
                             <li class="footer__item"><a href="#selector">Організаторам заходів</a></li>
                             <li class="footer__item"><a href="#selector">Тренерам та хореографам</a></li>
                         </ul>
-                        <li class="footer__item"><a href="#staff">Команда</a></li>
+                        <li class="footer__item"><a href="#staff">Наша команда</a></li>
                         <li class="footer__item"><a href="#location">ЛокаціЇ</a></li>
-                        <li class="footer__item"><a href="#feedback">Відгуки</a></li>
                     </ul>
                 </nav>
                 <a href="/">

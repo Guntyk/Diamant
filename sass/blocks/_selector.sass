@@ -1,28 +1,20 @@
 .selector
-    margin-top: 39px
-    color: #fff
+    padding: 100px 0 50px 0
+    color: #3B2E85
     font-weight: 500
     font-size: 20px
+    line-height: 24px
     text-align: center
+    background-color: #F8F8F8
     &__menu
         display: flex
         justify-content: center
         list-style-type: none
-        // box-shadow: 0px 0px 30px rgb(133, 133, 133)
-        background: linear-gradient(90deg, #4A00E0, #8E2DE2)
     &__item
-        margin: 26px 0
-        border-right: 2px ridge white
         cursor: pointer
-        &:first-child
-            border-left: 2px ridge white
+        margin: 0 12px
         &:hover
             text-decoration: underline
         &_active
+            font-weight: 600
             text-decoration: underline
-    &:first-child
-        padding: 0 48px
-    &:nth-child(2)
-        padding: 0 70px
-    &:last-child
-        padding: 0 41px
