@@ -1016,6 +1016,9 @@
                 margin: 0 auto 30px auto;
                 text-align: center;
             }
+            .feedback>.container>.swiper {
+                width: 100%;
+            }
             .feedback {
                 padding: 50px 0;
             }
@@ -1035,9 +1038,16 @@
                 font-size: 14px;
             }
             .feedback .comment {
-                margin: 30px;
+                justify-content: flex-start;
                 padding: 0;
-                min-height: 396px;
+                height: auto;
+                width: 280px;
+            }
+            .more-feedback__text {
+                max-width: 100%;
+            }
+            form {
+                max-width: 300px;
             }
             .form__title {
                 font-size: 30px;
@@ -1924,12 +1934,158 @@
                                         Мама тацюристки
                                     </p>
                                     <p class="feedback__descr">
-                                        Наш танцевальный мир начался для моей дочери четыре года назад в Клубе бального танца «Диамант-Элит».<span class="dots">..</span><span class="comment-details"> За это время, однозначно скажу, танцы это здорово, это дисциплина, это красивая осанка, фигура, умение подать себя, развивается координация и хороший вкус. Отдельно, хочется выделить наш тренерский состав, который не покладая сил, вдохновляет наших детей и шаг за шагом погружает в этот прекрасный мир танца. Пушкина Юлия Александровна, Евтеев Андрей Сергеевич большие профессионалы своего дела, всегда на позитиве, очень душевные, в тоже время настойчивы и терпеливы. Пусть наши дети растут уверенными в себе, спортивными и здоровыми. Красивый спорт, который останется с Вами на всю жизнь!</span><button class="read-more-btn-comment">Більше</button>
+                                        Наш танцевальный мир начался для моей дочери четыре года назад в Клубе бального танца «Диамант-Элит».<span class="dots">..</span><span id="more-feedback1" style="display:none;" class="comment-details dialog__box more-feedback__text">Наш танцевальный мир начался для моей дочери четыре года назад в Клубе бального танца «Диамант-Элит». За это время, однозначно скажу, танцы это здорово, это дисциплина, это красивая осанка, фигура, умение подать себя, развивается координация и хороший вкус. Отдельно, хочется выделить наш тренерский состав, который не покладая сил, вдохновляет наших детей и шаг за шагом погружает в этот прекрасный мир танца. Пушкина Юлия Александровна, Евтеев Андрей Сергеевич большие профессионалы своего дела, всегда на позитиве, очень душевные, в тоже время настойчивы и терпеливы. Пусть наши дети растут уверенными в себе, спортивными и здоровыми. Красивый спорт, который останется с Вами на всю жизнь!</span><button data-fancybox data-src="#more-feedback1" class="read-more-btn-comment">Більше</button>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="comment-slider__slide swiper-slide">
+                            <div class="comment comment-slider__comment">
+                                <div class="feedback__photo">
+                                    <img src="img/feedback/user.jpg" alt="2">
+                                </div>
+                                <div class="feedback__text">
+                                    <p class="feedback__name">
+                                        Ірина Губарева
+                                    </p>
+                                    <p class="feedback__stats">
+                                        Мама танцюристів
+                                    </p>
+                                    <p class="feedback__descr">
+                                        Хочу подякувати за дуже нелегку роботу, котру тренери клубу спортивного бального танцю «Діамант-Еліт»<span class="dots">...</span><span id="more-feedback2" style="display:none;" class="comment-details dialog__box more-feedback__text">Хочу подякувати за дуже нелегку роботу, котру тренери клубу спортивного бального танцю «Діамант-Еліт» Ірина Терновенко і Владислав Кравець, виконують щоденно. В клубі мої діти займаються вже вже дев’ятий та третій рік. За цей період наші тренери вклали всю душу в навчання дітей. Зробили по справжньому великий внесок до любові до танцю, спорту, самодисципліні, вмінні добиватися поставлених цілей, творчості моїх дітей. Тренери по справжньому люблять свою роботу і дітей, що робить їхню роботу по справжньому якісною! Взагалі роботу клубу оцінюю на дуже високому рівні: танцювальні збори, загально клубні практики, робота всього тренерського складу клубу і запрошених закордонних тренерів, підтримка на змаганнях, дуже подобається дітям і є рушійною силою рухатися вперед. Особисто від себе, як працівника культури, хочу подякувати клубу і нашим тренерам за постійну участь у творчому житті громади, що робить з наших дітей справжніх артистів.</span><button data-fancybox data-src="#more-feedback2" class="read-more-btn-comment">Більше</button>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="comment-slider__slide swiper-slide">
+                            <div class="comment comment-slider__comment">
+                                <div class="feedback__photo">
+                                    <img src="img/feedback/user.jpg" alt="2">
+                                </div>
+                                <div class="feedback__text">
+                                    <p class="feedback__name">
+                                        Іванна Данилюк
+                                    </p>
+                                    <p class="feedback__stats">
+                                        Мама танцюристки
+                                    </p>
+                                    <p class="feedback__descr">
+                                        Гарний танцювальний клуб, в якому завжди приємно знаходитись. Донька займається вже<span class="dots">...</span><span id="more-feedback3" style="display:none;" class="comment-details dialog__box more-feedback__text">Гарний танцювальний клуб, в якому завжди приємно знаходитись. Донька займається вже три роки та має гарні успіхи. Завжди на тренування йде з радістю. Окрема подяка Кравець Владиславу Володимировичу та Терновенко Ірині Володимирівні за вклад в наших  дітей! Вони знаходять підхід до кожної дитини</span><button data-fancybox data-src="#more-feedback3" class="read-more-btn-comment">Більше</button>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="comment-slider__slide swiper-slide">
+                            <div class="comment comment-slider__comment">
+                                <div class="feedback__photo">
+                                    <img src="img/feedback/user.jpg" alt="2">
+                                </div>
+                                <div class="feedback__text">
+                                    <p class="feedback__name">
+                                        Галина Бондаренко
+                                    </p>
+                                    <p class="feedback__stats">
+                                        Мама танцюристки
+                                    </p>
+                                    <p class="feedback__descr">
+                                        Дочка танцює вже три роки, які випали на непростий період для всіх період. Та завдяки<span class="dots">...</span><span id="more-feedback4" style="display:none;" class="comment-details dialog__box more-feedback__text">Дочка танцює вже три роки, які випали на непростий період для всіх період. Та завдяки танцям та заняттям (де б хто не був, онлайн ніхто не відміняв) - то є графік, дисциліна, та відповідальність.  Тренера стали справжніми наставниками для доньки(Ірина Володимирівна, та Владислав Володимирович), на тренування поспішає з радістю (хоча бувають моменти, настрій дівчинки буває мінливим, як весняна погода:-)).</span><button data-fancybox data-src="#more-feedback4" class="read-more-btn-comment">Більше</button>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="comment-slider__slide swiper-slide">
+                            <div class="comment comment-slider__comment">
+                                <div class="feedback__photo">
+                                    <img src="img/feedback/user.jpg" alt="2">
+                                </div>
+                                <div class="feedback__text">
+                                    <p class="feedback__name">
+                                        Наталія Конарева
+                                    </p>
+                                    <p class="feedback__stats">
+                                        Мама танцюриста
+                                    </p>
+                                    <p class="feedback__descr">
+                                        Заняття танцями дуже подобається моєму синові. Він сам обрав своє хобі після відвідування<span class="dots">...</span><span id="more-feedback5" style="display:none;" class="comment-details dialog__box more-feedback__text">Заняття танцями дуже подобається моєму синові. Він сам обрав своє хобі після відвідування відкритого уроку. Тренер знаходить підхід до кожного. Високий рівень викладання у поєднанні з індивідуальним підходом дає реальні результати! Клуб клієнтоорієнтований, завжди знаходимо компроміс. А той факт, що швидко налагодили віддалене навчання під час локдауну дуже порадував. Якість навчання, доступна ціна і високий рівень професіоналізму ось візитівка клубу.</span><button data-fancybox data-src="#more-feedback5" class="read-more-btn-comment">Більше</button>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="comment-slider__slide swiper-slide">
+                            <div class="comment comment-slider__comment">
+                                <div class="feedback__photo">
+                                    <img src="img/feedback/user.jpg" alt="2">
+                                </div>
+                                <div class="feedback__text">
+                                    <p class="feedback__name">
+                                        Анастасія
+                                    </p>
+                                    <p class="feedback__stats">
+                                        Мама танцюриста
+                                    </p>
+                                    <p class="feedback__descr">
+                                        Спасибо тренерской команде клуба "Диамант - Элит", отдельная благодарность нашему тренеру Руслану Андреевичу<span class="dots">...</span><span id="more-feedback6" style="display:none;" class="comment-details dialog__box more-feedback__text">Спасибо тренерской команде клуба "Диамант - Элит", отдельная благодарность нашему тренеру Руслану Андреевичу за то, что в этом клубе к каждому маленькому ученику есть свой профессиональный взрослый подход! Для нас это очень важно и имеет огромное значение в воспитании эстетического и спортивного духа наших детей!</span><button data-fancybox data-src="#more-feedback6" class="read-more-btn-comment">Більше</button>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="comment-slider__slide swiper-slide">
+                            <div class="comment comment-slider__comment">
+                                <div class="feedback__photo">
+                                    <img src="img/feedback/user.jpg" alt="2">
+                                </div>
+                                <div class="feedback__text">
+                                    <p class="feedback__name">
+                                        Ніна
+                                    </p>
+                                    <p class="feedback__stats">
+                                        Мама танцюриста
+                                    </p>
+                                    <p class="feedback__descr">
+                                        Мій син Антон займається танцями у клубі бального танцю "Діамант - Еліт" з п'яти років. Ми дуже<span class="dots">...</span><span id="more-feedback7" style="display:none;" class="comment-details dialog__box more-feedback__text">Мій син Антон займається танцями у клубі бального танцю "Діамант - Еліт" з п'яти років. Ми дуже задоволені, що потрапили в такий чудовий колектив професіоналів, які віддані своїй справі, люблять дітей і вчать їх так гарно танцювати. У клубі завжди панує дружня атмосфера. Окремо хочеться відмітити нашого тренера - Пушкіну Юлію Олександрівну. Ми дуже вдячні їй за вміння працювати з дітками, розкривати у них таланти. Вона добра і спокійна, водночас вимоглива і справедлива. Її тренування проходять цікаво і продуктивно. Вона вчить дітей долати труднощі, не зупинятися на досягнутому. Також Юля - прекрасний приклад для наслідування. Антон дуже пишається її досягненнаями в танцях і у всьому хоче бути схожим на неї. Бажаємо нашому улюбленному клубу подальшого розвитку і процвітання!</span><button data-fancybox data-src="#more-feedback7" class="read-more-btn-comment">Більше</button>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="comment-slider__slide swiper-slide">
+                            <div class="comment comment-slider__comment">
+                                <div class="feedback__photo">
+                                    <img src="img/feedback/user.jpg" alt="2">
+                                </div>
+                                <div class="feedback__text">
+                                    <p class="feedback__name">
+                                        Светлана Козий
+                                    </p>
+                                    <p class="feedback__stats">
+                                        Мама танцюриста
+                                    </p>
+                                    <p class="feedback__descr">
+                                        Антон, спасибо вам огромное за помощь в аттестации, спасибо за индивидуальные занятия - будем ждать<span class="dots">...</span><span id="more-feedback8" style="display:none;" class="comment-details dialog__box more-feedback__text">Антон, спасибо вам огромное за помощь в аттестации, спасибо за индивидуальные занятия - будем ждать хороших результатов!!! И отдельное спасибо клубу "Диамант - Элит" за идейность, за то что за руку нас ведёте к познанию в мире танцов, за то, что показываете все прелести этого прекрасно спорта. Спасибо! Идём дальше!</span><button data-fancybox data-src="#more-feedback8" class="read-more-btn-comment">Більше</button>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="comment-slider__slide swiper-slide">
+                            <div class="comment comment-slider__comment">
+                                <div class="feedback__photo">
+                                    <img src="img/feedback/user.jpg" alt="2">
+                                </div>
+                                <div class="feedback__text">
+                                    <p class="feedback__name">
+                                        Юлія Борисовець
+                                    </p>
+                                    <p class="feedback__stats">
+                                        Мама танцюристки
+                                    </p>
+                                    <p class="feedback__descr">
+                                        Доброго дня, хочу поділитися своїми враженнями про клуб спортивно-бального танцю "Діамант - Еліт". Моя<span class="dots">...</span><span id="more-feedback9" style="display:none;" class="comment-details dialog__box more-feedback__text">Доброго дня, хочу поділитися своїми враженнями про клуб спортивно-бального танцю "Діамант - Еліт". Моя донька займається в клубі вже сьомий рік. За ці роки в нас змінювалися тренери, але від кожного вона отримувала новий досвід. Всі тренери клубу дуже кваліфіковані і заняття в дітей проходять на дуже високому рівні. Діти з задоволенням ідуть на тренування, готуються до аттестацій і турнірів. На яких показують гарні результати. Два останні роки в нас тренер Левченко Антон Васильович - це тренер з великой букви. Має підхід до кожної дитини, завжди підтримує дітей на всіх турнірах. Тим більше, що турніри не завжди проходять в Києві. До того ж, ми віддали і молодшого сина в цей клуб. Діти ходять з задоволенням!!!!</span><button data-fancybox data-src="#more-feedback9" class="read-more-btn-comment">Більше</button>
                                     </p>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
                     <div class="swiper-pagination"></div>
                 </div>
             </div>

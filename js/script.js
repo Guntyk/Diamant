@@ -77,9 +77,13 @@ new Swiper('.staff-slider', {
 });
 
 new Swiper('.comment-slider', {
-    effect: 'cards',
+    effect: 'slide',
     cardsEffect: {
         slideShadows: false
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev'
     },
     pagination: {
         el: ".swiper-pagination",
@@ -93,7 +97,6 @@ new Swiper('.comment-slider', {
     },
     touchRatio: 2,
     speed: 500,
-    initialSlide: 2,
     grabCursor: true,
     breakpoints: {
         320: {
@@ -133,17 +136,17 @@ document.addEventListener("click", function (e) {
         card.classList.toggle('is-flipped');
     } 
 });
-document.addEventListener("click", function (e) {
-    const cont = e.target.closest(".comment");
-    const moreBtn = e.target.closest('.read-more-btn-comment');
-    if (moreBtn.innerText === "Більше"){
-        cont.classList.toggle('more');
-        moreBtn.innerText = "Сгорнути";
-    }else {
-        cont.classList.toggle('more');
-        moreBtn.innerText ="Більше"; 
-    }
-});
+// document.addEventListener("click", function (e) {
+//     const cont = e.target.closest(".comment");
+//     const moreBtn = e.target.closest('.read-more-btn-comment');
+//     if (moreBtn.innerText === "Більше"){
+//         cont.classList.toggle('more');
+//         moreBtn.innerText = "Сгорнути";
+//     }else {
+//         cont.classList.toggle('more');
+//         moreBtn.innerText ="Більше"; 
+//     }
+// });
 //!=====More Button End=====
 //!=====Location Start=====
 $('ul.location__list').on('click', 'li:not(.location__mark_active)', function() {

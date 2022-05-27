@@ -100,9 +100,12 @@
 .hide
     display: none
 .details
-    display: none
+    height: 0
+    overflow: hidden
+    transition: .3s
 .details.more
-    display: inline
+    height: auto
+    transition: .3s
 .read-more-btn
     background-color: #dbdbdb
     border-radius: 18px
