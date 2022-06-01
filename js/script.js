@@ -13,28 +13,6 @@ $('ul.selector__menu').on('click', 'li:not(.selector__item_active)', function() 
 		.closest('body').find('section.block__content').removeClass('block__content_active').eq($(this).index()).addClass('block__content_active');
 });
 //!=====Selector Menu Start=====
-//!=====Click on Carousel Cards Start=====
-// document.addEventListener("click", function (e) {
-//     const card = e.target.closest(".card__inner")
-//     if (card){
-//       card.classList.toggle('is-flipped');
-//     } 
-//   });
-// const social = document.querySelector(".social");
-// social.addEventListener('click' , function (e) {
-//   e.stopPropagation();
-//   });
-//!=====Click on Carousel Cards End=====
-//!=====Responsive Cards Start=====
-// VanillaTilt.init(document.querySelectorAll(".dancer__item"), {
-//     max: 10,
-//     speed: 1000,
-// });
-// VanillaTilt.init(document.querySelectorAll(".dancer__item_last"), {
-//     max: 5,
-//     speed: 1000,
-// });
-//!=====Responsive Cards End=====
 //!=====Carousel Start=====
 new Swiper('.staff-slider', {
     effect: 'slide',
@@ -55,6 +33,7 @@ new Swiper('.staff-slider', {
     loop: true,
     simulateTouch: false,
     spaceBetween: 100,
+    speed: 1000,
     preloadImages: false,
     initialSlide: 6,
     lazy: {
@@ -98,6 +77,11 @@ new Swiper('.comment-slider', {
     touchRatio: 2,
     speed: 500,
     grabCursor: true,
+    preloadImages: false,
+    lazy: {
+        loadOnTransitionStart: false,
+        loadPrevNext: true,
+    },
     breakpoints: {
         320: {
             touchRatio: 1,
@@ -136,17 +120,6 @@ document.addEventListener("click", function (e) {
         card.classList.toggle('is-flipped');
     } 
 });
-// document.addEventListener("click", function (e) {
-//     const cont = e.target.closest(".comment");
-//     const moreBtn = e.target.closest('.read-more-btn-comment');
-//     if (moreBtn.innerText === "Більше"){
-//         cont.classList.toggle('more');
-//         moreBtn.innerText = "Сгорнути";
-//     }else {
-//         cont.classList.toggle('more');
-//         moreBtn.innerText ="Більше"; 
-//     }
-// });
 //!=====More Button End=====
 //!=====Location Start=====
 $('ul.location__list').on('click', 'li:not(.location__mark_active)', function() {

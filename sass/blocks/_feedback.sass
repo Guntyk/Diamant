@@ -28,14 +28,34 @@
     .comment-details
         display: none
     &__photo
-        overflow: hidden
+        padding: 59px
+        margin: 27px 0
         width: 122px
         height: 122px
+        border: 2px solid #dbdbdb
         border-radius: 50%
-        margin: 27px 0
+        overflow: hidden
         img
             width: 122px
-            height: auto
+        .swiper-lazy-preloader
+            position: inherit
+            margin-top: -150px
+        .custom_pos-1
+            transform: translateX(-61px) translateY(-80px)
+        .custom_pos-2
+            transform: translateX(-61px) translateY(-65px)
+        .custom_pos-3
+            transform: translateX(-61px) translateY(-60px)
+        .custom_pos-4
+            width: 180px
+            transform: translateX(-88px) translateY(-61px)
+            &+.swiper-lazy-preloader
+                margin-top: -208px
+        .custom_pos-5
+            width: 125px
+            transform: translateX(-66px) translateY(-62px)
+        .custom_pos-6
+            transform: translateX(-60px) translateY(-60px)
     &__text
         margin: 40px 0 40px 20px
         display: flex
