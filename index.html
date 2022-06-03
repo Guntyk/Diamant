@@ -460,6 +460,9 @@
             width: 1110px;
             height: 300px;
         }
+        .fancybox__content :focus:not(.carousel__button.is-close) {
+            outline: none;
+        }
         /*===============COMMON END=================*/
         /*===============HEADER START=================*/
 
@@ -573,6 +576,10 @@
             }
             .header__wrapper>li {
                 margin-left: 25px;
+            }
+            .promo img {
+                width: 310px;
+                height: auto;
             }
             .promo__wrapper {
                 margin-right: 50px;
@@ -733,6 +740,10 @@
             .swiper-pagination {
                 visibility: visible;
             }
+            .promo img {
+                width: 250px;
+                height: auto;
+            }
             .promo__wrapper {
                 top: 135px;
                 width: 250px;
@@ -878,8 +889,9 @@
                 margin: 0 auto;
                 padding-top: 30px;
             }
-            .photo {
-                margin-top: 0;
+            .promo img {
+                width: 100%;
+                height: auto;
             }
             .promo__wrapper {
                 width: 383px;
@@ -966,10 +978,10 @@
                 flex-direction: column;
             }
             .organizator__card {
-                width: 400px;
+                width: 100%;
             }
             .gallery-photo {
-                width: 400px;
+                width: 100%;
             }
             .trainer {
                 width: 100%;
@@ -1050,6 +1062,9 @@
             form {
                 max-width: 300px;
             }
+            .form__text {
+                width: 100%;
+            }
             .form__title {
                 font-size: 30px;
             }
@@ -1078,24 +1093,37 @@
                 display: none;
             }
         }
-        @media (max-width: 360px) {
-            .selector:first-child{
-                padding: 0 15px 0 0;
-            }
-            .selector:nth-child(2){
-                padding: 0 15px;
-            }
-            .selector:last-child{
-                padding: 0 0 0 15px;
-            }
-        }
         /* `xsm` applies to x-small devices (old mini phones like iPhone 5/5s/SE, equals to 320px) */
         @media (max-width: 320px) { 
             /*without styles for container*/
+            .selector {
+                font-size: 12px;
+            }
             .dancer__item {
                 width: 100%;
             }
             .organizator__card>a>img {
+                width: 300px;
+            }
+            .organizator__address {
+                margin-bottom: 20px;
+                line-height: 20px;
+            }
+            .feedback .comment {
+                width: 240px;
+                height: auto;
+            }
+            .form__text {
+                width: 100%;
+            }
+            .form__title {
+                line-height: 35px;
+            }
+            .form__subtitle {
+                margin-top: 15px;
+            }
+            .logo__footer {
+                margin: -30px 0;
                 width: 300px;
             }
         }
@@ -1156,7 +1184,7 @@
                         Танцюй і отримуй задоволення.
                     </p>
                 </section>
-                <img width="1" height="1" src="img/main.webp" alt="main">
+                <img width="527px" height="660px" src="img/main.webp" alt="main">
             </div>
         </article>
     
@@ -1930,7 +1958,7 @@
                                         Мама тацюристки
                                     </p>
                                     <p class="feedback__descr">
-                                        Наш танцевальный мир начался для моей дочери четыре года назад в Клубе бального танца «Диамант-Элит».<span class="dots">..</span><span id="more-feedback1" style="display:none;" class="comment-details dialog__box more-feedback__text">Наш танцевальный мир начался для моей дочери четыре года назад в Клубе бального танца «Диамант-Элит». За это время, однозначно скажу, танцы это здорово, это дисциплина, это красивая осанка, фигура, умение подать себя, развивается координация и хороший вкус. Отдельно, хочется выделить наш тренерский состав, который не покладая сил, вдохновляет наших детей и шаг за шагом погружает в этот прекрасный мир танца. Пушкина Юлия Александровна, Евтеев Андрей Сергеевич большие профессионалы своего дела, всегда на позитиве, очень душевные, в тоже время настойчивы и терпеливы. Пусть наши дети растут уверенными в себе, спортивными и здоровыми. Красивый спорт, который останется с Вами на всю жизнь!</span><button data-fancybox data-src="#more-feedback1" class="read-more-btn-comment">Більше</button>
+                                        Наш танцевальный мир начался для моей дочери четыре года назад в Клубе бального танца «Диамант-Элит».<span class="dots">..</span><span id="more-feedback1" style="display:none;" class="comment-details dialog__box more-feedback__text">Наш танцевальный мир начался для моей дочери четыре года назад в Клубе бального танца «Диамант-Элит». За это время, однозначно скажу, танцы это здорово, это дисциплина, это красивая осанка, фигура, умение подать себя, развивается координация и хороший вкус. Отдельно, хочется выделить наш тренерский состав, который, не покладая сил, вдохновляет наших детей и шаг за шагом погружает в этот прекрасный мир танца. Пушкина Юлия Александровна, Евтеев Андрей Сергеевич большие профессионалы своего дела, всегда на позитиве, очень душевные, в тоже время, настойчивы и терпеливы. Пусть наши дети растут уверенными в себе, спортивными и здоровыми. Красивый спорт, который останется с Вами на всю жизнь!</span><button data-fancybox data-src="#more-feedback1" class="read-more-btn-comment">Більше</button>
                                     </p>
                                 </div>
                             </div>
@@ -2098,8 +2126,8 @@
         <article class="form">
             <div class="container send">
                 <form action="./send.php" method="POST">
-                    <input type="text" name="name" placeholder="Ім'я">
-                    <input type="phone" name="tel" placeholder="Номер телефону">
+                    <input type="text" name="name" required placeholder="Ім'я">
+                    <input type="phone" name="phone" required placeholder="Номер телефону">
                     <button type="submit" class="button">Надіслати</button>
                 </form>
                 <div class="form__text">
@@ -2133,6 +2161,16 @@
             </div>
         </div>
     </footer>
+
+    <aside>
+        <div class="container">
+            <section>
+                © 2022 Diamant-Elite
+                <a href="//guntyk.github.io/" target="_blank" rel="nofollow noopener noreferrer" class="none"><img src="icons/logo/sate.svg" alt="Sate"></a>
+                <a href="//guntyk.github.io/" target="_blank" rel="nofollow noopener noreferrer">By Sate</a>
+            </section>
+        </div>
+    </aside>
 
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>

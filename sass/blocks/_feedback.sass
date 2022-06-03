@@ -28,6 +28,7 @@
     .comment-details
         display: none
     &__photo
+        position: relative
         padding: 59px
         margin: 27px 0
         width: 122px
@@ -37,9 +38,6 @@
         overflow: hidden
         img
             width: 122px
-        .swiper-lazy-preloader
-            position: inherit
-            margin-top: -150px
         .custom_pos-1
             transform: translateX(-61px) translateY(-80px)
         .custom_pos-2
@@ -49,11 +47,9 @@
         .custom_pos-4
             width: 180px
             transform: translateX(-88px) translateY(-61px)
-            &+.swiper-lazy-preloader
-                margin-top: -208px
         .custom_pos-5
             width: 125px
-            transform: translateX(-66px) translateY(-62px)
+            transform: translateX(-57px) translateY(-62px)
         .custom_pos-6
             transform: translateX(-60px) translateY(-60px)
     &__text
@@ -72,9 +68,6 @@
         font-weight: 500
         font-size: 17px
         line-height: 21px
-.feedback>.container>.swiper
-    width: 60%
-    margin: 0 auto
 .feedback>.container>.swiper .swiper-slide
     display: flex
     justify-content: center

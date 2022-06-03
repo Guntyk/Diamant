@@ -136,9 +136,3 @@ $('ul.footer__menu__selector').on('click', 'li:not(.selector__item_active)', fun
         .closest('body').find('li.selector__item').removeClass('selector__item_active').eq($(this).index()).addClass('selector__item_active');
 });
 //!=====Footer Selector Menu End=====
-// $('ul.footer__menu').on('click', 'li:not(.footer__item_active)', function() {
-// 	$(this)
-// 		.addClass('footer__item_active').siblings().removeClass('footer__item_active')
-// 		.closest('body').find('section.block__content').removeClass('block__content_active').eq($(this).index()).addClass('block__content_active')
-//         .closest('body').find('li.selector__item').removeClass('selector__item_active').eq($(this).index()).addClass('selector__item_active');
-// });

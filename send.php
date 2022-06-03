@@ -1,9 +1,9 @@
 <?php
 define('url', "https://api.telegram.org/bot5331027047:AAFXDxilUP-OW4WLMaFHJsQegjZ96gBLNkE/");
 $name = $_POST['name'];
-$tel = $_POST['tel'];
+$phone = $_POST['phone'];
 $chat_id = '1133429141';
-$message = urlencode("Name: " . $name . "\nPhone: " . $tel);
+$message = urlencode("Name: " . $name . "\nPhone: " . $phone);
 $answer_obj = json_decode(file_get_contents(url . "sendmessage?text=" . $message . "&chat_id=" . $chat_id . "&parse_mode=HTML"))
 ?>
 
@@ -441,7 +441,8 @@ $answer_obj = json_decode(file_get_contents(url . "sendmessage?text=" . $message
             line-height: 1.5;
             color: #333;
             background-color: #fff;
-            cursor: url(icons/cursor-1.png), default;
+            --swiper-theme-color: #8e2de2;
+            /* cursor: url(icons/cursor-1.png), default; */
         }
         * {
             box-sizing: border-box;
@@ -467,6 +468,9 @@ $answer_obj = json_decode(file_get_contents(url . "sendmessage?text=" . $message
         .dancer__item:last-child {
             width: 1110px;
             height: 300px;
+        }
+        .fancybox__content :focus:not(.carousel__button.is-close) {
+            outline: none;
         }
         /*===============COMMON END=================*/
         /*===============HEADER START=================*/
@@ -495,17 +499,23 @@ $answer_obj = json_decode(file_get_contents(url . "sendmessage?text=" . $message
             }
             .staff-slider,
             .comment-slider {
-                width: 1000px;
+                width: 800px;
             }
             .staff-slider {
-                padding: 30px;
+                padding: 30px 0;
             }
             .swiper-button-prev,
             .swiper-button-next {
                 visibility: hidden;
             }
-            .swiper-pagination {
-                visibility: visible;
+            .card {
+                margin-right: 10px;
+            }
+            .card__name {
+                text-align: center;
+            }
+            .card__descr {
+                margin: 3px 10px;
             }
             .selector {
                 max-width: 1199px;
@@ -522,8 +532,14 @@ $answer_obj = json_decode(file_get_contents(url . "sendmessage?text=" . $message
                 font-size: 35px;
                 line-height: 40px;
             }
-            .trainer>.wrapper {
-                margin-top: 70px;
+            .organizator__card {
+                width: 430px;
+            }
+            .gallery-photo {
+                width: 430px;
+            }
+            .trainer>.wrapper>img {
+                width: 600px;
             }
             .trainer__wrapper {
                 margin-left: 50px;
@@ -534,6 +550,15 @@ $answer_obj = json_decode(file_get_contents(url . "sendmessage?text=" . $message
             }
             .location iframe{
                 width: 600px;
+            }
+            .advantages__wrapper:last-child {
+                margin-left: 30px;
+            }
+            .advantages__text:first-child {
+                width: 120px;
+            }
+            .advantages__text>span {
+                margin-left: 0px;
             }
         }
         /* `lg` applies to large devices (tablets, less than 992px) */
@@ -555,69 +580,88 @@ $answer_obj = json_decode(file_get_contents(url . "sendmessage?text=" . $message
             .swiper-pagination {
                 visibility: visible;
             }
-            .comment>img {
-                padding-top: 20px;
-                width: 100px
+            .header__calls {
+                width: 230px;
             }
-            .feedback .comment {
-                flex-direction: column;
-                width: 250px;
-                min-height: 300px;
+            .header__wrapper>li {
+                margin-left: 25px;
             }
-            .feedback__text {
-                text-align: center;
-            }
-            .feedback__name {
-                font-size: 18px;
-            }
-            .feedback__descr {
-                margin: 10px 0;
-                padding: 0 15px;
-                font-size: 16px;
+            .promo img {
+                width: 310px;
+                height: auto;
             }
             .promo__wrapper {
-                top: 135px;
-                width: 450px;
-                margin: 90px 50px 0 0;
+                margin-right: 50px;
             }
             .promo__title {
-                font-size: 35px;
+                font-size: 30px;
                 line-height: 39px;
             }
             .promo__subtitle {
                 font-size: 16px;
                 line-height: 21px;
             }
+            .advantages {
+                padding: 40px 0;
+            }
+            .advantages__wrapper:first-child {
+                min-width: 200px;
+            }
+            .advantages__wrapper:last-child {
+                margin-left: 40px;
+            }
+            .advantages__title {
+                margin-bottom: 30px;
+                font-size: 30px;
+            }
+            .advantages__text {
+                font-size: 16px;
+            }
+            .advantages__text>span {
+                font-size: 25px;
+                line-height: 24px;
+            }
+            .advantages__mark {
+                margin-bottom: 20px;
+            }
+            .advantages__mark>h5 {
+                margin-bottom: 0;
+                font-size: 20px;
+            }
+            .advantages__addition {
+                font-size: 16px;
+            }
             .button {
                 width: 250px;
                 font-size: 17px;
             }
             .selector {
-                max-width: 991px;
-                font-size: 14px;
+                padding: 50px 0 25px 0;
+                font-size: 16px;
                 text-align: center;
-            }
-            .selector:first-child{
-                border-left: none;
-            }
-            .selector:last-child{
-                border-right: none;
             }
             .organizator {
                 width: 100%;
-                text-align: center;
             }
             .organizator__card {
                 justify-content: center;
             }
             .organizator__wrapper {
+                width: 100%;
                 flex-wrap: wrap;
                 justify-content: center;
             }
             .organizator__title {
-                margin: 50px 0;
+                padding: 50px 0;
             }
-            .trainer img {
+            .organizator__content {
+                width: 100%;
+            }
+            .organizator__card,
+            .gallery-photo {
+                width: 350px;
+            }
+            .trainer>.wrapper>img {
                 width: 400px;
             }
             .trainer__title {
@@ -629,6 +673,7 @@ $answer_obj = json_decode(file_get_contents(url . "sendmessage?text=" . $message
                 line-height: 21px;
             }
             .location {
+                padding-top: 40px;
                 flex-wrap: wrap;
             }
             .location__wrapper {
@@ -641,6 +686,44 @@ $answer_obj = json_decode(file_get_contents(url . "sendmessage?text=" . $message
             .location__list {
                 list-style-type: none;
                 margin-left: 0;
+            }
+            .feedback .comment {
+                flex-direction: column;
+                width: 250px;
+                min-height: 396px;
+            }
+            .feedback__text {
+                margin: 0 0 20px 0;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            .feedback__name {
+                font-size: 18px;
+            }
+            .feedback__descr {
+                margin: 10px 0;
+                padding: 0 15px;
+                width: 230px;
+                font-size: 16px;
+            }
+            .form {
+                padding-top: 50px;
+            }
+            .send {
+                flex-direction: column-reverse;
+                align-items: center;
+            }
+            .form__text {
+                margin: 0 0 24px 0;
+                text-align: center;
+            }
+            .form__subtitle {
+                margin-top: 10px;
+            }
+            form {
+                align-items: center;
             }
             .footer__logo {
                 height: auto;
@@ -665,6 +748,10 @@ $answer_obj = json_decode(file_get_contents(url . "sendmessage?text=" . $message
             }
             .swiper-pagination {
                 visibility: visible;
+            }
+            .promo img {
+                width: 250px;
+                height: auto;
             }
             .promo__wrapper {
                 top: 135px;
@@ -811,8 +898,9 @@ $answer_obj = json_decode(file_get_contents(url . "sendmessage?text=" . $message
                 margin: 0 auto;
                 padding-top: 30px;
             }
-            .photo {
-                margin-top: 0;
+            .promo img {
+                width: 100%;
+                height: auto;
             }
             .promo__wrapper {
                 width: 383px;
@@ -835,30 +923,21 @@ $answer_obj = json_decode(file_get_contents(url . "sendmessage?text=" . $message
                 margin-top: 23px;
             }
             /* Diamonds */
-            .diamond__row {
-                margin-bottom: 0;
-                flex-wrap: wrap;
+            .advantages__row {
+                flex-direction: column-reverse;
+                align-items: center;
+                text-align: center;
             }
-            .diamond__mark {
-                margin: 90px 0;
+            .advantages__wrapper:last-child {
+                margin: 0 0 30px 0;
             }
-            .second>img {
-                left: 20px;
-            }
-            .third>img {
-                left: -7px;
-            }
-            .second,
-            .third {
-                padding: 0 10px;
-            }
-            .diamond__title {
-                margin-bottom: 0
+            .advantages__text:first-child {
+                width: auto;
             }
             /* Selector */
             .selector{
                 max-width: 575px;
-                font-size: 11px;
+                font-size: 14px;
             }
             .selector:first-child{
                 padding: 0 28px 0 8px;
@@ -878,7 +957,7 @@ $answer_obj = json_decode(file_get_contents(url . "sendmessage?text=" . $message
                 left: 10px;
             }
             .dancer__content {
-                margin-top: 20px;
+                padding-top: 20px;
             }
             .dancer__item {
                 margin: 4px;
@@ -893,16 +972,33 @@ $answer_obj = json_decode(file_get_contents(url . "sendmessage?text=" . $message
                 width: 290px;
                 height: 141px;
             }
-            .organizator__card {
-                width: 300px;
+            .organizator__title {
+                padding: 0 0 20px 0;
+                font-size: 30px;
             }
-            .organizator__card>a>img {
-                width: 350px;
+            .organizator__subtitle {
+                font-size: 20px;
+            }
+            .organizator__reasons>ul>li {
+                margin-bottom: 5px;
+                font-size: 16px;
+            }
+            .organizator__content {
+                flex-direction: column;
+            }
+            .organizator__card {
+                width: 100%;
+            }
+            .gallery-photo {
+                width: 100%;
+            }
+            .trainer {
+                width: 100%;
+                padding-bottom: 30px;
             }
             .trainer>.wrapper {
-                justify-content: center;
-                margin-top: 30px;
-                flex-wrap: wrap;
+                align-items: center;
+                flex-direction: column;
                 text-align: center;
             }
             .trainer__wrapper {
@@ -918,30 +1014,86 @@ $answer_obj = json_decode(file_get_contents(url . "sendmessage?text=" . $message
                 font-size: 16px;
                 line-height: 17px;
             }
-            .trainer img {
-                width: 300px;
+            .trainer>.wrapper>img {
+                width: 100%;
             }
             .staff {
-                margin-bottom: 100px;
+                padding: 0;
+                margin: 30px 0;
             }
             .staff__title {
-                margin-top: 100px;
+                margin: 0;
+                font-size: 30px;
             }
             .location {
                 flex-wrap: wrap;
+            }
+            .location__title {
+                font-size: 30px;
+            }
+            .location__list {
+                margin-top: 5px;
             }
             .location__wrapper {
                 margin: 0 auto 30px auto;
                 text-align: center;
             }
+            .feedback>.container>.swiper {
+                width: 100%;
+            }
+            .feedback {
+                padding: 50px 0;
+            }
+            .feedback__title {
+                font-size: 30px;
+            }
+            .feedback__text {
+                width: 100%;
+            }
+            .feedback__stats {
+                margin: 0;
+            }
+            .feedback__descr {
+                width: 100%;
+                padding: 0 10px;
+                margin-top: 5px;
+                font-size: 14px;
+            }
+            .feedback .comment {
+                justify-content: flex-start;
+                padding: 0;
+                height: auto;
+                width: 280px;
+            }
+            .more-feedback__text {
+                max-width: 100%;
+            }
+            form {
+                max-width: 300px;
+            }
+            .form__text {
+                width: 100%;
+            }
+            .form__title {
+                font-size: 30px;
+            }
+            .form__subtitle {
+                margin-top: 0;
+                font-size: 18px;
+            }
+            form>input {
+                max-width: 290px;
+                border-radius: 18px;
+            }
             footer .wrapper {
                 flex-wrap: wrap-reverse;
                 justify-content: center;
             }
-            .footer__logo {
-                margin-top: 45px;
-                width: 250px;
-                height: auto;
+            .logo__footer {
+                width: 370px;
+            }
+            .footer ul {
+                text-align: center;
             }
             aside {
                 padding-top: 7.5px;
@@ -950,24 +1102,37 @@ $answer_obj = json_decode(file_get_contents(url . "sendmessage?text=" . $message
                 display: none;
             }
         }
-        @media (max-width: 360px) {
-            .selector:first-child{
-                padding: 0 15px 0 0;
-            }
-            .selector:nth-child(2){
-                padding: 0 15px;
-            }
-            .selector:last-child{
-                padding: 0 0 0 15px;
-            }
-        }
         /* `xsm` applies to x-small devices (old mini phones like iPhone 5/5s/SE, equals to 320px) */
         @media (max-width: 320px) { 
             /*without styles for container*/
+            .selector {
+                font-size: 12px;
+            }
             .dancer__item {
                 width: 100%;
             }
             .organizator__card>a>img {
+                width: 300px;
+            }
+            .organizator__address {
+                margin-bottom: 20px;
+                line-height: 20px;
+            }
+            .feedback .comment {
+                width: 240px;
+                height: auto;
+            }
+            .form__text {
+                width: 100%;
+            }
+            .form__title {
+                line-height: 35px;
+            }
+            .form__subtitle {
+                margin-top: 15px;
+            }
+            .logo__footer {
+                margin: -30px 0;
                 width: 300px;
             }
         }
@@ -1028,55 +1193,48 @@ $answer_obj = json_decode(file_get_contents(url . "sendmessage?text=" . $message
                         Танцюй і отримуй задоволення.
                     </p>
                 </section>
-                <section class="photo">
-                    <img src="img/main.webp" alt="main">
-                </section>
+                <img width="527px" height="660px" src="img/main.webp" alt="main">
             </div>
         </article>
     
-        <article class="diamond">
-            <h4 class="diamond__title">
-                Чому ми?
-            </h4>
+        <article id="advantages" class="advantages">
             <div class="container">
-                <section class="diamond__row">
-                    <div class="diamond__mark">
-                        <img src="icons/diamond.svg" alt="Diamond">
-                        <h4>Досвід</h4>
-                        <p>20 років на ринку. День народження клубу: 7 березня 2003 року.</p>
+                <h4 class="advantages__title">
+                    Наші переваги
+                </h4>
+                <div class="advantages__row">
+                    <div class="advantages__wrapper">
+                        <p class="advantages__text">
+                            майже <span>20 років</span><br>успішного викладання
+                        </p>
+                        <p class="advantages__addition">
+                            / День народження клубу<br>7 березня 2003 /
+                        </p>
                     </div>
-                    <div class="diamond__mark">
-                        <img src="icons/diamond.svg" alt="Diamond">
-                        <h4>Професійність</h4>
-                        <p>Відповідна освіта та досвід кожного. Регулярна участь у навчаннях та майстер-класах.</p>
+                    <div class="advantages__wrapper">
+                        <div class="advantages__mark">
+                            <h5>Професійність</h5>
+                            <p class="advantages__text">Відповідна освіта викладачів та постійне підвищення кваліфікації.</p>
+                        </div>
+                        <div class="advantages__mark">
+                            <h5>Виховання</h5>
+                            <p class="advantages__text">Нашою метою являється – не лише навчити правильно рухатись, а дотикнутись до виховання багатогранної душі в особистості.</p>
+                        </div>
+                        <div class="advantages__mark">
+                            <h5>Індивідуальний підхід</h5>
+                            <p class="advantages__text">Це незмінне правило нашої роботи. Кожна людина важлива для нас!</p>
+                        </div>
                     </div>
-                    <div class="diamond__mark">
-                        <img src="icons/diamond.svg" alt="Diamond">
-                        <h4>Виховання</h4>
-                        <p>Мета: не тільки навчити правильно рухатись, а доторкнутися до виховання багатогранної душі.</p>
-                    </div>
-                </section>
-                <section class="diamond__row">
-                    <div class="diamond__mark second">
-                        <img src="icons/diamond.svg" alt="Diamond">
-                        <h4>Індивідуальність</h4>
-                        <p>Кожна людина важлива для нас. Правило нашої роботи - індивідуальний підхід. </p>
-                    </div>
-                    <div class="diamond__mark third">
-                        <img src="icons/diamond.svg" alt="Diamond">
-                        <h4>Реабілітація</h4>
-                        <p>Наше кредо - реабілітація особистості через рухи під музику.</p>
-                    </div>
-                </section>
+                </div>
             </div>
         </article>
 
         <article id="selector" class="selector">
             <nav>
                 <ul class="selector__menu">
-                    <li class="selector selector__item selector__item_active"><div>Танцюристам та батькам</div></li>
-                    <li class="selector selector__item"><div>Організаторам заходів</div></li>
-                    <li class="selector selector__item"><div>Тренерам та хореографам</div></li>
+                    <li class="selector__item selector__item_active"><div>Танцюристам та батькам</div></li>
+                    <li class="selector__item"><div>Організаторам заходів</div></li>
+                    <li class="selector__item"><div>Тренерам та хореографам</div></li>
                 </ul>
             </nav>
         </article>
@@ -1167,7 +1325,7 @@ $answer_obj = json_decode(file_get_contents(url . "sendmessage?text=" . $message
                                         <p>Зал №1 — 168 м²</p>
                                         <p>Зал №2 — 72 м²</p>
                                         <p>Зал №3 — 36 м²</p>
-                                        <p>Зал №4 - ? м²</p>
+                                        <p>Зал №4 - 17 м²</p>
                                         <p>Роздягальні, туалети, кофейня, лаунж-зона, WI-FI</p>
                                     </span>
                                 </div>
@@ -1262,7 +1420,7 @@ $answer_obj = json_decode(file_get_contents(url . "sendmessage?text=" . $message
                             <div class="card__inner">
                                 <div class="card__face card__face--front">
                                     <div class="card__photo">
-                                        <img data-src="img/portrait/3.webp" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="swiper-lazy" alt="Image">
+                                        <img width="81px" height="122px" data-src="img/portrait/3.webp" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="swiper-lazy" alt="Image">
                                         <div class="swiper-lazy-preloader"></div>
                                     </div>
                                     <h3 class="card__name">
@@ -1272,14 +1430,14 @@ $answer_obj = json_decode(file_get_contents(url . "sendmessage?text=" . $message
                                         Адміністратор<br>Студія "Позняки"
                                     </p>
                                     <div class="social__wrapper">
-                                        <a target="_blank" href="//instagram.com/helga.ts" class="social"><img class="social" src="icons/social/instagram_white.svg"></a>
-                                        <a target="_blank" href="//www.facebook.com/olha.ha.5" class="social"><img class="social" src="icons/social/facebook_white.svg"></a>
+                                        <a target="_blank" href="//instagram.com/helga.ts" class="social"><img class="social" src="icons/social/instagram_white.svg" alt="instagram"></a>
+                                        <a target="_blank" href="//www.facebook.com/olha.ha.5" class="social"><img class="social" src="icons/social/facebook_white.svg" alt="facebook"></a>
                                     </div>
                                     <button class="descr-btn">Детальніше</button>
                                 </div>
                                 <div class="card__face card__face--back">
                                     <p class="card__descr">
-                                        Освіта вища. Творча, доброзичлива, відповідальна. В клубі працює 5 років.
+                                        Освіта вища. Творча, доброзичлива, відповідальна. В клубі працюю - 5 років.
                                     </p>
                                     <button class="descr-btn">Назад</button>
                                 </div>
@@ -1288,25 +1446,25 @@ $answer_obj = json_decode(file_get_contents(url . "sendmessage?text=" . $message
                         <div class="card staff-slider__slide swiper-slide">
                             <div class="card__inner">
                                 <div class="card__face card__face--front">
-                                    <div class="card__photo">
-                                        <img data-src="img/portrait/4.webp" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="swiper-lazy" alt="Image">
+                                    <div class="card__photo loading-2">
+                                        <img width="81px" height="122px" data-src="img/portrait/4.webp" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="swiper-lazy" alt="Image">
                                         <div class="swiper-lazy-preloader"></div>
                                     </div>
                                     <h3 class="card__name">
                                         Олександр Берьозін
                                     </h3>
                                     <p class="card__descr">
-                                        Тренер дорослі та ProAm
+                                        Тренер дорослі та Pro-Am
                                     </p>
                                     <div class="social__wrapper">
-                                        <a target="_blank" href="//www.instagram.com/sanich2000/" class="social"><img class="social" src="icons/social/instagram_white.svg"></a>
-                                        <a target="_blank" href="//www.facebook.com/berezci" class="social"><img class="social" src="icons/social/facebook_white.svg"></a>
+                                        <a target="_blank" href="//www.instagram.com/sanich2000/" class="social"><img class="social" src="icons/social/instagram_white.svg" alt="instagram"></a>
+                                        <a target="_blank" href="//www.facebook.com/berezci" class="social"><img class="social" src="icons/social/facebook_white.svg" alt="facebook"></a>
                                     </div>
                                     <button class="descr-btn">Детальніше</button>
                                 </div>
                                 <div class="card__face card__face--back">
                                     <p class="card__descr">
-                                        Стаж роботи викладачем понад 15 років. Досвід праці з усіма віковими категоріями та виступу на міжнародних змаганнях. Вихованці - діти танцюристи спортсмени
+                                        Стаж роботи викладачем понад 15 років. Досвід роботи з усіма віковими категоріями та виступу на міжнародних змаганнях. Вихованці - діти танцюристи спортсмени.
                                     </p>
                                     <button class="descr-btn">Назад</button>
                                 </div>
@@ -1316,7 +1474,7 @@ $answer_obj = json_decode(file_get_contents(url . "sendmessage?text=" . $message
                             <div class="card__inner">
                                 <div class="card__face card__face--front">
                                     <div class="card__photo">
-                                        <img data-src="img/portrait/5.webp" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="swiper-lazy" alt="Image">
+                                        <img width="81px" height="122px" data-src="img/portrait/5.webp" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="swiper-lazy" alt="Image">
                                         <div class="swiper-lazy-preloader"></div>
                                     </div>
                                     <h3 class="card__name">
@@ -1326,14 +1484,13 @@ $answer_obj = json_decode(file_get_contents(url . "sendmessage?text=" . $message
                                         Тренер дитячої та дорослої групи
                                     </p>
                                     <div class="social__wrapper">
-                                        <!-- <a target="_blank" href="#" class="social"><img class="social" src="icons/social/instagram_white.svg"></a> -->
-                                        <a target="_blank" href="//m.facebook.com/100041138511951/" class="social"><img class="social" src="icons/social/facebook_white.svg"></a>
+                                        <a target="_blank" href="//m.facebook.com/100041138511951/" class="social"><img class="social" src="icons/social/facebook_white.svg" alt="facebook"></a>
                                     </div>
                                     <button class="descr-btn">Детальніше</button>
                                 </div>
                                 <div class="card__face card__face--back">
                                     <p class="card__descr">
-                                        Вища педагогічна освіта з бальної хореографії. Стаж роботи 12 років. Досвід викладання в групах різних вікових категорій, від дітей до дорослих. Суддя 1-ї категорії. Працює в системі Pro-am.
+                                        Вища педагогічна освіта з бальної хореографії. Стаж роботи 12 років. Досвід викладання в групах різних вікових категорій, від дітей до дорослих. Суддя 1-ї категорії. Працює в системі Pro-Am.
                                     </p>
                                     <button class="descr-btn">Назад</button>
                                 </div>
@@ -1342,8 +1499,8 @@ $answer_obj = json_decode(file_get_contents(url . "sendmessage?text=" . $message
                         <div class="card staff-slider__slide swiper-slide">
                             <div class="card__inner">
                                 <div class="card__face card__face--front">
-                                    <div class="card__photo">
-                                        <img data-src="img/portrait/6.webp" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="swiper-lazy" alt="Image">
+                                    <div class="card__photo loading-1">
+                                        <img width="81px" height="122px" data-src="img/portrait/6.webp" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="swiper-lazy" alt="Image">
                                         <div class="swiper-lazy-preloader"></div>
                                     </div>
                                     <h3 class="card__name">
@@ -1353,8 +1510,8 @@ $answer_obj = json_decode(file_get_contents(url . "sendmessage?text=" . $message
                                         Тренер дитячих груп<br>Студія "Позняки"<br>Філія "Щасливе"
                                     </p>
                                     <div class="social__wrapper">
-                                        <a target="_blank" href="//www.instagram.com/littlepuf" class="social"><img class="social" src="icons/social/instagram_white.svg"></a>
-                                        <a target="_blank" href="//www.facebook.com/diana.berekashvili.5" class="social"><img class="social" src="icons/social/facebook_white.svg"></a>
+                                        <a target="_blank" href="//www.instagram.com/littlepuf" class="social"><img class="social" src="icons/social/instagram_white.svg" alt="instagram"></a>
+                                        <a target="_blank" href="//www.facebook.com/diana.berekashvili.5" class="social"><img class="social" src="icons/social/facebook_white.svg" alt="facebook"></a>
                                     </div>
                                     <button class="descr-btn">Детальніше</button>
                                 </div>
@@ -1369,8 +1526,8 @@ $answer_obj = json_decode(file_get_contents(url . "sendmessage?text=" . $message
                         <div class="card staff-slider__slide swiper-slide">
                             <div class="card__inner">
                                 <div class="card__face card__face--front">
-                                    <div class="card__photo">
-                                        <img data-src="img/portrait/7.webp" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="swiper-lazy" alt="Image">
+                                    <div class="card__photo loading-1">
+                                        <img width="81px" height="122px" data-src="img/portrait/7.webp" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="swiper-lazy" alt="Image">
                                         <div class="swiper-lazy-preloader"></div>
                                     </div>
                                     <h3 class="card__name">
@@ -1380,14 +1537,13 @@ $answer_obj = json_decode(file_get_contents(url . "sendmessage?text=" . $message
                                         Тренер старшої та молодшої групи<br>Студія "Позняки"
                                     </p>
                                     <div class="social__wrapper">
-                                        <!-- <a target="_blank" href="#" class="social"><img class="social" src="icons/social/instagram_white.svg"></a> -->
-                                        <a target="_blank" href="//www.facebook.com/profile.php?id=100007293646078" class="social"><img class="social" src="icons/social/facebook_white.svg"></a>
+                                        <a target="_blank" href="//www.facebook.com/profile.php?id=100007293646078" class="social"><img class="social" src="icons/social/facebook_white.svg" alt="facebook"></a>
                                     </div>
                                     <button class="descr-btn">Детальніше</button>
                                 </div>
                                 <div class="card__face card__face--back">
                                     <p class="card__descr">
-                                        Займається спортом з 7 років. Тренерский стаж 14 років. Суддя 1 категорії. Співорганізатор традиційного міжнародного турніру Inspiration Cup в м. Києві
+                                        Займаюся спортом з 7 років. Тренерский стаж 14 років. Суддя 1 категорії. Співорганізатор традиційного міжнародного турніру Inspiration Cup в м. Києві.
                                     </p>
                                     <button class="descr-btn">Назад</button>
                                 </div>
@@ -1397,7 +1553,7 @@ $answer_obj = json_decode(file_get_contents(url . "sendmessage?text=" . $message
                             <div class="card__inner">
                                 <div class="card__face card__face--front">
                                     <div class="card__photo">
-                                        <img data-src="img/portrait/8.webp" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="swiper-lazy" alt="Image">
+                                        <img width="81px" height="122px" data-src="img/portrait/8.webp" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="swiper-lazy" alt="Image">
                                         <div class="swiper-lazy-preloader"></div>
                                     </div>
                                     <h3 class="card__name">
@@ -1407,14 +1563,13 @@ $answer_obj = json_decode(file_get_contents(url . "sendmessage?text=" . $message
                                         Тренер дитячих груп<br>Філія "Щасливе"
                                     </p>
                                     <div class="social__wrapper">
-                                        <a target="_blank" href="//instagram.com/de_dance.school" class="social"><img class="social" src="icons/social/instagram_white.svg"></a>
-                                        <!-- <a target="_blank" href="#" class="social"><img class="social" src="icons/social/facebook_white.svg"></a> -->
+                                        <a target="_blank" href="//instagram.com/de_dance.school" class="social"><img class="social" src="icons/social/instagram_white.svg" alt="instagram"></a>
                                     </div>
                                     <button class="descr-btn">Детальніше</button>
                                 </div>
                                 <div class="card__face card__face--back">
                                     <p class="card__descr">
-                                        Досвід роботи тренером більше 5 років. Магістр зі спортивного танцю. Працює з дітьми категорій “baby” та “N”, “E” класу
+                                        Досвід роботи тренером більше 5 років. Магістр зі спортивного танцю. Працюю з дітьми категорій “baby” та “N”, “E” класу.
                                     </p>
                                     <button class="descr-btn">Назад</button>
                                 </div>
@@ -1424,7 +1579,7 @@ $answer_obj = json_decode(file_get_contents(url . "sendmessage?text=" . $message
                             <div class="card__inner">
                                 <div class="card__face card__face--front">
                                     <div class="card__photo">
-                                        <img data-src="img/portrait/1.webp" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="swiper-lazy" alt="Image">
+                                        <img width="81px" height="122px" data-src="img/portrait/1.webp" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="swiper-lazy" alt="Image">
                                         <div class="swiper-lazy-preloader"></div>
                                     </div>
                                     <h3 class="card__name">
@@ -1434,14 +1589,14 @@ $answer_obj = json_decode(file_get_contents(url . "sendmessage?text=" . $message
                                         Тренер спортивної групи Студія "Либідська"
                                     </p>
                                     <div class="social__wrapper">
-                                        <a target="_blank" href="//www.instagram.com/chernenkotim/" class="social"><img class="social" src="icons/social/instagram_white.svg"></a>
-                                        <a target="_blank" href="//www.facebook.com/chernenkotim/" class="social"><img class="social" src="icons/social/facebook_white.svg"></a>
+                                        <a target="_blank" href="//www.instagram.com/chernenkotim/" class="social"><img class="social" src="icons/social/instagram_white.svg" alt="instagram"></a>
+                                        <a target="_blank" href="//www.facebook.com/chernenkotim/" class="social"><img class="social" src="icons/social/facebook_white.svg" alt="facebook"></a>
                                     </div>
                                     <button class="descr-btn">Детальніше</button>
                                 </div>
                                 <div class="card__face card__face--back">
                                     <p class="card__descr">
-                                        Чемпіон України серед професіоналів з 10 танців, призер міжнародних змагань, суддя національної категорії, тренерський стаж 20 років
+                                        Чемпіон України серед професіоналів з 10 танців, призер міжнародних змагань, суддя національної категорії, тренерський стаж 20 років.
                                     </p>
                                     <button class="descr-btn">Назад</button>
                                 </div>
@@ -1451,7 +1606,7 @@ $answer_obj = json_decode(file_get_contents(url . "sendmessage?text=" . $message
                             <div class="card__inner">
                                 <div class="card__face card__face--front">
                                     <div class="card__photo">
-                                        <img data-src="img/portrait/12.webp" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="swiper-lazy" alt="Image">
+                                        <img width="81px" height="122px" data-src="img/portrait/12.webp" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="swiper-lazy" alt="Image">
                                         <div class="swiper-lazy-preloader"></div>
                                     </div>
                                     <h3 class="card__name">
@@ -1461,14 +1616,14 @@ $answer_obj = json_decode(file_get_contents(url . "sendmessage?text=" . $message
                                         Президент клубу<br>Тренер спортивної групи
                                     </p>
                                     <div class="social__wrapper">
-                                        <a target="_blank" href="//instagram.com/larysamashyna" class="social"><img class="social" src="icons/social/instagram_white.svg"></a>
-                                        <a target="_blank" href="//www.facebook.com/larysa.mashyna" class="social"><img class="social" src="icons/social/facebook_white.svg"></a>
+                                        <a target="_blank" href="//instagram.com/larysamashyna" class="social"><img class="social" src="icons/social/instagram_white.svg" alt="instagram"></a>
+                                        <a target="_blank" href="//www.facebook.com/larysa.mashyna" class="social"><img class="social" src="icons/social/facebook_white.svg" alt="facebook"></a>
                                     </div>
                                     <button class="descr-btn">Детальніше</button>
                                 </div>
                                 <div class="card__face card__face--back">
                                     <p class="card__descr">
-                                        Фіналістка міжнародних змагань з європейської та латиноамериканської програм, призер Чемпіонату України з 10-ти танців, суддя національної категорії, тренерський стаж більше 25-ти років
+                                        Фіналістка міжнародних змагань з європейської та латиноамериканської програм, призер Чемпіонату України з 10-ти танців, суддя національної категорії, тренерський стаж більше 25-ти років.
                                     </p>
                                     <button class="descr-btn">Назад</button>
                                 </div>
@@ -1478,7 +1633,7 @@ $answer_obj = json_decode(file_get_contents(url . "sendmessage?text=" . $message
                             <div class="card__inner">
                                 <div class="card__face card__face--front">
                                     <div class="card__photo">
-                                        <img data-src="img/portrait/2.webp" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="swiper-lazy portrait" alt="Image">
+                                        <img width="81px" height="122px" data-src="img/portrait/2.webp" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="swiper-lazy portrait" alt="Image">
                                         <div class="swiper-lazy-preloader"></div>
                                     </div>
                                     <h3 class="card__name">
@@ -1488,14 +1643,14 @@ $answer_obj = json_decode(file_get_contents(url . "sendmessage?text=" . $message
                                         Тренер спортивної групи Студія "Либідська"
                                     </p>
                                     <div class="social__wrapper">
-                                        <a target="_blank" href="//instagram.com/olenaberozina" class="social"><img class="social" src="icons/social/instagram_white.svg"></a>
-                                        <a target="_blank" href="//www.facebook.com/profile.php?id=100008214097877" class="social"><img class="social" src="icons/social/facebook_white.svg"></a>
+                                        <a target="_blank" href="//instagram.com/olenaberozina" class="social"><img class="social" src="icons/social/instagram_white.svg" alt="instagram"></a>
+                                        <a target="_blank" href="//www.facebook.com/profile.php?id=100008214097877" class="social"><img class="social" src="icons/social/facebook_white.svg" alt="facebook"></a>
                                     </div>
                                     <button class="descr-btn">Детальніше</button>
                                 </div>
                                 <div class="card__face card__face--back">
                                     <p class="card__descr">
-                                        Стаж роботи тренером 38 років, освіта вища, суддя національної категорії. Вихованці - фіналісти всеукраїнських та міжнародних змагань, Чемпіонатів світу та Європи
+                                        Стаж роботи тренером 38 років, освіта вища, суддя національної категорії. Вихованці - фіналісти всеукраїнських та міжнародних змагань, Чемпіонатів світу та Європи.
                                     </p>
                                     <button class="descr-btn">Назад</button>
                                 </div>
@@ -1504,8 +1659,8 @@ $answer_obj = json_decode(file_get_contents(url . "sendmessage?text=" . $message
                         <div class="card staff-slider__slide swiper-slide">
                             <div class="card__inner">
                                 <div class="card__face card__face--front">
-                                    <div class="card__photo">
-                                        <img data-src="img/portrait/9.webp" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="swiper-lazy" alt="Image">
+                                    <div class="card__photo loading-1">
+                                        <img width="81px" height="122px" data-src="img/portrait/9.webp" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="swiper-lazy" alt="Image">
                                         <div class="swiper-lazy-preloader"></div>
                                     </div>
                                     <h3 class="card__name">
@@ -1515,14 +1670,14 @@ $answer_obj = json_decode(file_get_contents(url . "sendmessage?text=" . $message
                                         Тренер початкових та спортивних груп<br>Студія "Позняки"
                                     </p>
                                     <div class="social__wrapper">
-                                        <a target="_blank" href="//www.instagram.com/pushkina_ju" class="social"><img class="social" src="icons/social/instagram_white.svg"></a>
-                                        <a target="_blank" href="//www.facebook.com/jylia.pushkina" class="social"><img class="social" src="icons/social/facebook_white.svg"></a>
+                                        <a target="_blank" href="//www.instagram.com/pushkina_ju" class="social"><img class="social" src="icons/social/instagram_white.svg" alt="instagram"></a>
+                                        <a target="_blank" href="//www.facebook.com/jylia.pushkina" class="social"><img class="social" src="icons/social/facebook_white.svg" alt="facebook"></a>
                                     </div>
                                     <button class="descr-btn">Детальніше</button>
                                 </div>
                                 <div class="card__face card__face--back">
                                     <p class="card__descr">
-                                        Приоритет: гармонійний розвиток дитини у спорті та унікальність кожного учня. Вища освіта. Стаж - 4 роки. Діючий спортсмен, кандидат у майстри спорту, член збірної України зі спортивних танців
+                                        Пріоритет: гармонійний розвиток дитини у спорті та унікальність кожного учня. Вища освіта. Стаж - 4 роки. Діючий спортсмен, кандидат у майстри спорту, член збірної України зі спортивних танців.
                                     </p>
                                     <button class="descr-btn">Назад</button>
                                 </div>
@@ -1531,8 +1686,8 @@ $answer_obj = json_decode(file_get_contents(url . "sendmessage?text=" . $message
                         <div class="card staff-slider__slide swiper-slide">
                             <div class="card__inner">
                                 <div class="card__face card__face--front">
-                                    <div class="card__photo">
-                                        <img data-src="img/portrait/16.webp" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="swiper-lazy" alt="Image">
+                                    <div class="card__photo loading-1">
+                                        <img width="81px" height="122px" data-src="img/portrait/16.webp" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="swiper-lazy" alt="Image">
                                         <div class="swiper-lazy-preloader"></div>
                                     </div>
                                     <h3 class="card__name">
@@ -1542,14 +1697,14 @@ $answer_obj = json_decode(file_get_contents(url . "sendmessage?text=" . $message
                                         Тренер початкових та спортивних груп<br>Філія "Вишеньки"
                                     </p>
                                     <div class="social__wrapper">
-                                        <a target="_blank" href="//www.instagram.com/ruslangitia/" class="social"><img class="social" src="icons/social/instagram_white.svg"></a>
-                                        <a target="_blank" href="//www.facebook.com/profile.php?id=100038626413634" class="social"><img class="social" src="icons/social/facebook_white.svg"></a>
+                                        <a target="_blank" href="//www.instagram.com/ruslangitia/" class="social"><img class="social" src="icons/social/instagram_white.svg" alt="instagram"></a>
+                                        <a target="_blank" href="//www.facebook.com/profile.php?id=100038626413634" class="social"><img class="social" src="icons/social/facebook_white.svg" alt="facebook"></a>
                                     </div>
                                     <button class="descr-btn">Детальніше</button>
                                 </div>
                                 <div class="card__face card__face--back">
                                     <p class="card__descr">
-                                        Освіта - вища. Стаж - 4 роки. Досвід роботи з дитячими групами та з парами ProAm. Діючий спортсмен, кандидат у майстри спорту, член збірної України зі спортивних танців
+                                        Освіта - вища. Стаж - 4 роки. Досвід роботи з дитячими групами та з парами Pro-Am. Діючий спортсмен, кандидат у майстри спорту, член збірної України зі спортивних танців.
                                     </p>
                                     <button class="descr-btn">Назад</button>
                                 </div>
@@ -1559,7 +1714,7 @@ $answer_obj = json_decode(file_get_contents(url . "sendmessage?text=" . $message
                             <div class="card__inner">
                                 <div class="card__face card__face--front">
                                     <div class="card__photo">
-                                        <img data-src="img/portrait/17.webp" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="swiper-lazy" alt="Image">
+                                        <img width="81px" height="122px" data-src="img/portrait/17.webp" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="swiper-lazy" alt="Image">
                                         <div class="swiper-lazy-preloader"></div>
                                     </div>
                                     <h3 class="card__name">
@@ -1569,8 +1724,7 @@ $answer_obj = json_decode(file_get_contents(url . "sendmessage?text=" . $message
                                         Адміністратор<br>Студія "Либідська"
                                     </p>
                                     <div class="social__wrapper">
-                                        <!-- <a target="_blank" href="https://google.com" class="social"><img class="social" src="icons/social/instagram_white.svg"></a>
-                                        <a target="_blank" href="https://duckduckgo.com" class="social"><img class="social" src="icons/social/facebook_white.svg"></a> -->
+                                        <a target="_blank" href="//www.instagram.com/astrukov961/" class="social"><img class="social" src="icons/social/instagram_white.svg" alt="instagram"></a>
                                     </div>
                                     <button class="descr-btn">Детальніше</button>
                                 </div>
@@ -1585,8 +1739,8 @@ $answer_obj = json_decode(file_get_contents(url . "sendmessage?text=" . $message
                         <div class="card staff-slider__slide swiper-slide">
                             <div class="card__inner">
                                 <div class="card__face card__face--front">
-                                    <div class="card__photo">
-                                        <img data-src="img/portrait/10.webp" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="swiper-lazy" alt="Image">
+                                    <div class="card__photo loading-1">
+                                        <img width="81px" height="122px" data-src="img/portrait/10.webp" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="swiper-lazy" alt="Image">
                                         <div class="swiper-lazy-preloader"></div>
                                     </div>
                                     <h3 class="card__name">
@@ -1596,14 +1750,14 @@ $answer_obj = json_decode(file_get_contents(url . "sendmessage?text=" . $message
                                         Тренер дитячих груп та класичної хореографії<br>Студія "Либідська"
                                     </p>
                                     <div class="social__wrapper">
-                                        <a target="_blank" href="//www.instagram.com/anastayshaparenko" class="social"><img class="social" src="icons/social/instagram_white.svg"></a>
-                                        <a target="_blank" href="//www.facebook.com/profile.php?id=100003257322604" class="social"><img class="social" src="icons/social/facebook_white.svg"></a>
+                                        <a target="_blank" href="//www.instagram.com/anastayshaparenko" class="social"><img class="social" src="icons/social/instagram_white.svg" alt="instagram"></a>
+                                        <a target="_blank" href="//www.facebook.com/profile.php?id=100003257322604" class="social"><img class="social" src="icons/social/facebook_white.svg" alt="facebook"></a>
                                     </div>
                                     <button class="descr-btn">Детальніше</button>
                                 </div>
                                 <div class="card__face card__face--back">
                                     <p class="card__descr">
-                                        Вища педагогічна освіта, суддівська категорія. Досвід роботи 8 років. Може викладати українською та англійською мовами
+                                        Вища педагогічна освіта, суддівська категорія. Досвід роботи 8 років. Може викладати українською та англійською мовами.
                                     </p>
                                     <button class="descr-btn">Назад</button>
                                 </div>
@@ -1613,7 +1767,7 @@ $answer_obj = json_decode(file_get_contents(url . "sendmessage?text=" . $message
                             <div class="card__inner">
                                 <div class="card__face card__face--front">
                                     <div class="card__photo">
-                                        <img data-src="img/portrait/11.webp" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="swiper-lazy" alt="Image">
+                                        <img width="81px" height="122px" data-src="img/portrait/11.webp" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="swiper-lazy" alt="Image">
                                         <div class="swiper-lazy-preloader"></div>
                                     </div>
                                     <h3 class="card__name">
@@ -1623,14 +1777,12 @@ $answer_obj = json_decode(file_get_contents(url . "sendmessage?text=" . $message
                                         Тренер дитячих груп<br>Філія "Гора"
                                     </p>
                                     <div class="social__wrapper">
-                                        <!-- <a target="_blank" href="https://google.com" class="social"><img class="social" src="icons/social/instagram_white.svg"></a>
-                                        <a target="_blank" href="https://duckduckgo.com" class="social"><img class="social" src="icons/social/facebook_white.svg"></a> -->
                                     </div>
                                     <button class="descr-btn">Детальніше</button>
                                 </div>
                                 <div class="card__face card__face--back">
                                     <p class="card__descr">
-                                        Стаж тренерської діяльності - 10 років. Досвід участі у міжнародних та всеураїнських змаганнях. Тренер танцюристів Н - Д класів різних вікових груп
+                                        Стаж тренерської діяльності - 10 років. Досвід участі у міжнародних та всеураїнських змаганнях. Тренер танцюристів Н - Д класів різних вікових груп.
                                     </p>
                                     <button class="descr-btn">Назад</button>
                                 </div>
@@ -1639,8 +1791,8 @@ $answer_obj = json_decode(file_get_contents(url . "sendmessage?text=" . $message
                         <div class="card staff-slider__slide swiper-slide">
                             <div class="card__inner">
                                 <div class="card__face card__face--front">
-                                    <div class="card__photo">
-                                        <img data-src="img/portrait/14.webp" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="swiper-lazy" alt="Image">
+                                    <div class="card__photo loading-1">
+                                        <img width="81px" height="122px" data-src="img/portrait/14.webp" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="swiper-lazy" alt="Image">
                                         <div class="swiper-lazy-preloader"></div>
                                     </div>
                                     <h3 class="card__name">
@@ -1650,14 +1802,14 @@ $answer_obj = json_decode(file_get_contents(url . "sendmessage?text=" . $message
                                         Тренер дитячих та спортивних груп<br>Філія "Гора"
                                     </p>
                                     <div class="social__wrapper">
-                                        <a target="_blank" href="//www.instagram.com/ternovenko.irina/" class="social"><img class="social" src="icons/social/instagram_white.svg"></a>
-                                        <a target="_blank" href="//www.facebook.com/profile.php?id=100010330095125" class="social"><img class="social" src="icons/social/facebook_white.svg"></a>
+                                        <a target="_blank" href="//www.instagram.com/ternovenko.irina/" class="social"><img class="social" src="icons/social/instagram_white.svg" alt="instagram"></a>
+                                        <a target="_blank" href="//www.facebook.com/profile.php?id=100010330095125" class="social"><img class="social" src="icons/social/facebook_white.svg" alt="facebook"></a>
                                     </div>
                                     <button class="descr-btn">Детальніше</button>
                                 </div>
                                 <div class="card__face card__face--back">
                                     <p class="card__descr">
-                                        Працюю з дітьми віком від 3-х років та спортсменів N, E, D класів. Стаж роботи 13 років
+                                        Працюю з дітьми віком від 3-х років та спортсменами N, E, D класів. Стаж роботи 13 років.
                                     </p>
                                     <button class="descr-btn">Назад</button>
                                 </div>
@@ -1666,8 +1818,8 @@ $answer_obj = json_decode(file_get_contents(url . "sendmessage?text=" . $message
                         <div class="card staff-slider__slide swiper-slide">
                             <div class="card__inner">
                                 <div class="card__face card__face--front">
-                                    <div class="card__photo">
-                                        <img data-src="img/portrait/13.webp" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="swiper-lazy" alt="Image">
+                                    <div class="card__photo loading-2">
+                                        <img width="81px" height="122px" data-src="img/portrait/13.webp" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="swiper-lazy" alt="Image">
                                         <div class="swiper-lazy-preloader"></div>
                                     </div>
                                     <h3 class="card__name">
@@ -1677,13 +1829,13 @@ $answer_obj = json_decode(file_get_contents(url . "sendmessage?text=" . $message
                                         Головний адміністратор філій
                                     </p>
                                     <div class="social__wrapper">
-                                        <a target="_blank" href="//www.facebook.com/profile.php?id=100010751524846" class="social"><img class="social" src="icons/social/facebook_white.svg"></a>
+                                        <a target="_blank" href="//www.facebook.com/profile.php?id=100010751524846" class="social"><img class="social" src="icons/social/facebook_white.svg" alt="facebook"></a>
                                     </div>
                                     <button class="descr-btn">Детальніше</button>
                                 </div>
                                 <div class="card__face card__face--back">
                                     <p class="card__descr">
-                                        Легко комунікую, завжди шукаю позитив - ці якості дали мені заняття бальними танцями і зараз допомагають мені жити та працювати в нашому чудовому клубі
+                                        Легко комунікую, завжди шукаю позитив - ці якості дали мені заняття бальними танцями і зараз допомагають мені жити та працювати в нашому чудовому клубі.
                                     </p>
                                     <button class="descr-btn">Назад</button>
                                 </div>
@@ -1692,8 +1844,8 @@ $answer_obj = json_decode(file_get_contents(url . "sendmessage?text=" . $message
                         <div class="card staff-slider__slide swiper-slide">
                             <div class="card__inner">
                                 <div class="card__face card__face--front">
-                                    <div class="card__photo">
-                                        <img data-src="img/portrait/15.webp" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="swiper-lazy" alt="Image">
+                                    <div class="card__photo loading-2">
+                                        <img width="81px" height="122px" data-src="img/portrait/15.webp" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="swiper-lazy" alt="Image">
                                         <div class="swiper-lazy-preloader"></div>
                                     </div>
                                     <h3 class="card__name">
@@ -1703,7 +1855,7 @@ $answer_obj = json_decode(file_get_contents(url . "sendmessage?text=" . $message
                                         Виконавчий директор
                                     </p>
                                     <div class="social__wrapper">
-                                        <a target="_blank" href="//www.facebook.com/maryna.nazarenko.5" class="social"><img class="social" src="icons/social/facebook_white.svg"></a>
+                                        <a target="_blank" href="//www.facebook.com/maryna.nazarenko.5" class="social"><img class="social" src="icons/social/facebook_white.svg" alt="facebook"></a>
                                     </div>
                                     <button class="descr-btn">Детальніше</button>
                                 </div>
@@ -1727,7 +1879,7 @@ $answer_obj = json_decode(file_get_contents(url . "sendmessage?text=" . $message
             <div class="container location">
                 <section class="location__wrapper">
                     <h4 class="location__title">
-                        Зали та філіали
+                        Зали та філії
                     </h4>
                     <ul class="location__list">
                         <li class="location__mark location__mark_active">Студія "Либідська"</li>
@@ -1742,9 +1894,9 @@ $answer_obj = json_decode(file_get_contents(url . "sendmessage?text=" . $message
                     </button>
                 </section>
                 <!-- Лыбедская -->
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d635.6877577831542!2d30.52615609019995!3d50.40847735984789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf380966fba5%3A0x8c5a1608e8e18a44!2sKlub%20Bal%CA%B9noho%20Tantsyu%20%22Diamant-Elit%22!5e0!3m2!1sru!2sus!4v1650437610926!5m2!1sru!2sus" width="700" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="location__map location__map_active"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d635.6877577831542!2d30.52615609019995!3d50.40847735984789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf380966fba5%3A0x8c5a1608e8e18a44!2sKlub%20Bal%CA%B9noho%20Tantsyu%20%22Diamant-Elit%22!5e0!3m2!1sru!2sus!4v1650437610926!5m2!1sru!2sus" width="700" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="location__map location__map_active" title="вулиця Залізничне шосе 3"></iframe>
                 <!-- Позняки -->
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2543.465523782726!2d30.638815315894522!3d50.395161299228015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4c44e12c44087%3A0xce3b1e336f3b21d5!2z0JTQuNCw0LzQsNC90YIg0K3Qu9C40YIuINCa0LvRg9CxINCx0LDQu9GM0L3Ri9GFINGC0LDQvdGG0LXQsg!5e0!3m2!1sru!2sua!4v1652382824581!5m2!1sru!2sua" width="700" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="location__map"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2543.465523782726!2d30.638815315894522!3d50.395161299228015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4c44e12c44087%3A0xce3b1e336f3b21d5!2z0JTQuNCw0LzQsNC90YIg0K3Qu9C40YIuINCa0LvRg9CxINCx0LDQu9GM0L3Ri9GFINGC0LDQvdGG0LXQsg!5e0!3m2!1sru!2sua!4v1652382824581!5m2!1sru!2sua" width="700" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="location__map" title="вулиця Лариси Руденко 6а"></iframe>
                 <!-- Гора -->
                 <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d346.8590452998959!2d30.862527128282203!3d50.37458544977905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x81ff271e56037615!2sKlub%20Bal%CA%B9noho%20Tantsyu%20%22Diamant-Elit%22!5e0!3m2!1sru!2sua!4v1652352034939!5m2!1sru!2sua" width="700" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="location__map"></iframe> -->
                 <!-- Вишенки -->
@@ -1755,8 +1907,8 @@ $answer_obj = json_decode(file_get_contents(url . "sendmessage?text=" . $message
                 <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4165.147632223963!2d30.834275472337662!3d50.28853143766903!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4eb185db15ac3%3A0x5f48f16973fa9517!2sRevnivs%CA%B9ka%20Zahal%CA%B9noosvitnya%20Shkola%20I-Iii%20Stupeniv!5e0!3m2!1sru!2sua!4v1652352010524!5m2!1sru!2sua" width="700" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="location__map"></iframe> -->
             </div>
         </article>
-
-        <article class="feedback">
+        
+        <article id="feedback" class="feedback">
             <div class="container">
                 <h4 class="feedback__title">
                     Відгуки
@@ -1766,7 +1918,8 @@ $answer_obj = json_decode(file_get_contents(url . "sendmessage?text=" . $message
                         <div class="comment-slider__slide swiper-slide">
                             <div class="comment comment-slider__comment">
                                 <div class="feedback__photo">
-                                    <img src="img/feedback/1.webp" alt="1">
+                                    <img width="122px" height="163px" data-src="img/feedback/1.webp" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="custom_pos-1 swiper-lazy" alt="Image">
+                                    <div class="swiper-lazy-preloader"></div>
                                 </div>
                                 <div class="feedback__text">
                                     <p class="feedback__name">
@@ -1776,7 +1929,7 @@ $answer_obj = json_decode(file_get_contents(url . "sendmessage?text=" . $message
                                         Мама тацюристки
                                     </p>
                                     <p class="feedback__descr">
-                                        Тренерський склад високої кваліфікації, дитина з радістю і цікавістю відвідує заняття, спортивні збори, бере участь у турнірах.
+                                        Тренерський склад високої кваліфікації, дитина з радістю відвідує заняття, спортивні збори, бере участь у турнірах.
                                     </p>
                                 </div>
                             </div>
@@ -1784,7 +1937,8 @@ $answer_obj = json_decode(file_get_contents(url . "sendmessage?text=" . $message
                         <div class="comment-slider__slide swiper-slide">
                             <div class="comment comment-slider__comment">
                                 <div class="feedback__photo">
-                                    <img src="img/feedback/2.webp" alt="2">
+                                    <img width="122px" height="124px" data-src="img/feedback/2.webp" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="custom_pos-2 swiper-lazy" alt="Image">
+                                    <div class="swiper-lazy-preloader"></div>
                                 </div>
                                 <div class="feedback__text">
                                     <p class="feedback__name">
@@ -1802,7 +1956,8 @@ $answer_obj = json_decode(file_get_contents(url . "sendmessage?text=" . $message
                         <div class="comment-slider__slide swiper-slide">
                             <div class="comment comment-slider__comment">
                                 <div class="feedback__photo">
-                                    <img src="img/feedback/3.webp" alt="3">
+                                    <img width="122px" height="163px" data-src="img/feedback/3.webp" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="custom_pos-1 swiper-lazy" alt="Image">
+                                    <div class="swiper-lazy-preloader"></div>
                                 </div>
                                 <div class="feedback__text">
                                     <p class="feedback__name">
@@ -1812,28 +1967,184 @@ $answer_obj = json_decode(file_get_contents(url . "sendmessage?text=" . $message
                                         Мама тацюристки
                                     </p>
                                     <p class="feedback__descr">
-                                        Наш танцевальный мир начался для моей дочери четыре года назад в Клубе бального танца «Диамант-Элит».<span class="dots">..</span><span class="comment-details"> За это время, однозначно скажу, танцы это здорово, это дисциплина, это красивая осанка, фигура, умение подать себя, развивается координация и хороший вкус. Отдельно, хочется выделить наш тренерский состав, который не покладая сил, вдохновляет наших детей и шаг за шагом погружает в этот прекрасный мир танца. Пушкина Юлия Александровна, Евтеев Андрей Сергеевич большие профессионалы своего дела, всегда на позитиве, очень душевные, в тоже время настойчивы и терпеливы. Пусть наши дети растут уверенными в себе, спортивными и здоровыми. Красивый спорт, который останется с Вами на всю жизнь!</span><button class="read-more-btn-comment">Більше</button>
+                                        Наш танцевальный мир начался для моей дочери четыре года назад в Клубе бального танца «Диамант-Элит».<span class="dots">..</span><span id="more-feedback1" style="display:none;" class="comment-details dialog__box more-feedback__text">Наш танцевальный мир начался для моей дочери четыре года назад в Клубе бального танца «Диамант-Элит». За это время, однозначно скажу, танцы это здорово, это дисциплина, это красивая осанка, фигура, умение подать себя, развивается координация и хороший вкус. Отдельно, хочется выделить наш тренерский состав, который, не покладая сил, вдохновляет наших детей и шаг за шагом погружает в этот прекрасный мир танца. Пушкина Юлия Александровна, Евтеев Андрей Сергеевич большие профессионалы своего дела, всегда на позитиве, очень душевные, в тоже время, настойчивы и терпеливы. Пусть наши дети растут уверенными в себе, спортивными и здоровыми. Красивый спорт, который останется с Вами на всю жизнь!</span><button data-fancybox data-src="#more-feedback1" class="read-more-btn-comment">Більше</button>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="comment-slider__slide swiper-slide">
+                            <div class="comment comment-slider__comment">
+                                <div class="feedback__photo">
+                                    <img width="122px" height="122px" data-src="img/feedback/user.webp" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="custom_pos-3 swiper-lazy" alt="Image">
+                                    <div class="swiper-lazy-preloader"></div>
+                                </div>
+                                <div class="feedback__text">
+                                    <p class="feedback__name">
+                                        Ірина Губарева
+                                    </p>
+                                    <p class="feedback__stats">
+                                        Мама танцюристів
+                                    </p>
+                                    <p class="feedback__descr">
+                                        Хочу подякувати за дуже нелегку роботу, котру тренери клубу спортивного бального танцю «Діамант-Еліт»<span class="dots">...</span><span id="more-feedback2" style="display:none;" class="comment-details dialog__box more-feedback__text">Хочу подякувати за дуже нелегку роботу, котру тренери клубу спортивного бального танцю «Діамант-Еліт» Ірина Терновенко і Владислав Кравець, виконують щоденно. В клубі мої діти займаються вже вже дев’ятий та третій рік. За цей період наші тренери вклали всю душу в навчання дітей. Зробили по справжньому великий внесок до любові до танцю, спорту, самодисципліні, вмінні добиватися поставлених цілей, творчості моїх дітей. Тренери по справжньому люблять свою роботу і дітей, що робить їхню роботу по справжньому якісною! Взагалі роботу клубу оцінюю на дуже високому рівні: танцювальні збори, загально клубні практики, робота всього тренерського складу клубу і запрошених закордонних тренерів, підтримка на змаганнях, дуже подобається дітям і є рушійною силою рухатися вперед. Особисто від себе, як працівника культури, хочу подякувати клубу і нашим тренерам за постійну участь у творчому житті громади, що робить з наших дітей справжніх артистів.</span><button data-fancybox data-src="#more-feedback2" class="read-more-btn-comment">Більше</button>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="comment-slider__slide swiper-slide">
+                            <div class="comment comment-slider__comment">
+                                <div class="feedback__photo">
+                                    <img width="122px" height="122px" data-src="img/feedback/user.webp" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="custom_pos-3 swiper-lazy" alt="Image">
+                                    <div class="swiper-lazy-preloader"></div>
+                                </div>
+                                <div class="feedback__text">
+                                    <p class="feedback__name">
+                                        Іванна Данилюк
+                                    </p>
+                                    <p class="feedback__stats">
+                                        Мама танцюристки
+                                    </p>
+                                    <p class="feedback__descr">
+                                        Гарний танцювальний клуб, в якому завжди приємно знаходитись. Донька займається вже<span class="dots">...</span><span id="more-feedback3" style="display:none;" class="comment-details dialog__box more-feedback__text">Гарний танцювальний клуб, в якому завжди приємно знаходитись. Донька займається вже три роки та має гарні успіхи. Завжди на тренування йде з радістю. Окрема подяка Кравець Владиславу Володимировичу та Терновенко Ірині Володимирівні за вклад в наших  дітей! Вони знаходять підхід до кожної дитини</span><button data-fancybox data-src="#more-feedback3" class="read-more-btn-comment">Більше</button>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="comment-slider__slide swiper-slide">
+                            <div class="comment comment-slider__comment">
+                                <div class="feedback__photo">
+                                    <img width="180px" height="120px" data-src="img/feedback/6.webp" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="custom_pos-4 swiper-lazy" alt="Image">
+                                    <div class="swiper-lazy-preloader"></div>
+                                </div>
+                                <div class="feedback__text">
+                                    <p class="feedback__name">
+                                        Галина Бондаренко
+                                    </p>
+                                    <p class="feedback__stats">
+                                        Мама танцюристки
+                                    </p>
+                                    <p class="feedback__descr">
+                                        Дочка танцює вже три роки, які випали на непростий період для всіх період. Та завдяки<span class="dots">...</span><span id="more-feedback4" style="display:none;" class="comment-details dialog__box more-feedback__text">Дочка танцює вже три роки, які випали на непростий період для всіх період. Та завдяки танцям та заняттям (де б хто не був, онлайн ніхто не відміняв) - то є графік, дисциліна, та відповідальність.  Тренера стали справжніми наставниками для доньки(Ірина Володимирівна, та Владислав Володимирович), на тренування поспішає з радістю (хоча бувають моменти, настрій дівчинки буває мінливим, як весняна погода:-)).</span><button data-fancybox data-src="#more-feedback4" class="read-more-btn-comment">Більше</button>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="comment-slider__slide swiper-slide">
+                            <div class="comment comment-slider__comment">
+                                <div class="feedback__photo">
+                                    <img width="125px" height="130px" data-src="img/feedback/7.webp" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="custom_pos-5 swiper-lazy" alt="Image">
+                                    <div class="swiper-lazy-preloader"></div>
+                                </div>
+                                <div class="feedback__text">
+                                    <p class="feedback__name">
+                                        Наталія Конарева
+                                    </p>
+                                    <p class="feedback__stats">
+                                        Мама танцюриста
+                                    </p>
+                                    <p class="feedback__descr">
+                                        Заняття танцями дуже подобається моєму синові. Він сам обрав своє хобі після відвідування<span class="dots">...</span><span id="more-feedback5" style="display:none;" class="comment-details dialog__box more-feedback__text">Заняття танцями дуже подобається моєму синові. Він сам обрав своє хобі після відвідування відкритого уроку. Тренер знаходить підхід до кожного. Високий рівень викладання у поєднанні з індивідуальним підходом дає реальні результати! Клуб клієнтоорієнтований, завжди знаходимо компроміс. А той факт, що швидко налагодили віддалене навчання під час локдауну дуже порадував. Якість навчання, доступна ціна і високий рівень професіоналізму ось візитівка клубу.</span><button data-fancybox data-src="#more-feedback5" class="read-more-btn-comment">Більше</button>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="comment-slider__slide swiper-slide">
+                            <div class="comment comment-slider__comment">
+                                <div class="feedback__photo">
+                                    <img width="122px" height="140px" data-src="img/feedback/8.webp" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="custom_pos-6 swiper-lazy" alt="Image">
+                                    <div class="swiper-lazy-preloader"></div>
+                                </div>
+                                <div class="feedback__text">
+                                    <p class="feedback__name">
+                                        Анастасія
+                                    </p>
+                                    <p class="feedback__stats">
+                                        Мама танцюриста
+                                    </p>
+                                    <p class="feedback__descr">
+                                        Спасибо тренерской команде клуба "Диамант - Элит", отдельная благодарность нашему тренеру Руслану Андреевичу<span class="dots">...</span><span id="more-feedback6" style="display:none;" class="comment-details dialog__box more-feedback__text">Спасибо тренерской команде клуба "Диамант - Элит", отдельная благодарность нашему тренеру Руслану Андреевичу за то, что в этом клубе к каждому маленькому ученику есть свой профессиональный взрослый подход! Для нас это очень важно и имеет огромное значение в воспитании эстетического и спортивного духа наших детей!</span><button data-fancybox data-src="#more-feedback6" class="read-more-btn-comment">Більше</button>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="comment-slider__slide swiper-slide">
+                            <div class="comment comment-slider__comment">
+                                <div class="feedback__photo">
+                                    <img width="180px" height="152px" data-src="img/feedback/9.webp" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="custom_pos-4 swiper-lazy" alt="Image">
+                                    <div class="swiper-lazy-preloader"></div>
+                                </div>
+                                <div class="feedback__text">
+                                    <p class="feedback__name">
+                                        Ніна
+                                    </p>
+                                    <p class="feedback__stats">
+                                        Мама танцюриста
+                                    </p>
+                                    <p class="feedback__descr">
+                                        Мій син Антон займається танцями у клубі бального танцю "Діамант - Еліт" з п'яти років. Ми дуже<span class="dots">...</span><span id="more-feedback7" style="display:none;" class="comment-details dialog__box more-feedback__text">Мій син Антон займається танцями у клубі бального танцю "Діамант - Еліт" з п'яти років. Ми дуже задоволені, що потрапили в такий чудовий колектив професіоналів, які віддані своїй справі, люблять дітей і вчать їх так гарно танцювати. У клубі завжди панує дружня атмосфера. Окремо хочеться відмітити нашого тренера - Пушкіну Юлію Олександрівну. Ми дуже вдячні їй за вміння працювати з дітками, розкривати у них таланти. Вона добра і спокійна, водночас вимоглива і справедлива. Її тренування проходять цікаво і продуктивно. Вона вчить дітей долати труднощі, не зупинятися на досягнутому. Також Юля - прекрасний приклад для наслідування. Антон дуже пишається її досягненнаями в танцях і у всьому хоче бути схожим на неї. Бажаємо нашому улюбленному клубу подальшого розвитку і процвітання!</span><button data-fancybox data-src="#more-feedback7" class="read-more-btn-comment">Більше</button>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="comment-slider__slide swiper-slide">
+                            <div class="comment comment-slider__comment">
+                                <div class="feedback__photo">
+                                    <img width="122px" height="122px" data-src="img/feedback/user.webp" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="custom_pos-3 swiper-lazy" alt="Image">
+                                    <div class="swiper-lazy-preloader"></div>
+                                </div>
+                                <div class="feedback__text">
+                                    <p class="feedback__name">
+                                        Светлана Козий
+                                    </p>
+                                    <p class="feedback__stats">
+                                        Мама танцюриста
+                                    </p>
+                                    <p class="feedback__descr">
+                                        Антон, спасибо вам огромное за помощь в аттестации, спасибо за индивидуальные занятия - будем ждать<span class="dots">...</span><span id="more-feedback8" style="display:none;" class="comment-details dialog__box more-feedback__text">Антон, спасибо вам огромное за помощь в аттестации, спасибо за индивидуальные занятия - будем ждать хороших результатов!!! И отдельное спасибо клубу "Диамант - Элит" за идейность, за то что за руку нас ведёте к познанию в мире танцов, за то, что показываете все прелести этого прекрасно спорта. Спасибо! Идём дальше!</span><button data-fancybox data-src="#more-feedback8" class="read-more-btn-comment">Більше</button>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="comment-slider__slide swiper-slide">
+                            <div class="comment comment-slider__comment">
+                                <div class="feedback__photo">
+                                    <img width="122px" height="122px" data-src="img/feedback/user.webp" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="custom_pos-3 swiper-lazy" alt="Image">
+                                    <div class="swiper-lazy-preloader"></div>
+                                </div>
+                                <div class="feedback__text">
+                                    <p class="feedback__name">
+                                        Юлія Борисовець
+                                    </p>
+                                    <p class="feedback__stats">
+                                        Мама танцюристки
+                                    </p>
+                                    <p class="feedback__descr">
+                                        Доброго дня, хочу поділитися своїми враженнями про клуб спортивно-бального танцю "Діамант - Еліт". Моя<span class="dots">...</span><span id="more-feedback9" style="display:none;" class="comment-details dialog__box more-feedback__text">Доброго дня, хочу поділитися своїми враженнями про клуб спортивно-бального танцю "Діамант - Еліт". Моя донька займається в клубі вже сьомий рік. За ці роки в нас змінювалися тренери, але від кожного вона отримувала новий досвід. Всі тренери клубу дуже кваліфіковані і заняття в дітей проходять на дуже високому рівні. Діти з задоволенням ідуть на тренування, готуються до аттестацій і турнірів. На яких показують гарні результати. Два останні роки в нас тренер Левченко Антон Васильович - це тренер з великой букви. Має підхід до кожної дитини, завжди підтримує дітей на всіх турнірах. Тим більше, що турніри не завжди проходять в Києві. До того ж, ми віддали і молодшого сина в цей клуб. Діти ходять з задоволенням!!!!</span><button data-fancybox data-src="#more-feedback9" class="read-more-btn-comment">Більше</button>
                                     </p>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
                     <div class="swiper-pagination"></div>
                 </div>
             </div>
         </article>
-
+        
         <article class="form">
-            <div class="container form">
-                <form action="./send.php" method="POST">
-                    <input type="text" name="name">
-                    <input type="phone" name="tel">
-                    <button type="submit">Send</button>
+            <div class="container send">
+                <div class="form__title">Дякуємо!</div>
+                <div class="form__subtitle">Ми передзвонимо вам якнайшвидше</div>
+                <!-- <form action="./send.php" method="POST">
+                    <input type="text" name="name" placeholder="Ім'я">
+                    <input type="phone" name="tel" placeholder="Номер телефону">
+                    <button type="submit" class="button">Надіслати</button>
                 </form>
                 <div class="form__text">
-                    <h4>Маєте питання?</h4>
-                    <p>Ми передзвонимо та детально відповімо на усі ваші запитання</p>
-                </div>
+                    <h4 class="form__title">Зворотній зв'язок</h4>
+                    <p class="form__subtitle">Ми передзвонимо та детально відповімо на усі ваші запитання</p>
+                </div> -->
             </div>
         </article>
     </main>
@@ -1844,17 +2155,19 @@ $answer_obj = json_decode(file_get_contents(url . "sendmessage?text=" . $message
                 <nav class="footer">
                     <ul class="footer__menu">
                         <li class="main"><a href="#">Головна</a></li>
+                        <li class="footer__item"><a href="#advantages">Переваги</a></li>
                         <ul class="footer__menu__selector">
                             <li class="footer__item"><a href="#selector">Танцюристам та батькам</a></li>
                             <li class="footer__item"><a href="#selector">Організаторам заходів</a></li>
                             <li class="footer__item"><a href="#selector">Тренерам та хореографам</a></li>
                         </ul>
-                        <li class="footer__item"><a href="#staff">Наша команда</a></li>
+                        <li class="footer__item"><a href="#staff">Команда</a></li>
                         <li class="footer__item"><a href="#location">ЛокаціЇ</a></li>
+                        <li class="footer__item"><a href="#feedback">Відгуки</a></li>
                     </ul>
                 </nav>
                 <a href="/">
-                    <img src="icons/logo/Logo_2.svg" alt="logo" class="logo logo__footer"> 
+                    <img src="icons/logo/Logo_2.svg" alt="logo" class="logo logo__footer swiper-lazy"> 
                 </a>
             </div>
         </div>
