@@ -136,3 +136,20 @@ $('ul.footer__menu__selector').on('click', 'li:not(.selector__item_active)', fun
         .closest('body').find('li.selector__item').removeClass('selector__item_active').eq($(this).index()).addClass('selector__item_active');
 });
 //!=====Footer Selector Menu End=====
+// !=====Pages Gallery Start=====
+Fancybox.bind('[data-fancybox="gallery"]', {
+    Thumbs: {
+        Carousel: {
+        fill: false,
+        center: true,
+        },
+    },
+});
+// !=====Pages Gallery End=====
+// !=====Form Submit Start=====
+const form = document.getElementById('form');
+form.addEventListener('submit', (event) => {
+    event.preventDefault();
+    form.reset();
+})
+// !=====Form Submit End=====

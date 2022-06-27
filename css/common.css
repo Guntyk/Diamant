@@ -1,0 +1,1110 @@
+/* cyrillic-ext */
+@font-face {
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 100;
+font-display: swap;
+src: url(https://fonts.gstatic.com/s/montserrat/v24/JTUSjIg1_i6t8kCHKm459WRhyzbi.woff2) format('woff2');
+unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 100;
+font-display: swap;
+src: url(https://fonts.gstatic.com/s/montserrat/v24/JTUSjIg1_i6t8kCHKm459W1hyzbi.woff2) format('woff2');
+unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 100;
+font-display: swap;
+src: url(https://fonts.gstatic.com/s/montserrat/v24/JTUSjIg1_i6t8kCHKm459WZhyzbi.woff2) format('woff2');
+unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 100;
+font-display: swap;
+src: url(https://fonts.gstatic.com/s/montserrat/v24/JTUSjIg1_i6t8kCHKm459Wdhyzbi.woff2) format('woff2');
+unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 100;
+font-display: swap;
+src: url(https://fonts.gstatic.com/s/montserrat/v24/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2) format('woff2');
+unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 300;
+font-display: swap;
+src: url(https://fonts.gstatic.com/s/montserrat/v24/JTUSjIg1_i6t8kCHKm459WRhyzbi.woff2) format('woff2');
+unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 300;
+font-display: swap;
+src: url(https://fonts.gstatic.com/s/montserrat/v24/JTUSjIg1_i6t8kCHKm459W1hyzbi.woff2) format('woff2');
+unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 300;
+font-display: swap;
+src: url(https://fonts.gstatic.com/s/montserrat/v24/JTUSjIg1_i6t8kCHKm459WZhyzbi.woff2) format('woff2');
+unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 300;
+font-display: swap;
+src: url(https://fonts.gstatic.com/s/montserrat/v24/JTUSjIg1_i6t8kCHKm459Wdhyzbi.woff2) format('woff2');
+unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 300;
+font-display: swap;
+src: url(https://fonts.gstatic.com/s/montserrat/v24/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2) format('woff2');
+unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-display: swap;
+src: url(https://fonts.gstatic.com/s/montserrat/v24/JTUSjIg1_i6t8kCHKm459WRhyzbi.woff2) format('woff2');
+unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-display: swap;
+src: url(https://fonts.gstatic.com/s/montserrat/v24/JTUSjIg1_i6t8kCHKm459W1hyzbi.woff2) format('woff2');
+unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-display: swap;
+src: url(https://fonts.gstatic.com/s/montserrat/v24/JTUSjIg1_i6t8kCHKm459WZhyzbi.woff2) format('woff2');
+unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-display: swap;
+src: url(https://fonts.gstatic.com/s/montserrat/v24/JTUSjIg1_i6t8kCHKm459Wdhyzbi.woff2) format('woff2');
+unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-display: swap;
+src: url(https://fonts.gstatic.com/s/montserrat/v24/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2) format('woff2');
+unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-display: swap;
+src: url(https://fonts.gstatic.com/s/montserrat/v24/JTUSjIg1_i6t8kCHKm459WRhyzbi.woff2) format('woff2');
+unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-display: swap;
+src: url(https://fonts.gstatic.com/s/montserrat/v24/JTUSjIg1_i6t8kCHKm459W1hyzbi.woff2) format('woff2');
+unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-display: swap;
+src: url(https://fonts.gstatic.com/s/montserrat/v24/JTUSjIg1_i6t8kCHKm459WZhyzbi.woff2) format('woff2');
+unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-display: swap;
+src: url(https://fonts.gstatic.com/s/montserrat/v24/JTUSjIg1_i6t8kCHKm459Wdhyzbi.woff2) format('woff2');
+unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-display: swap;
+src: url(https://fonts.gstatic.com/s/montserrat/v24/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2) format('woff2');
+unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 600;
+font-display: swap;
+src: url(https://fonts.gstatic.com/s/montserrat/v24/JTUSjIg1_i6t8kCHKm459WRhyzbi.woff2) format('woff2');
+unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 600;
+font-display: swap;
+src: url(https://fonts.gstatic.com/s/montserrat/v24/JTUSjIg1_i6t8kCHKm459W1hyzbi.woff2) format('woff2');
+unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 600;
+font-display: swap;
+src: url(https://fonts.gstatic.com/s/montserrat/v24/JTUSjIg1_i6t8kCHKm459WZhyzbi.woff2) format('woff2');
+unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 600;
+font-display: swap;
+src: url(https://fonts.gstatic.com/s/montserrat/v24/JTUSjIg1_i6t8kCHKm459Wdhyzbi.woff2) format('woff2');
+unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 600;
+font-display: swap;
+src: url(https://fonts.gstatic.com/s/montserrat/v24/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2) format('woff2');
+unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-display: swap;
+src: url(https://fonts.gstatic.com/s/montserrat/v24/JTUSjIg1_i6t8kCHKm459WRhyzbi.woff2) format('woff2');
+unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-display: swap;
+src: url(https://fonts.gstatic.com/s/montserrat/v24/JTUSjIg1_i6t8kCHKm459W1hyzbi.woff2) format('woff2');
+unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-display: swap;
+src: url(https://fonts.gstatic.com/s/montserrat/v24/JTUSjIg1_i6t8kCHKm459WZhyzbi.woff2) format('woff2');
+unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-display: swap;
+src: url(https://fonts.gstatic.com/s/montserrat/v24/JTUSjIg1_i6t8kCHKm459Wdhyzbi.woff2) format('woff2');
+unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-display: swap;
+src: url(https://fonts.gstatic.com/s/montserrat/v24/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2) format('woff2');
+unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 800;
+font-display: swap;
+src: url(https://fonts.gstatic.com/s/montserrat/v24/JTUSjIg1_i6t8kCHKm459WRhyzbi.woff2) format('woff2');
+unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 800;
+font-display: swap;
+src: url(https://fonts.gstatic.com/s/montserrat/v24/JTUSjIg1_i6t8kCHKm459W1hyzbi.woff2) format('woff2');
+unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 800;
+font-display: swap;
+src: url(https://fonts.gstatic.com/s/montserrat/v24/JTUSjIg1_i6t8kCHKm459WZhyzbi.woff2) format('woff2');
+unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 800;
+font-display: swap;
+src: url(https://fonts.gstatic.com/s/montserrat/v24/JTUSjIg1_i6t8kCHKm459Wdhyzbi.woff2) format('woff2');
+unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 800;
+font-display: swap;
+src: url(https://fonts.gstatic.com/s/montserrat/v24/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2) format('woff2');
+unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 900;
+font-display: swap;
+src: url(https://fonts.gstatic.com/s/montserrat/v24/JTUSjIg1_i6t8kCHKm459WRhyzbi.woff2) format('woff2');
+unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 900;
+font-display: swap;
+src: url(https://fonts.gstatic.com/s/montserrat/v24/JTUSjIg1_i6t8kCHKm459W1hyzbi.woff2) format('woff2');
+unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 900;
+font-display: swap;
+src: url(https://fonts.gstatic.com/s/montserrat/v24/JTUSjIg1_i6t8kCHKm459WZhyzbi.woff2) format('woff2');
+unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 900;
+font-display: swap;
+src: url(https://fonts.gstatic.com/s/montserrat/v24/JTUSjIg1_i6t8kCHKm459Wdhyzbi.woff2) format('woff2');
+unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 900;
+font-display: swap;
+src: url(https://fonts.gstatic.com/s/montserrat/v24/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2) format('woff2');
+unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/*===============CSS RESET START=================*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/*===============CSS RESET END=================*/
+/*===============COMMON START=================*/
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Montserrat';
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    background-color: #fff;
+    --swiper-theme-color: #8e2de2;
+    /* cursor: url(icons/cursor-1.png), default; */
+}
+* {
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    display: inline-block;
+    color: inherit;
+}
+button,
+input,
+textarea {
+    font: inherit;
+}
+.container{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1320px;
+}
+.mb55 {
+    margin-bottom: 55px;
+}
+.dancer__item:last-child {
+    width: 1110px;
+    height: 300px;
+}
+.fancybox__content :focus:not(.carousel__button.is-close) {
+    outline: none;
+}
+/*===============COMMON END=================*/
+/*===============HEADER START=================*/
+
+/*===============HEADER END=================*/
+/*===============PROMO START=================*/
+
+/*===============PROMO END=================*/
+/*===============ABOUT START=================*/
+
+/*===============ABOUT END=================*/
+/*Desktop first!*/
+/* `xxl` applies to xx-large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) { 
+    .container{
+        max-width: 1140px;
+    }
+    .trainer {
+        width: 90%;
+    }
+}
+/* `xl` applies to e-large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) { 
+    .container{
+        max-width: 960px;
+    }
+    .staff-slider,
+    .comment-slider {
+        width: 800px;
+    }
+    .staff-slider {
+        padding: 30px 0;
+    }
+    .swiper-button-prev,
+    .swiper-button-next {
+        visibility: hidden;
+    }
+    .card {
+        margin-right: 10px;
+    }
+    .card__name {
+        text-align: center;
+    }
+    .card__descr {
+        margin: 3px 10px;
+    }
+    .selector {
+        max-width: 1199px;
+        font-size: 15px;
+    }
+    .dancer__item:last-child {
+        margin: 15px 0;
+        width: 540px;
+    }
+    .organizator__wrapper {
+        width: 900px;
+    }
+    .organizator__title {
+        font-size: 35px;
+        line-height: 40px;
+    }
+    .organizator__card {
+        width: 430px;
+    }
+    .gallery-photo {
+        width: 430px;
+    }
+    .trainer>.wrapper>img {
+        width: 600px;
+    }
+    .trainer__wrapper {
+        margin-left: 50px;
+    }
+    .trainer__title {
+        font-size: 45px;
+        line-height: 55px;
+    }
+    .location iframe{
+        width: 600px;
+    }
+    .advantages__wrapper:last-child {
+        margin-left: 30px;
+    }
+    .advantages__text:first-child {
+        width: 120px;
+    }
+    .advantages__text>span {
+        margin-left: 0px;
+    }
+}
+/* `lg` applies to large devices (tablets, less than 992px) */
+@media (max-width: 991.98px) { 
+    .container{
+        max-width: 720px;
+    }
+    .staff-slider,
+    .comment-slider {
+        width: 300px;
+    }
+    .staff-slider {
+        padding: 30px;
+    }
+    .swiper-button-prev,
+    .swiper-button-next {
+        visibility: hidden;
+    }
+    .swiper-pagination {
+        visibility: visible;
+    }
+    .header__calls {
+        width: 230px;
+    }
+    .header__wrapper>li {
+        margin-left: 25px;
+    }
+    .promo img {
+        width: 310px;
+        height: auto;
+    }
+    .promo__wrapper {
+        margin-right: 50px;
+    }
+    .promo__title {
+        font-size: 30px;
+        line-height: 39px;
+    }
+    .promo__subtitle {
+        font-size: 16px;
+        line-height: 21px;
+    }
+    .advantages {
+        padding: 40px 0;
+    }
+    .advantages__wrapper:first-child {
+        min-width: 200px;
+    }
+    .advantages__wrapper:last-child {
+        margin-left: 40px;
+    }
+    .advantages__title {
+        margin-bottom: 30px;
+        font-size: 30px;
+    }
+    .advantages__text {
+        font-size: 16px;
+    }
+    .advantages__text>span {
+        font-size: 25px;
+        line-height: 24px;
+    }
+    .advantages__mark {
+        margin-bottom: 20px;
+    }
+    .advantages__mark>h5 {
+        margin-bottom: 0;
+        font-size: 20px;
+    }
+    .advantages__addition {
+        font-size: 16px;
+    }
+    .button {
+        width: 250px;
+        font-size: 17px;
+    }
+    .selector {
+        padding: 50px 0 25px 0;
+        font-size: 16px;
+        text-align: center;
+    }
+    .organizator {
+        width: 100%;
+    }
+    .organizator__card {
+        justify-content: center;
+    }
+    .organizator__wrapper {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .organizator__title {
+        padding: 50px 0;
+    }
+    .organizator__content {
+        width: 100%;
+    }
+    .organizator__card,
+    .gallery-photo {
+        width: 350px;
+    }
+    .trainer>.wrapper>img {
+        width: 400px;
+    }
+    .trainer__title {
+        font-size: 35px;
+        line-height: 39px;
+    }
+    .trainer__subtitle {
+        font-size: 16px;
+        line-height: 21px;
+    }
+    .location {
+        padding-top: 40px;
+        flex-wrap: wrap;
+    }
+    .location__wrapper {
+        margin: 0 auto 30px auto;
+        text-align: center;
+    }
+    .location iframe {
+        margin: 0 auto;
+    }
+    .location__list {
+        list-style-type: none;
+        margin-left: 0;
+    }
+    .feedback .comment {
+        flex-direction: column;
+        width: 250px;
+        min-height: 396px;
+    }
+    .feedback__text {
+        margin: 0 0 20px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .feedback__name {
+        font-size: 18px;
+    }
+    .feedback__descr {
+        margin: 10px 0;
+        padding: 0 15px;
+        width: 230px;
+        font-size: 16px;
+    }
+    .form {
+        padding-top: 50px;
+    }
+    .send {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .form__text {
+        margin: 0 0 24px 0;
+        text-align: center;
+    }
+    .form__subtitle {
+        margin-top: 10px;
+    }
+    form {
+        align-items: center;
+    }
+    .footer__logo {
+        height: auto;
+        width: 421px;
+    }
+}
+/*=====================================1============================================*/
+/* `md` applies to medium devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) { 
+    .container{
+        max-width: 540px;
+    }
+    .staff-slider {
+        width: 300px;
+    }
+    .staff-slider {
+        padding: 30px;
+    }
+    .swiper-button-prev,
+    .swiper-button-next {
+        visibility: hidden;
+    }
+    .swiper-pagination {
+        visibility: visible;
+    }
+    .promo img {
+        width: 250px;
+        height: auto;
+    }
+    .promo__wrapper {
+        top: 135px;
+        width: 250px;
+        margin: 50px 50px 0 0;
+    }
+    .promo__title {
+        font-size: 25px;
+        line-height: 29px;
+    }
+    .promo__subtitle {
+        font-size: 16px;
+        line-height: 17px;
+    }
+    .button {
+        height: 42px;
+        width: 200px;
+        font-size: 13px;
+    }
+    .button>.phone,
+    .button>.down {
+        width: 15px;
+        height: 15px;
+    }
+    .button>.phone {
+        transform: translateY(0) translateX(-23px)
+    }
+    .button>.down {
+        transform: translateY(0) translateX(7px)
+    }
+    .selector {
+        max-width: 767px;
+        font-size: 13px;
+    }
+    .dancer__item:last-child {
+        width: 510px;
+        height: 300px;
+    }
+    .staff {
+        margin-bottom: 100px;
+    }
+    .staff__title {
+        margin-top: 100px;
+    }
+    .organizator__card {
+        width: 100%;
+    }
+    .trainer img {
+        width: 250px;
+    }
+    .trainer__title {
+        font-size: 25px;
+        line-height: 29px;
+    }
+    .trainer__subtitle {
+        font-size: 16px;
+        line-height: 17px;
+    }
+    .location {
+        flex-wrap: wrap;
+    }
+    .location__wrapper {
+        margin: 0 auto 30px auto;
+        text-align: center;
+    }
+    .footer__logo{
+        height: auto;
+        width: 300px;
+    }
+    .footer__menu>li {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .footer__menu__selector>li{
+        font-size: 16px;
+        line-height: 20px;
+    }
+}
+/*====================================2=============================================*/
+/* `sm` applies to small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .container{
+        max-width: 100%;
+        padding: 0 15px;
+        margin: 0 auto;
+    }
+    /* Sliders */
+    .staff-slider {
+        width: 300px;
+    }
+    .comment-slider {
+        width: 250px;
+    }
+    .staff-slider {
+        padding: 30px;
+    }
+    .swiper-button-prev,
+    .swiper-button-next {
+        visibility: hidden;
+    }
+    .swiper-pagination {
+        visibility: visible;
+    }
+    .comment>img {
+        padding-top: 20px;
+        width: 100px
+    }
+    .feedback .comment {
+        flex-direction: column;
+        width: 200px;
+        min-height: 350px;
+    }
+    .feedback__text {
+        text-align: center;
+    }
+    .feedback__name {
+        font-size: 18px;
+    }
+    .feedback__descr {
+        margin: 10px 0;
+        padding: 0 15px;
+        font-size: 16px;
+    }
+    /* Header */
+    .header__row>a>img {
+        width: 200px;
+        height: 60px;
+        margin: 5px 0;
+    }
+    .desktop {
+        display: none;
+    }
+    .mobile {
+        display: block;
+    }
+    .header__calls {
+        display: none;
+    }
+    .header {
+        width: 100%;
+    }
+    /* Promo */
+    .promo {
+        margin: 0 auto;
+        padding-top: 30px;
+    }
+    .promo img {
+        width: 100%;
+        height: auto;
+    }
+    .promo__wrapper {
+        width: 383px;
+        height: auto;
+        text-align: center;
+        margin: 0 auto 30px auto;
+    }
+    .align {
+        flex-wrap: wrap;
+    }
+    .promo__title {
+        font-size: 30px;
+        line-height: 29px;
+    }
+    .promo__subtitle {
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .button__mt30 {
+        margin-top: 23px;
+    }
+    /* Diamonds */
+    .advantages__row {
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+    }
+    .advantages__wrapper:last-child {
+        margin: 0 0 30px 0;
+    }
+    .advantages__text:first-child {
+        width: auto;
+    }
+    /* Selector */
+    .selector{
+        max-width: 575px;
+        font-size: 14px;
+    }
+    .selector:first-child{
+        padding: 0 28px 0 8px;
+        border-left: none;
+    }
+    .selector:nth-child(2){
+        padding: 0 28px 0 28px;
+    }
+    .selector:last-child{
+        padding: 0 0 0 28px;
+        border-right: none;
+    }
+    /* Dancers */
+    .dancer h2 {
+        position: absolute;
+        bottom: 17px;
+        left: 10px;
+    }
+    .dancer__content {
+        padding-top: 20px;
+    }
+    .dancer__item {
+        margin: 4px;
+        width: 141px;
+        height: 141px;
+        border-radius: 18px;
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .dancer__item:last-child {
+        margin: 4px;
+        width: 290px;
+        height: 141px;
+    }
+    .organizator__title {
+        padding: 0 0 20px 0;
+        font-size: 30px;
+    }
+    .organizator__subtitle {
+        font-size: 20px;
+    }
+    .organizator__reasons>ul>li {
+        margin-bottom: 5px;
+        font-size: 16px;
+    }
+    .organizator__content {
+        flex-direction: column;
+    }
+    .organizator__card {
+        width: 100%;
+    }
+    .gallery-photo {
+        width: 100%;
+    }
+    .trainer {
+        width: 100%;
+        padding-bottom: 30px;
+    }
+    .trainer>.wrapper {
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+    .trainer__wrapper {
+        text-align: center;
+        margin-left: 0;
+    }
+    .trainer__title {
+        margin-top: 30px;
+        font-size: 25px;
+        line-height: 29px;
+    }
+    .trainer__subtitle {
+        font-size: 16px;
+        line-height: 17px;
+    }
+    .trainer>.wrapper>img {
+        width: 100%;
+    }
+    .staff {
+        padding: 0;
+        margin: 30px 0;
+    }
+    .staff__title {
+        margin: 0;
+        font-size: 30px;
+    }
+    .location {
+        flex-wrap: wrap;
+    }
+    .location__title {
+        font-size: 30px;
+    }
+    .location__list {
+        margin-top: 5px;
+    }
+    .location__wrapper {
+        margin: 0 auto 30px auto;
+        text-align: center;
+    }
+    .feedback>.container>.swiper {
+        width: 100%;
+    }
+    .feedback {
+        padding: 50px 0;
+    }
+    .feedback__title {
+        font-size: 30px;
+    }
+    .feedback__text {
+        width: 100%;
+    }
+    .feedback__stats {
+        margin: 0;
+    }
+    .feedback__descr {
+        width: 100%;
+        padding: 0 10px;
+        margin-top: 5px;
+        font-size: 14px;
+    }
+    .feedback .comment {
+        justify-content: flex-start;
+        padding: 0;
+        height: auto;
+        width: 280px;
+    }
+    .more-feedback__text {
+        max-width: 100%;
+    }
+    form {
+        max-width: 300px;
+    }
+    .form__text {
+        width: 100%;
+    }
+    .form__title {
+        font-size: 30px;
+    }
+    .form__subtitle {
+        margin-top: 0;
+        font-size: 18px;
+    }
+    form>input {
+        max-width: 290px;
+        border-radius: 18px;
+    }
+    footer .wrapper {
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+    }
+    .logo__footer {
+        width: 370px;
+    }
+    .footer ul {
+        text-align: center;
+    }
+    aside {
+        padding-top: 7.5px;
+    }
+    aside .none {
+        display: none;
+    }
+}
+/* `xsm` applies to x-small devices (old mini phones like iPhone 5/5s/SE, equals to 320px) */
+@media (max-width: 320px) { 
+    /*without styles for container*/
+    .selector {
+        font-size: 12px;
+    }
+    .dancer__item {
+        width: 100%;
+    }
+    .organizator__card>a>img {
+        width: 300px;
+    }
+    .organizator__address {
+        margin-bottom: 20px;
+        line-height: 20px;
+    }
+    .feedback .comment {
+        width: 240px;
+        height: auto;
+    }
+    .form__text {
+        width: 100%;
+    }
+    .form__title {
+        line-height: 35px;
+    }
+    .form__subtitle {
+        margin-top: 15px;
+    }
+    .logo__footer {
+        margin: -30px 0;
+        width: 300px;
+    }
+}
