@@ -706,7 +706,7 @@ textarea {
 /* `md` applies to medium devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) { 
     .container{
-        max-width: 540px;
+        max-width: 500px;
     }
     .staff-slider {
         width: 300px;
@@ -800,6 +800,22 @@ textarea {
     .footer__menu__selector>li{
         font-size: 16px;
         line-height: 20px;
+    }
+    footer .wrapper {
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+    }
+    .logo__footer {
+        width: 370px;
+    }
+    .footer ul {
+        text-align: center;
+    }
+    aside {
+        padding-top: 7.5px;
+    }
+    aside .none {
+        display: none;
     }
 }
 /*====================================2=============================================*/
@@ -1056,22 +1072,6 @@ textarea {
     form>input {
         max-width: 290px;
         border-radius: 18px;
-    }
-    footer .wrapper {
-        flex-wrap: wrap-reverse;
-        justify-content: center;
-    }
-    .logo__footer {
-        width: 370px;
-    }
-    .footer ul {
-        text-align: center;
-    }
-    aside {
-        padding-top: 7.5px;
-    }
-    aside .none {
-        display: none;
     }
 }
 /* `xsm` applies to x-small devices (old mini phones like iPhone 5/5s/SE, equals to 320px) */
