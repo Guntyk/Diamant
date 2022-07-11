@@ -47,5 +47,19 @@
         li
             list-style-type: none
             margin-left: 40px
-            &::before
-                content: url(../icons/phone.svg)
+            &:nth-child(1)
+                &::before       
+                    content: url(../icons/phone.svg)
+            &:nth-child(2)
+                position: relative
+                margin-left: 24%
+                &::before
+                    position: absolute
+                    top: 12px
+                    left: -10px
+                    content: url(../icons/telegram.svg)
+                &::after
+                    position: absolute
+                    top: 12px
+                    left: -35px
+                    content: url(../icons/viber.svg)
