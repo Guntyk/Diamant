@@ -37,8 +37,21 @@
             &:hover
                 text-decoration: underline
         li
-            &::before
+            &::before       
                 content: url(../icons/phone.svg)
+            &:nth-child(1)
+                position: relative
+                margin-left: 15%
+                &::before
+                    position: absolute
+                    top: 12px
+                    left: -13px
+                    content: url(../icons/telegram.svg)
+                &::after
+                    position: absolute
+                    top: 12px
+                    left: -38px
+                    content: url(../icons/viber.svg)
 .desktop:focus
     transform: scale(1.03)
 .dialog__box
