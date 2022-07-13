@@ -39,24 +39,30 @@
         li
             &::before       
                 content: url(../icons/phone.svg)
-            &:nth-child(1)
+            &:first-child
                 position: relative
-                margin: 0 0 10px 17%
+                margin-left: 18%
                 font-size: 17px
                 &::before
                     position: absolute
-                    top: 0px
-                    left: -25px
+                    top: 13px
+                    left: -40px
                     content: url(../icons/telegram.svg)
                 &::after
                     position: absolute
-                    top: 0px
-                    left: -50px
+                    top: 13px
+                    left: -63px
                     content: url(../icons/viber.svg)
+        .mixed
+            position: absolute
+            top: 16px
+            left: -12px
+            content: url(../icons/phone.svg)
+
 .desktop:focus
     transform: scale(1.03)
 .dialog__box
-    padding: 30px
+    padding: 30px 50px
     border-radius: 18px
 .more-feedback__text
     max-width: 500px
@@ -88,3 +94,7 @@
     outline: none
     color: #333c
     cursor: pointer
+
+.fancybox__content :focus:not(.carousel__button.is-close)
+    outline: none
+    box-shadow: none
