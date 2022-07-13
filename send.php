@@ -1153,9 +1153,9 @@ $answer_obj = json_decode(file_get_contents(url . "sendmessage?text=" . $message
                 </button>
                 <div class="header__calls">
                     <ul class="header__wrapper">
+                        <li><a href="#" class="phone">+380732029988</a></li>
                         <li><a href="tel:+380505229988" class="phone">+380505229988</a></li>
                         <li><a href="tel:+380680229988" class="phone">+380680229988</a></li>
-                        <li><a href="tel:+380732029988" class="phone">+380732029988</a></li>
                     </ul> 
                 </div>
                 <button data-fancybox data-src="#dialog-content" class="mobile">
@@ -1169,9 +1169,9 @@ $answer_obj = json_decode(file_get_contents(url . "sendmessage?text=" . $message
         <article class="dialog">
             <div id="dialog-content" style="display:none;" class="dialog__box">
                 <ul class="button__wrapper">
+                    <li><a href="tel:+380732029988" class="phone"><span class="mixed"></span>+380732029988</a></li>
                     <li><a href="tel:+380505229988" class="phone">+380505229988</a></li>
                     <li><a href="tel:+380680229988" class="phone">+380680229988</a></li>
-                    <li><a href="tel:+380732029988" class="phone">+380732029988</a></li>
                 </ul> 
             </div>
         </article>
@@ -1218,7 +1218,7 @@ $answer_obj = json_decode(file_get_contents(url . "sendmessage?text=" . $message
                         </div>
                         <div class="advantages__mark">
                             <h5>Виховання</h5>
-                            <p class="advantages__text">Нашою метою являється – не лише навчити правильно рухатись, а дотикнутись до виховання багатогранної душі в особистості.</p>
+                            <p class="advantages__text">Наша мета – не лише навчити правильно рухатись, а й доторкнутись до виховання багатогранної душі в особистості.</p>
                         </div>
                         <div class="advantages__mark">
                             <h5>Індивідуальний підхід</h5>
@@ -1243,36 +1243,36 @@ $answer_obj = json_decode(file_get_contents(url . "sendmessage?text=" . $message
             <div class="container">
                 <section class="block__content block__content_active dancer">
                     <div class="dancer__content">
-                        <div class="dancer__item">
+                        <a href="#" class="dancer__item">
                             <h2>
                                 Бальні танці<br>для дітей
                             </h2>
                             <!-- <img src="icons/arrows/arrow_small.svg" alt="arrow" class="dancer__arrow"> -->
-                        </div>
-                        <div class="dancer__item">
+                        </a>
+                        <a href="#" class="dancer__item">
                             <h2>
                                 Онлайн навчання
                             </h2>
                             <!-- <img src="icons/arrows/arrow_small.svg" alt="arrow" class="dancer__arrow"> -->
-                        </div>
-                        <div class="dancer__item">
+                        </a>
+                        <a href="#" class="dancer__item">
                             <h2>
                                 Pro-Am для<br>дітей
                             </h2>
                             <!-- <img src="icons/arrows/arrow_small.svg" alt="arrow" class="dancer__arrow"> -->
-                        </div>
-                        <div class="dancer__item">
+                        </a>
+                        <a href="#" class="dancer__item">
                             <h2>
                                 Pro-Am для<br>дорослих
                             </h2>
                             <!-- <img src="icons/arrows/arrow_small.svg" alt="arrow" class="dancer__arrow"> -->
-                        </div>
-                        <div class="dancer__item">
+                        </a>
+                        <a href="#" class="dancer__item">
                             <h2>
                                 Спортивні бальні танці
                             </h2>
                             <!-- <img src="icons/arrows/arrow_big.svg" alt="arrow" class="dancer__arrow dancer__arrow_big"> -->
-                        </div>
+                        </a>
                     </div>
                 </section>
                 <section class="block__content organizator">
@@ -1312,7 +1312,7 @@ $answer_obj = json_decode(file_get_contents(url . "sendmessage?text=" . $message
                                 <div class="organizator__info">
                                     <div class="organizator__info_wrapper">
                                         <p class="organizator__address">
-                                            Просторий зал, поряд ст. метро «Либідська»
+                                            Простора зала, поряд ст. метро «Либідська»
                                         </p>
                                         <a href="https://goo.gl/maps/ykHk92aBg5vsnDkF7" target="_blank" rel="nofollow noopener noreferrer" class="organizator__address href">
                                             (вул. Залізничне шосе, 3)
@@ -1322,11 +1322,11 @@ $answer_obj = json_decode(file_get_contents(url . "sendmessage?text=" . $message
                                 </div>
                                 <div class="details">
                                     <span class="details-content">
-                                        <p>Зал №1 — 168 м²</p>
-                                        <p>Зал №2 — 72 м²</p>
-                                        <p>Зал №3 — 36 м²</p>
-                                        <p>Зал №4 - 17 м²</p>
-                                        <p>Роздягальні, туалети, кофейня, лаунж-зона, WI-FI</p>
+                                        <p>Зала №1 — 168 м²</p>
+                                        <p>Зала №2 — 72 м²</p>
+                                        <p>Зала №3 — 36 м²</p>
+                                        <p>Зала №4 — 17 м²</p>
+                                        <p>Роздягальні, туалети, кофейня, лаунж-зона, Wi-Fi</p>
                                     </span>
                                 </div>
                             </div>
@@ -1355,7 +1355,7 @@ $answer_obj = json_decode(file_get_contents(url . "sendmessage?text=" . $message
                                 <div class="organizator__info">
                                     <div class="organizator__info_wrapper">
                                         <p class="organizator__address">
-                                            Великий та світлий зал, поряд ст. метро «Позняки»
+                                            Велика та світла зала, поряд ст. метро «Позняки»
                                         </p>
                                         <a href="https://goo.gl/maps/wtovPVVdX8m9jffa6" target="_blank" rel="nofollow noopener noreferrer" class="organizator__address href">
                                             (вул. Лариси Руденко, 6а)
@@ -1365,9 +1365,9 @@ $answer_obj = json_decode(file_get_contents(url . "sendmessage?text=" . $message
                                 </div>
                                 <div class="details1">
                                     <span class="details-content">
-                                        <p>Зал №1 – 90 м²</p>
-                                        <p>Зал №2 – 45 м²</p>
-                                        <p>Зал №3 – 45 м²</p>
+                                        <p>Зала №1 – 90 м²</p>
+                                        <p>Зала №2 – 45 м²</p>
+                                        <p>Зала №3 – 45 м²</p>
                                         <p>Роздягальні, туалети, душова, лаунж-зона, Wi-Fi</p>
                                     </span>
                                 </div>
@@ -1490,7 +1490,7 @@ $answer_obj = json_decode(file_get_contents(url . "sendmessage?text=" . $message
                                 </div>
                                 <div class="card__face card__face--back">
                                     <p class="card__descr">
-                                        Вища педагогічна освіта з бальної хореографії. Стаж роботи 12 років. Досвід викладання в групах різних вікових категорій, від дітей до дорослих. Суддя 1-ї категорії. Працює в системі Pro-Am.
+                                        Вища педагогічна освіта з бальної хореографії. Стаж роботи 12 років. Досвід викладання в групах різних вікових категорій, від дітей до дорослих. Суддя 1-ї категорії. Працюю в системі Pro-Am.
                                     </p>
                                     <button class="descr-btn">Назад</button>
                                 </div>
@@ -1731,7 +1731,7 @@ $answer_obj = json_decode(file_get_contents(url . "sendmessage?text=" . $message
                                 </div>
                                 <div class="card__face card__face--back">
                                     <p class="card__descr">
-                                        Вища педагогічна освіта, суддівська категорія. Досвід роботи 8 років. Може викладати українською та англійською мовами.
+                                        Вища педагогічна освіта, суддівська категорія. Досвід роботи 8 років. Можу викладати українською та англійською мовами.
                                     </p>
                                     <button class="descr-btn">Назад</button>
                                 </div>
@@ -1831,6 +1831,13 @@ $answer_obj = json_decode(file_get_contents(url . "sendmessage?text=" . $message
                                     <div class="social__wrapper">
                                         <a target="_blank" href="//www.instagram.com/astrukov961/" class="social"><img class="social" src="icons/social/instagram_white.svg" alt="instagram"></a>
                                     </div>
+                                    <button class="descr-btn">Детальніше</button>
+                                </div>
+                                <div class="card__face card__face--back">
+                                    <p class="card__descr">
+                                        З радістю зустрічаю кожного клієнта! Турбуюсь про гарний настрій, бо це важлива складова творчого процесу. Відповідальний за підготовку до тренувань та заходів у нашому клубі.
+                                    </p>
+                                    <button class="descr-btn">Назад</button>
                                 </div>
                             </div>
                         </div>                   
@@ -1877,6 +1884,7 @@ $answer_obj = json_decode(file_get_contents(url . "sendmessage?text=" . $message
                     <ul class="location__list">
                         <li class="location__mark location__mark_active">Студія "Либідська"</li>
                         <li class="location__mark">Студія "Позняки"</li>
+                        <li class="location__mark">Філія "Чайки"</li>
                         <li class="location__mark">Філія "Гора"</li>
                         <li class="location__mark">Філія "Вишеньки"</li>
                         <li class="location__mark">Філія "Щасливе"</li>
@@ -1887,17 +1895,19 @@ $answer_obj = json_decode(file_get_contents(url . "sendmessage?text=" . $message
                     </button>
                 </section>
                 <!-- Лыбедская -->
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d635.6877577831542!2d30.52615609019995!3d50.40847735984789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf380966fba5%3A0x8c5a1608e8e18a44!2sKlub%20Bal%CA%B9noho%20Tantsyu%20%22Diamant-Elit%22!5e0!3m2!1sru!2sus!4v1650437610926!5m2!1sru!2sus" width="700" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="location__map location__map_active" title="вулиця Залізничне шосе 3"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d635.6877577831542!2d30.52615609019995!3d50.40847735984789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf380966fba5%3A0x8c5a1608e8e18a44!2sKlub%20Bal%CA%B9noho%20Tantsyu%20%22Diamant-Elit%22!5e0!3m2!1sru!2sus!4v1650437610926!5m2!1sru!2sus" width="700" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="location__map location__map_active" title="м. Київ, вулиця Залізничне шосе 3"></iframe>
                 <!-- Позняки -->
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2543.465523782726!2d30.638815315894522!3d50.395161299228015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4c44e12c44087%3A0xce3b1e336f3b21d5!2z0JTQuNCw0LzQsNC90YIg0K3Qu9C40YIuINCa0LvRg9CxINCx0LDQu9GM0L3Ri9GFINGC0LDQvdGG0LXQsg!5e0!3m2!1sru!2sua!4v1652382824581!5m2!1sru!2sua" width="700" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="location__map" title="вулиця Лариси Руденко 6а"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2543.465523782726!2d30.638815315894522!3d50.395161299228015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4c44e12c44087%3A0xce3b1e336f3b21d5!2z0JTQuNCw0LzQsNC90YIg0K3Qu9C40YIuINCa0LvRg9CxINCx0LDQu9GM0L3Ri9GFINGC0LDQvdGG0LXQsg!5e0!3m2!1sru!2sua!4v1652382824581!5m2!1sru!2sua" width="700" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="location__map" title="м. Київ, вулиця Лариси Руденко 6а"></iframe>
+                <!-- Чайки -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d158.8029017521036!2d30.280100583376196!3d50.44396111422749!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x472b34b7d5157127%3A0xcc8a878f0e580593!2z0JrQu9GD0LEg0LHQsNC70YzQvdC-0LPQviDRgtCw0L3RhtCwICLQlNC40LDQvNCw0L3Rgi3QrdC70LjRgiI!5e0!3m2!1sru!2sua!4v1654446633163!5m2!1sru!2sua" width="700" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="location__map" title="м. Київ, вулиця Бударіна 3б"></iframe>
                 <!-- Гора -->
-                <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d346.8590452998959!2d30.862527128282203!3d50.37458544977905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x81ff271e56037615!2sKlub%20Bal%CA%B9noho%20Tantsyu%20%22Diamant-Elit%22!5e0!3m2!1sru!2sua!4v1652352034939!5m2!1sru!2sua" width="700" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="location__map"></iframe> -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12105.078769772308!2d30.85122193235847!3d50.37066898299214!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4e81726caba3b%3A0x66b45554e1431670!2z0JPQvtGA0LAsINCa0LjQtdCy0YHQutCw0Y8g0L7QsdC70LDRgdGC0YwsIDA4MzI0!5e0!3m2!1sru!2sua!4v1654445179007!5m2!1sru!2sua" width="700" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="location__map" title="Гора"></iframe>
                 <!-- Вишенки -->
-                <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d637.092650401863!2d30.713897590120407!3d50.303675683441206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4c177c8bc3a87%3A0x98c487bfe60354a9!2z0JrQu9GD0LEg0LHQsNC70YzQvdC-0LPQviDRgtCw0L3RhtCwINCU0LjQsNC80LDQvdGCLdCV0LvQuNGC!5e0!3m2!1sru!2sua!4v1652382754990!5m2!1sru!2sua" width="700" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="location__map"></iframe> -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57667.94278398324!2d30.691829774329612!3d50.29963516848422!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4c1d018b6c3dd%3A0xdbf160769dcb9490!2z0JLQuNGI0LXQvdC60LgsINCa0LjQtdCy0YHQutCw0Y8g0L7QsdC70LDRgdGC0Yw!5e0!3m2!1sru!2sua!4v1654445404291!5m2!1sru!2sua" width="700" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="location__map" title="Вишеньки"></iframe>
                 <!-- Счастливое -->
-                <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1272.1596788470433!2d30.7964028572514!3d50.37924496434345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4c2eeb2fc0001%3A0x2ab3bdb4b081697!2sKlub%20Bal%CA%B9noho%20Tantsyu%20%22Diamant-Elit%22!5e0!3m2!1sru!2sua!4v1652383537518!5m2!1sru!2sua" width="700" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="location__map"></iframe> -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20358.189068042087!2d30.77879484054117!3d50.37077530799938!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4c2ef744dab69%3A0x5553cebb83b0f48e!2z0KHRh9Cw0YHRgtC70LjQstC-0LUsINCa0LjQtdCy0YHQutCw0Y8g0L7QsdC70LDRgdGC0Yw!5e0!3m2!1sru!2sua!4v1654445362066!5m2!1sru!2sua" width="700" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="location__map" title="Щасливе"></iframe>
                 <!-- Ревное -->
-                <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4165.147632223963!2d30.834275472337662!3d50.28853143766903!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4eb185db15ac3%3A0x5f48f16973fa9517!2sRevnivs%CA%B9ka%20Zahal%CA%B9noosvitnya%20Shkola%20I-Iii%20Stupeniv!5e0!3m2!1sru!2sua!4v1652352010524!5m2!1sru!2sua" width="700" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="location__map"></iframe> -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10196.762746511347!2d30.822819394960767!3d50.28836828111247!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ebc630b1d0a3%3A0xa4cb66cb27e4aafa!2z0KDQtdCy0L3QvtC1LCDQmtC40LXQstGB0LrQsNGPINC-0LHQu9Cw0YHRgtGM!5e0!3m2!1sru!2sua!4v1654445317801!5m2!1sru!2sua" width="700" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="location__map" title="Ревне"></iframe>
             </div>
         </article>
         
@@ -1941,7 +1951,7 @@ $answer_obj = json_decode(file_get_contents(url . "sendmessage?text=" . $message
                                         Tацюрист
                                     </p>
                                     <p class="feedback__descr">
-                                        Все дуже чудово, тренера найкращі у світі!  На кожному тренуванні я отримую багато нових емоцій! Дуже дякую!
+                                        Все дуже чудово, тренери найкращі у світі!  На кожному тренуванні я отримую багато нових емоцій! Дуже дякую!
                                     </p>
                                 </div>
                             </div>
@@ -1960,7 +1970,7 @@ $answer_obj = json_decode(file_get_contents(url . "sendmessage?text=" . $message
                                         Мама тацюристки
                                     </p>
                                     <p class="feedback__descr">
-                                        Наш танцевальный мир начался для моей дочери четыре года назад в Клубе бального танца «Диамант-Элит».<span class="dots">..</span><span id="more-feedback1" style="display:none;" class="comment-details dialog__box more-feedback__text">Наш танцевальный мир начался для моей дочери четыре года назад в Клубе бального танца «Диамант-Элит». За это время, однозначно скажу, танцы это здорово, это дисциплина, это красивая осанка, фигура, умение подать себя, развивается координация и хороший вкус. Отдельно, хочется выделить наш тренерский состав, который, не покладая сил, вдохновляет наших детей и шаг за шагом погружает в этот прекрасный мир танца. Пушкина Юлия Александровна, Евтеев Андрей Сергеевич большие профессионалы своего дела, всегда на позитиве, очень душевные, в тоже время, настойчивы и терпеливы. Пусть наши дети растут уверенными в себе, спортивными и здоровыми. Красивый спорт, который останется с Вами на всю жизнь!</span><button data-fancybox data-src="#more-feedback1" class="read-more-btn-comment">Більше</button>
+                                        Наш танцевальный мир начался для моей дочери четыре года назад в Клубе бального танца «Диамант-Элит».<span class="dots">..</span><span id="more-feedback1" style="display:none;" class="comment-details dialog__box more-feedback__text">Наш танцевальный мир начался для моей дочери четыре года назад в Клубе бального танца «Диамант-Элит». За это время, однозначно скажу, танцы это здорово, это дисциплина, это красивая осанка, фигура, умение подать себя, развивается координация и хороший вкус. Отдельно, хочется выделить наш тренерский состав, который, не покладая сил, вдохновляет наших детей и шаг за шагом погружает в этот прекрасный мир танца. Пушкина Юлия Александровна, Евтеев Андрей Сергеевич большие профессионалы своего дела, всегда на позитиве, очень душевные, в то же время, настойчивы и терпеливы. Пусть наши дети растут уверенными в себе, спортивными и здоровыми. Красивый спорт, который останется с Вами на всю жизнь!</span><button data-fancybox data-src="#more-feedback1" class="read-more-btn-comment">Більше</button>
                                     </p>
                                 </div>
                             </div>
@@ -1979,7 +1989,7 @@ $answer_obj = json_decode(file_get_contents(url . "sendmessage?text=" . $message
                                         Мама танцюристів
                                     </p>
                                     <p class="feedback__descr">
-                                        Хочу подякувати за дуже нелегку роботу, яку тренери клубу спортивного бального танцю «Діамант-Еліт»<span class="dots">...</span><span id="more-feedback2" style="display:none;" class="comment-details dialog__box more-feedback__text">Хочу подякувати за дуже нелегку роботу, яку тренери клубу спортивного бального танцю «Діамант-Еліт» Ірина Терновенко і Владислав Кравець виконують щоденно. В клубі мої діти займаються вже дев’ятий та третій рік. За цей період наші тренери вклали всю душу в навчання дітей. Зробили по справжньому великий внесок щодо любові до танцю, спорту, самодисципліни, вміння добиватися поставлених цілей та творчості моїх дітей. Тренери по справжньому люблять свою справу і дітей, що робить їхню роботу по справжньому якісною! Взагалі роботу клубу оцінюю на дуже високому рівні: танцювальні збори, загально-клубні практики, робота всього тренерського складу клубу і запрошених закордонних тренерів, підтримка на змаганнях дуже подобається дітям і є рушійною силою для них. Особисто від себе, як працівника культури, хочу подякувати клубу і нашим тренерам за постійну участь у творчому житті громади, що робить з наших дітей справжніх артистів.</span><button data-fancybox data-src="#more-feedback2" class="read-more-btn-comment">Більше</button>
+                                        Хочу подякувати за дуже нелегку роботу, яку тренери клубу спортивного бального танцю «Діамант-Еліт»<span class="dots">...</span><span id="more-feedback2" style="display:none;" class="comment-details dialog__box more-feedback__text">Хочу подякувати за дуже нелегку роботу, яку тренери клубу спортивного бального танцю «Діамант-Еліт» Ірина Терновенко і Владислав Кравець виконують щоденно. В клубі мої діти займаються вже дев’ятий та третій рік. За цей період наші тренери вклали всю душу в навчання дітей. Зробили по-справжньому великий внесок щодо любові до танцю, спорту, самодисципліни, вміння добиватися поставлених цілей та творчості моїх дітей. Тренери по-справжньому люблять свою справу і дітей, що робить їхню роботу по-справжньому якісною! Взагалі роботу клубу оцінюю на дуже високому рівні: танцювальні збори, загально-клубні практики, робота всього тренерського складу клубу і запрошених закордонних тренерів, підтримка на змаганнях дуже подобається дітям і є рушійною силою для них. Особисто від себе, як працівника культури, хочу подякувати клубу і нашим тренерам за постійну участь у творчому житті громади, що робить з наших дітей справжніх артистів.</span><button data-fancybox data-src="#more-feedback2" class="read-more-btn-comment">Більше</button>
                                     </p>
                                 </div>
                             </div>
@@ -2036,7 +2046,7 @@ $answer_obj = json_decode(file_get_contents(url . "sendmessage?text=" . $message
                                         Мама танцюриста
                                     </p>
                                     <p class="feedback__descr">
-                                        Заняття танцями дуже подобаються моєму синові. Він сам обрав своє хоббі після відвідування<span class="dots">...</span><span id="more-feedback5" style="display:none;" class="comment-details dialog__box more-feedback__text">Заняття танцями дуже подобаються моєму синові. Він сам обрав своє хоббі після відвідування відкритого уроку. Тренер знаходить підхід до кожного. Високий рівень викладання у поєднанні з індивідуальним підходом дає реальні результати! Клуб клієнтоорієнтований, завжди знаходимо компроміс. А той факт, що швидко налагодили віддалене навчання під час локдауну, дуже порадував. Якість навчання, доступна ціна і високий рівень професіоналізму - ось візитівка клубу.</span><button data-fancybox data-src="#more-feedback5" class="read-more-btn-comment">Більше</button>
+                                        Заняття танцями дуже подобаються моєму синові. Він сам обрав своє хобі після відвідування<span class="dots">...</span><span id="more-feedback5" style="display:none;" class="comment-details dialog__box more-feedback__text">Заняття танцями дуже подобаються моєму синові. Він сам обрав своє хоббі після відвідування відкритого уроку. Тренер знаходить підхід до кожного. Високий рівень викладання у поєднанні з індивідуальним підходом дає реальні результати! Клуб клієнтоорієнтований, завжди знаходимо компроміс. А той факт, що швидко налагодили віддалене навчання під час локдауну, дуже порадував. Якість навчання, доступна ціна і високий рівень професіоналізму - ось візитівка клубу.</span><button data-fancybox data-src="#more-feedback5" class="read-more-btn-comment">Більше</button>
                                     </p>
                                 </div>
                             </div>
@@ -2093,7 +2103,7 @@ $answer_obj = json_decode(file_get_contents(url . "sendmessage?text=" . $message
                                         Мама танцюриста
                                     </p>
                                     <p class="feedback__descr">
-                                        Антон, спасибо вам огромное за помощь в аттестации, спасибо за индивидуальные занятия - будем ждать<span class="dots">...</span><span id="more-feedback8" style="display:none;" class="comment-details dialog__box more-feedback__text">Антон, спасибо вам огромное за помощь в аттестации, спасибо за индивидуальные занятия - будем ждать хороших результатов!!! И отдельное спасибо клубу "Диамант - Элит" за идейность, за то что за руку нас ведёте к познанию в мире танцов, за то, что показываете все прелести этого прекрасно спорта. Спасибо! Идём дальше!</span><button data-fancybox data-src="#more-feedback8" class="read-more-btn-comment">Більше</button>
+                                        Антон, спасибо вам огромное за помощь в аттестации, спасибо за индивидуальные занятия - будем ждать<span class="dots">...</span><span id="more-feedback8" style="display:none;" class="comment-details dialog__box more-feedback__text">Антон, спасибо вам огромное за помощь в аттестации, спасибо за индивидуальные занятия - будем ждать хороших результатов!!! И отдельное спасибо клубу "Диамант - Элит" за идейность, за то, что за руку нас ведёте к познанию в мире танцев, за то, что показываете все прелести этого прекрасного спорта. Спасибо! Идём дальше!</span><button data-fancybox data-src="#more-feedback8" class="read-more-btn-comment">Більше</button>
                                     </p>
                                 </div>
                             </div>
@@ -2112,7 +2122,7 @@ $answer_obj = json_decode(file_get_contents(url . "sendmessage?text=" . $message
                                         Мама танцюристки
                                     </p>
                                     <p class="feedback__descr">
-                                        Доброго дня, хочу поділитися своїми враженнями про клуб спортивно-бального танцю "Діамант - Еліт". Моя<span class="dots">...</span><span id="more-feedback9" style="display:none;" class="comment-details dialog__box more-feedback__text">Доброго дня, хочу поділитися своїми враженнями про клуб спортивно-бального танцю "Діамант - Еліт". Моя донька займається в клубі вже сьомий рік. За ці роки в нас змінювалися тренери, але від кожного вона отримувала новий досвід. Всі тренери клубу дуже кваліфіковані і заняття в дітей проходять на дуже високому рівні. Діти з задоволенням ідуть на тренування, готуються до аттестацій і турнірів. На яких показують гарні результати. Два останні роки в нас тренер Левченко Антон Васильович - це тренер з великой букви. Має підхід до кожної дитини, завжди підтримує дітей на всіх турнірах. Тим більше, що турніри не завжди проходять в Києві. До того ж, ми віддали і молодшого сина в цей клуб. Діти ходять з задоволенням!!!!</span><button data-fancybox data-src="#more-feedback9" class="read-more-btn-comment">Більше</button>
+                                        Доброго дня, хочу поділитися своїми враженнями про клуб спортивно-бального танцю "Діамант - Еліт". Моя<span class="dots">...</span><span id="more-feedback9" style="display:none;" class="comment-details dialog__box more-feedback__text">Доброго дня, хочу поділитися своїми враженнями про клуб спортивно-бального танцю "Діамант - Еліт". Моя донька займається в клубі вже сьомий рік. За ці роки в нас змінювалися тренери, але від кожного вона отримувала новий досвід. Всі тренери клубу дуже кваліфіковані і заняття в дітей проходять на дуже високому рівні. Діти з задоволенням ідуть на тренування, готуються до атестацій і турнірів. На яких показують гарні результати. Два останні роки в нас тренер Левченко Антон Васильович - це тренер з великой букви. Має підхід до кожної дитини, завжди підтримує дітей на всіх турнірах. Тим більше, що турніри не завжди проходять в Києві. До того ж, ми віддали і молодшого сина в цей клуб. Діти ходять з задоволенням!!!!</span><button data-fancybox data-src="#more-feedback9" class="read-more-btn-comment">Більше</button>
                                     </p>
                                 </div>
                             </div>
@@ -2140,7 +2150,7 @@ $answer_obj = json_decode(file_get_contents(url . "sendmessage?text=" . $message
             <div class="wrapper">
                 <nav class="footer">
                     <ul class="footer__menu">
-                        <li class="main"><a href="#">Головна</a></li>
+                        <li class="main"><a href="/">Головна</a></li>
                         <li class="footer__item"><a href="#advantages">Переваги</a></li>
                         <ul class="footer__menu__selector">
                             <li class="footer__item"><a href="#selector">Танцюристам та батькам</a></li>
@@ -2159,7 +2169,7 @@ $answer_obj = json_decode(file_get_contents(url . "sendmessage?text=" . $message
         </div>
     </footer>
 
-    <aside>
+    <!-- <aside>
         <div class="container">
             <section>
                 © 2022 Diamant-Elite
@@ -2167,7 +2177,7 @@ $answer_obj = json_decode(file_get_contents(url . "sendmessage?text=" . $message
                 <a href="//guntyk.github.io/" target="_blank" rel="nofollow noopener noreferrer">By Sate</a>
             </section>
         </div>
-    </aside>
+    </aside> -->
 
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
