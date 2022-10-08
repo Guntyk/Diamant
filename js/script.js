@@ -147,9 +147,9 @@ Fancybox.bind('[data-fancybox="gallery"]', {
 });
 // !=====Pages Gallery End=====
 // !=====Form Submit Start=====
-const form = document.getElementById('form');
-form.addEventListener('submit', (event) => {
-    event.preventDefault();
-    form.reset();
-})
+// const form = document.getElementById('form');
+// form.addEventListener('submit', (event) => {
+//     event.preventDefault();
+//     form.reset();
+// })
 // !=====Form Submit End=====

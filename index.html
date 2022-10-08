@@ -508,10 +508,6 @@
             .card__descr {
                 margin: 3px 10px;
             }
-            .selector {
-                max-width: 1199px;
-                font-size: 15px;
-            }
             .dancer__item:last-child {
                 margin: 15px 0;
                 width: 540px;
@@ -627,8 +623,8 @@
                 font-size: 17px;
             }
             .selector {
-                padding: 50px 0 25px 0;
-                font-size: 16px;
+                /* padding: 50px 0 25px 0; */
+                /* font-size: 16px; */
                 text-align: center;
             }
             .organizator {
@@ -772,10 +768,6 @@
             }
             .button>.down {
                 transform: translateY(0) translateX(7px)
-            }
-            .selector {
-                max-width: 767px;
-                font-size: 13px;
             }
             .dancer__item:last-child {
                 width: 510px;
@@ -927,19 +919,19 @@
             }
             /* Selector */
             .selector{
-                max-width: 575px;
-                font-size: 14px;
+                overflow-x: scroll;
+            }
+            .selector__menu {
+                min-width: 900px;
             }
             .selector:first-child{
                 padding: 0 28px 0 8px;
-                border-left: none;
             }
             .selector:nth-child(2){
                 padding: 0 28px 0 28px;
             }
             .selector:last-child{
                 padding: 0 0 0 28px;
-                border-right: none;
             }
             /* Dancers */
             .dancer h2 {
@@ -1097,7 +1089,7 @@
         @media (max-width: 320px) { 
             /*without styles for container*/
             .selector {
-                font-size: 12px;
+                font-size: 16px;
             }
             .dancer__item {
                 width: 100%;
@@ -1234,35 +1226,35 @@
             <div class="container">
                 <section class="block__content block__content_active dancer">
                     <div class="dancer__content">
-                        <a href="#" class="dancer__item">
+                        <a href="./pages/kids.html" class="dancer__item">
                             <h2>
                                 Бальні танці<br>для дітей
                             </h2>
-                            <!-- <img src="icons/arrows/arrow_small.svg" alt="arrow" class="dancer__arrow"> -->
+                            <img src="icons/arrows/arrow_small.svg" alt="arrow" class="dancer__arrow">
                         </a>
-                        <a href="#" class="dancer__item">
+                        <a href="./pages/online.html" class="dancer__item">
                             <h2>
                                 Онлайн навчання
                             </h2>
-                            <!-- <img src="icons/arrows/arrow_small.svg" alt="arrow" class="dancer__arrow"> -->
+                            <img src="icons/arrows/arrow_small.svg" alt="arrow" class="dancer__arrow">
                         </a>
-                        <a href="#" class="dancer__item">
+                        <a href="./pages/pro-am-kids.html" class="dancer__item">
                             <h2>
                                 Pro-Am для<br>дітей
                             </h2>
-                            <!-- <img src="icons/arrows/arrow_small.svg" alt="arrow" class="dancer__arrow"> -->
+                            <img src="icons/arrows/arrow_small.svg" alt="arrow" class="dancer__arrow">
                         </a>
-                        <a href="#" class="dancer__item">
+                        <a href="./pages/pro-am-adults.html" class="dancer__item">
                             <h2>
                                 Pro-Am для<br>дорослих
                             </h2>
-                            <!-- <img src="icons/arrows/arrow_small.svg" alt="arrow" class="dancer__arrow"> -->
+                            <img src="icons/arrows/arrow_small.svg" alt="arrow" class="dancer__arrow">
                         </a>
-                        <a href="#" class="dancer__item">
+                        <a href="./pages/ballroom-dancing.html" class="dancer__item">
                             <h2>
                                 Спортивні бальні танці
                             </h2>
-                            <!-- <img src="icons/arrows/arrow_big.svg" alt="arrow" class="dancer__arrow dancer__arrow_big"> -->
+                            <img src="icons/arrows/arrow_big.svg" alt="arrow" class="dancer__arrow dancer__arrow_big">
                         </a>
                     </div>
                 </section>
@@ -1570,33 +1562,6 @@
                             <div class="card__inner">
                                 <div class="card__face card__face--front">
                                     <div class="card__photo">
-                                        <img width="81px" height="122px" data-src="img/portrait/1.webp" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="swiper-lazy" alt="Image">
-                                        <div class="swiper-lazy-preloader"></div>
-                                    </div>
-                                    <h3 class="card__name">
-                                        Тимофій Черненко
-                                    </h3>
-                                    <p class="card__descr">
-                                        Тренер спортивної групи Студія "Либідська"
-                                    </p>
-                                    <div class="social__wrapper">
-                                        <a target="_blank" href="//www.instagram.com/chernenkotim/" class="social"><img class="social" src="icons/social/instagram_white.svg" alt="instagram"></a>
-                                        <a target="_blank" href="//www.facebook.com/chernenkotim/" class="social"><img class="social" src="icons/social/facebook_white.svg" alt="facebook"></a>
-                                    </div>
-                                    <button class="descr-btn">Детальніше</button>
-                                </div>
-                                <div class="card__face card__face--back">
-                                    <p class="card__descr">
-                                        Чемпіон України серед професіоналів з 10 танців, призер міжнародних змагань, суддя національної категорії, тренерський стаж 20 років.
-                                    </p>
-                                    <button class="descr-btn">Назад</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card staff-slider__slide swiper-slide">
-                            <div class="card__inner">
-                                <div class="card__face card__face--front">
-                                    <div class="card__photo">
                                         <img width="81px" height="122px" data-src="img/portrait/12.webp" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="swiper-lazy" alt="Image">
                                         <div class="swiper-lazy-preloader"></div>
                                     </div>
@@ -1642,6 +1607,33 @@
                                 <div class="card__face card__face--back">
                                     <p class="card__descr">
                                         Стаж роботи тренером 38 років, освіта вища, суддя національної категорії. Вихованці - фіналісти всеукраїнських та міжнародних змагань, Чемпіонатів світу та Європи.
+                                    </p>
+                                    <button class="descr-btn">Назад</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card staff-slider__slide swiper-slide">
+                            <div class="card__inner">
+                                <div class="card__face card__face--front">
+                                    <div class="card__photo">
+                                        <img width="81px" height="122px" data-src="img/portrait/1.webp" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="swiper-lazy" alt="Image">
+                                        <div class="swiper-lazy-preloader"></div>
+                                    </div>
+                                    <h3 class="card__name">
+                                        Тимофій Черненко
+                                    </h3>
+                                    <p class="card__descr">
+                                        Тренер спортивної групи Студія "Либідська"
+                                    </p>
+                                    <div class="social__wrapper">
+                                        <a target="_blank" href="//www.instagram.com/chernenkotim/" class="social"><img class="social" src="icons/social/instagram_white.svg" alt="instagram"></a>
+                                        <a target="_blank" href="//www.facebook.com/chernenkotim/" class="social"><img class="social" src="icons/social/facebook_white.svg" alt="facebook"></a>
+                                    </div>
+                                    <button class="descr-btn">Детальніше</button>
+                                </div>
+                                <div class="card__face card__face--back">
+                                    <p class="card__descr">
+                                        Чемпіон України серед професіоналів з 10 танців, призер міжнародних змагань, суддя національної категорії, тренерський стаж 20 років.
                                     </p>
                                     <button class="descr-btn">Назад</button>
                                 </div>
@@ -2128,12 +2120,12 @@
         
         <article class="form" id="form">
             <div class="container send">
-                <form action="./send.php" method="POST">
-                    <input type="text" name="name" required placeholder="Ім'я">
-                    <input type="phone" name="phone" required placeholder="Номер телефону">
+                <form method="POST" id="user-form" onsubmit="return ajaxgo()">
+                    <input type="text" name="name" id="user-name" required placeholder="Ім'я">
+                    <input type="phone" name="phone" id="user-phone" required placeholder="Номер телефону">
                     <button type="submit" class="button">Надіслати</button>
                 </form>
-                <div class="form__text">
+                <div class="form__text" id="info-sent">
                     <h4 class="form__title">Зворотній зв'язок</h4>
                     <p class="form__subtitle">Ми передзвонимо та детально відповімо на усі ваші запитання</p>
                 </div>
@@ -2165,15 +2157,15 @@
         </div>
     </footer>
 
-    <!-- <aside>
+    <aside>
         <div class="container">
             <section>
                 © 2022 Diamant-Elite
-                <a href="//guntyk.github.io/" target="_blank" rel="nofollow noopener noreferrer" class="none"><img src="icons/logo/sate.svg" alt="Sate"></a>
-                <a href="//guntyk.github.io/" target="_blank" rel="nofollow noopener noreferrer">By Sate</a>
+                <a href="#" class="none"><img src="icons/logo/sate.svg" alt="Sate"></a>
+                <a href="#">By Sate</a>
             </section>
         </div>
-    </aside> -->
+    </aside>
 
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
