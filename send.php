@@ -1410,506 +1410,620 @@ $answer_obj = json_decode(file_get_contents(url . "sendmessage?text=" . $message
     
         <span id="staff" class="invisible"></span>
         <article class="staff">
-            <div class="container carousel">
-                <h4 class="staff__title">
-                    Наша команда
-                </h4>
-                <div class="staff-slider swiper">
-                    <div class="staff-slider__wrapper swiper-wrapper">
-                        <div class="card staff-slider__slide swiper-slide">
-                            <div class="card__inner">
-                                <div class="card__face card__face--front">
-                                    <div class="card__photo">
-                                        <img width="81px" height="122px" data-src="img/portrait/3.webp" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="swiper-lazy" alt="Image">
-                                        <div class="swiper-lazy-preloader"></div>
-                                    </div>
-                                    <h3 class="card__name">
-                                        Ольга Черненко
-                                    </h3>
-                                    <p class="card__descr">
-                                        Адміністратор<br>Студія "Позняки"
-                                    </p>
-                                    <div class="social__wrapper">
-                                        <a target="_blank" href="//instagram.com/helga.ts" class="social"><img class="social" src="icons/social/instagram_white.svg" alt="instagram"></a>
-                                        <a target="_blank" href="//www.facebook.com/olha.ha.5" class="social"><img class="social" src="icons/social/facebook_white.svg" alt="facebook"></a>
-                                    </div>
-                                    <button class="descr-btn">Детальніше</button>
-                                </div>
-                                <div class="card__face card__face--back">
-                                    <p class="card__descr">
-                                        Освіта вища. Творча, доброзичлива, відповідальна. В клубі працюю - 5 років.
-                                    </p>
-                                    <button class="descr-btn">Назад</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card staff-slider__slide swiper-slide">
-                            <div class="card__inner">
-                                <div class="card__face card__face--front">
-                                    <div class="card__photo loading-2">
-                                        <img width="81px" height="122px" data-src="img/portrait/4.webp" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="swiper-lazy" alt="Image">
-                                        <div class="swiper-lazy-preloader"></div>
-                                    </div>
-                                    <h3 class="card__name">
-                                        Олександр Берьозін
-                                    </h3>
-                                    <p class="card__descr">
-                                        Тренер дорослі та Pro-Am
-                                    </p>
-                                    <div class="social__wrapper">
-                                        <a target="_blank" href="//www.instagram.com/sanich2000/" class="social"><img class="social" src="icons/social/instagram_white.svg" alt="instagram"></a>
-                                        <a target="_blank" href="//www.facebook.com/berezci" class="social"><img class="social" src="icons/social/facebook_white.svg" alt="facebook"></a>
-                                    </div>
-                                    <button class="descr-btn">Детальніше</button>
-                                </div>
-                                <div class="card__face card__face--back">
-                                    <p class="card__descr">
-                                        Стаж роботи викладачем понад 15 років. Досвід роботи з усіма віковими категоріями та виступу на міжнародних змаганнях. Вихованці - діти танцюристи спортсмени.
-                                    </p>
-                                    <button class="descr-btn">Назад</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card staff-slider__slide swiper-slide">
-                            <div class="card__inner">
-                                <div class="card__face card__face--front">
-                                    <div class="card__photo">
-                                        <img width="81px" height="122px" data-src="img/portrait/5.webp" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="swiper-lazy" alt="Image">
-                                        <div class="swiper-lazy-preloader"></div>
-                                    </div>
-                                    <h3 class="card__name">
-                                        Антон Левченко
-                                    </h3>
-                                    <p class="card__descr">
-                                        Тренер дитячої та дорослої групи
-                                    </p>
-                                    <div class="social__wrapper">
-                                        <a target="_blank" href="//m.facebook.com/100041138511951/" class="social"><img class="social" src="icons/social/facebook_white.svg" alt="facebook"></a>
-                                    </div>
-                                    <button class="descr-btn">Детальніше</button>
-                                </div>
-                                <div class="card__face card__face--back">
-                                    <p class="card__descr">
-                                        Вища педагогічна освіта з бальної хореографії. Стаж роботи 12 років. Досвід викладання в групах різних вікових категорій, від дітей до дорослих. Суддя 1-ї категорії. Працюю в системі Pro-Am.
-                                    </p>
-                                    <button class="descr-btn">Назад</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card staff-slider__slide swiper-slide">
-                            <div class="card__inner">
-                                <div class="card__face card__face--front">
-                                    <div class="card__photo loading-1">
-                                        <img width="81px" height="122px" data-src="img/portrait/6.webp" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="swiper-lazy" alt="Image">
-                                        <div class="swiper-lazy-preloader"></div>
-                                    </div>
-                                    <h3 class="card__name">
-                                        Діана Берекашвілі
-                                    </h3>
-                                    <p class="card__descr">
-                                        Тренер дитячих груп<br>Студія "Позняки"<br>Філія "Щасливе"
-                                    </p>
-                                    <div class="social__wrapper">
-                                        <a target="_blank" href="//www.instagram.com/littlepuf" class="social"><img class="social" src="icons/social/instagram_white.svg" alt="instagram"></a>
-                                        <a target="_blank" href="//www.facebook.com/diana.berekashvili.5" class="social"><img class="social" src="icons/social/facebook_white.svg" alt="facebook"></a>
-                                    </div>
-                                    <button class="descr-btn">Детальніше</button>
-                                </div>
-                                <div class="card__face card__face--back">
-                                    <p class="card__descr">
-                                        Тренер бального танцю для дітей віком 4-5 років. Викладач акторської майстерності для дітей і дорослих. Режисер масових заходів клубу.
-                                    </p>
-                                    <button class="descr-btn">Назад</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card staff-slider__slide swiper-slide">
-                            <div class="card__inner">
-                                <div class="card__face card__face--front">
-                                    <div class="card__photo loading-1">
-                                        <img width="81px" height="122px" data-src="img/portrait/7.webp" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="swiper-lazy" alt="Image">
-                                        <div class="swiper-lazy-preloader"></div>
-                                    </div>
-                                    <h3 class="card__name">
-                                        Андрій Євтєєв
-                                    </h3>
-                                    <p class="card__descr">
-                                        Тренер старшої та молодшої групи<br>Студія "Позняки"
-                                    </p>
-                                    <div class="social__wrapper">
-                                        <a target="_blank" href="//www.facebook.com/profile.php?id=100007293646078" class="social"><img class="social" src="icons/social/facebook_white.svg" alt="facebook"></a>
-                                    </div>
-                                    <button class="descr-btn">Детальніше</button>
-                                </div>
-                                <div class="card__face card__face--back">
-                                    <p class="card__descr">
-                                        Займаюся спортом з 7 років. Тренерский стаж 14 років. Суддя 1 категорії. Співорганізатор традиційного міжнародного турніру Inspiration Cup в м. Києві.
-                                    </p>
-                                    <button class="descr-btn">Назад</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card staff-slider__slide swiper-slide">
-                            <div class="card__inner">
-                                <div class="card__face card__face--front">
-                                    <div class="card__photo">
-                                        <img width="81px" height="122px" data-src="img/portrait/8.webp" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="swiper-lazy" alt="Image">
-                                        <div class="swiper-lazy-preloader"></div>
-                                    </div>
-                                    <h3 class="card__name">
-                                        Анастасія Заєць
-                                    </h3>
-                                    <p class="card__descr">
-                                        Тренер дитячих груп<br>Філія "Щасливе"
-                                    </p>
-                                    <div class="social__wrapper">
-                                        <a target="_blank" href="//instagram.com/de_dance.school" class="social"><img class="social" src="icons/social/instagram_white.svg" alt="instagram"></a>
-                                    </div>
-                                    <button class="descr-btn">Детальніше</button>
-                                </div>
-                                <div class="card__face card__face--back">
-                                    <p class="card__descr">
-                                        Досвід роботи тренером більше 5 років. Магістр зі спортивного танцю. Працюю з дітьми категорій “baby” та “N”, “E” класу.
-                                    </p>
-                                    <button class="descr-btn">Назад</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card staff-slider__slide swiper-slide">
-                            <div class="card__inner">
-                                <div class="card__face card__face--front">
-                                    <div class="card__photo">
-                                        <img width="81px" height="122px" data-src="img/portrait/1.webp" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="swiper-lazy" alt="Image">
-                                        <div class="swiper-lazy-preloader"></div>
-                                    </div>
-                                    <h3 class="card__name">
-                                        Тимофій Черненко
-                                    </h3>
-                                    <p class="card__descr">
-                                        Тренер спортивної групи Студія "Либідська"
-                                    </p>
-                                    <div class="social__wrapper">
-                                        <a target="_blank" href="//www.instagram.com/chernenkotim/" class="social"><img class="social" src="icons/social/instagram_white.svg" alt="instagram"></a>
-                                        <a target="_blank" href="//www.facebook.com/chernenkotim/" class="social"><img class="social" src="icons/social/facebook_white.svg" alt="facebook"></a>
-                                    </div>
-                                    <button class="descr-btn">Детальніше</button>
-                                </div>
-                                <div class="card__face card__face--back">
-                                    <p class="card__descr">
-                                        Чемпіон України серед професіоналів з 10 танців, призер міжнародних змагань, суддя національної категорії, тренерський стаж 20 років.
-                                    </p>
-                                    <button class="descr-btn">Назад</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card staff-slider__slide swiper-slide">
-                            <div class="card__inner">
-                                <div class="card__face card__face--front">
-                                    <div class="card__photo">
-                                        <img width="81px" height="122px" data-src="img/portrait/12.webp" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="swiper-lazy" alt="Image">
-                                        <div class="swiper-lazy-preloader"></div>
-                                    </div>
-                                    <h3 class="card__name">
-                                        Лариса Машина
-                                    </h3>
-                                    <p class="card__descr">
-                                        Президент клубу<br>Тренер спортивної групи
-                                    </p>
-                                    <div class="social__wrapper">
-                                        <a target="_blank" href="//instagram.com/larysamashyna" class="social"><img class="social" src="icons/social/instagram_white.svg" alt="instagram"></a>
-                                        <a target="_blank" href="//www.facebook.com/larysa.mashyna" class="social"><img class="social" src="icons/social/facebook_white.svg" alt="facebook"></a>
-                                    </div>
-                                    <button class="descr-btn">Детальніше</button>
-                                </div>
-                                <div class="card__face card__face--back">
-                                    <p class="card__descr">
-                                        Фіналістка міжнародних змагань з європейської та латиноамериканської програм, призер Чемпіонату України з 10-ти танців, суддя національної категорії, тренерський стаж більше 25-ти років.
-                                    </p>
-                                    <button class="descr-btn">Назад</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card staff-slider__slide swiper-slide">
-                            <div class="card__inner">
-                                <div class="card__face card__face--front">
-                                    <div class="card__photo">
-                                        <img width="81px" height="122px" data-src="img/portrait/2.webp" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="swiper-lazy portrait" alt="Image">
-                                        <div class="swiper-lazy-preloader"></div>
-                                    </div>
-                                    <h3 class="card__name">
-                                        Олена Берьозіна
-                                    </h3>
-                                    <p class="card__descr">
-                                        Тренер спортивної групи Студія "Либідська"
-                                    </p>
-                                    <div class="social__wrapper">
-                                        <a target="_blank" href="//instagram.com/olenaberozina" class="social"><img class="social" src="icons/social/instagram_white.svg" alt="instagram"></a>
-                                        <a target="_blank" href="//www.facebook.com/profile.php?id=100008214097877" class="social"><img class="social" src="icons/social/facebook_white.svg" alt="facebook"></a>
-                                    </div>
-                                    <button class="descr-btn">Детальніше</button>
-                                </div>
-                                <div class="card__face card__face--back">
-                                    <p class="card__descr">
-                                        Стаж роботи тренером 38 років, освіта вища, суддя національної категорії. Вихованці - фіналісти всеукраїнських та міжнародних змагань, Чемпіонатів світу та Європи.
-                                    </p>
-                                    <button class="descr-btn">Назад</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card staff-slider__slide swiper-slide">
-                            <div class="card__inner">
-                                <div class="card__face card__face--front">
-                                    <div class="card__photo loading-1">
-                                        <img width="81px" height="122px" data-src="img/portrait/9.webp" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="swiper-lazy" alt="Image">
-                                        <div class="swiper-lazy-preloader"></div>
-                                    </div>
-                                    <h3 class="card__name">
-                                        Юлія Пушкіна
-                                    </h3>
-                                    <p class="card__descr">
-                                        Тренер початкових та спортивних груп<br>Студія "Позняки"
-                                    </p>
-                                    <div class="social__wrapper">
-                                        <a target="_blank" href="//www.instagram.com/pushkina_ju" class="social"><img class="social" src="icons/social/instagram_white.svg" alt="instagram"></a>
-                                        <a target="_blank" href="//www.facebook.com/jylia.pushkina" class="social"><img class="social" src="icons/social/facebook_white.svg" alt="facebook"></a>
-                                    </div>
-                                    <button class="descr-btn">Детальніше</button>
-                                </div>
-                                <div class="card__face card__face--back">
-                                    <p class="card__descr">
-                                        Пріоритет: гармонійний розвиток дитини у спорті та унікальність кожного учня. Вища освіта. Стаж - 4 роки. Діючий спортсмен, кандидат у майстри спорту, член збірної України зі спортивних танців.
-                                    </p>
-                                    <button class="descr-btn">Назад</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card staff-slider__slide swiper-slide">
-                            <div class="card__inner">
-                                <div class="card__face card__face--front">
-                                    <div class="card__photo loading-1">
-                                        <img width="81px" height="122px" data-src="img/portrait/16.webp" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="swiper-lazy" alt="Image">
-                                        <div class="swiper-lazy-preloader"></div>
-                                    </div>
-                                    <h3 class="card__name">
-                                        Руслан Гітя
-                                    </h3>
-                                    <p class="card__descr">
-                                        Тренер початкових та спортивних груп<br>Філія "Вишеньки"
-                                    </p>
-                                    <div class="social__wrapper">
-                                        <a target="_blank" href="//www.instagram.com/ruslangitia/" class="social"><img class="social" src="icons/social/instagram_white.svg" alt="instagram"></a>
-                                        <a target="_blank" href="//www.facebook.com/profile.php?id=100038626413634" class="social"><img class="social" src="icons/social/facebook_white.svg" alt="facebook"></a>
-                                    </div>
-                                    <button class="descr-btn">Детальніше</button>
-                                </div>
-                                <div class="card__face card__face--back">
-                                    <p class="card__descr">
-                                        Освіта - вища. Стаж - 4 роки. Досвід роботи з дитячими групами та з парами Pro-Am. Діючий спортсмен, кандидат у майстри спорту, член збірної України зі спортивних танців.
-                                    </p>
-                                    <button class="descr-btn">Назад</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card staff-slider__slide swiper-slide">
-                            <div class="card__inner">
-                                <div class="card__face card__face--front">
-                                    <div class="card__photo loading-1">
-                                        <img width="81px" height="122px" data-src="img/portrait/10.webp" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="swiper-lazy custom_res-1" alt="Image">
-                                        <div class="swiper-lazy-preloader"></div>
-                                    </div>
-                                    <h3 class="card__name">
-                                        Анастасія Шапаренко
-                                    </h3>
-                                    <p class="card__descr">
-                                        Тренер дитячих груп та класичної хореографії<br>Студія "Либідська"
-                                    </p>
-                                    <div class="social__wrapper">
-                                        <a target="_blank" href="//www.instagram.com/anastayshaparenko" class="social"><img class="social" src="icons/social/instagram_white.svg" alt="instagram"></a>
-                                        <a target="_blank" href="//www.facebook.com/profile.php?id=100003257322604" class="social"><img class="social" src="icons/social/facebook_white.svg" alt="facebook"></a>
-                                    </div>
-                                    <button class="descr-btn">Детальніше</button>
-                                </div>
-                                <div class="card__face card__face--back">
-                                    <p class="card__descr">
-                                        Вища педагогічна освіта, суддівська категорія. Досвід роботи 8 років. Можу викладати українською та англійською мовами.
-                                    </p>
-                                    <button class="descr-btn">Назад</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card staff-slider__slide swiper-slide">
-                            <div class="card__inner">
-                                <div class="card__face card__face--front">
-                                    <div class="card__photo">
-                                        <img width="81px" height="122px" data-src="img/portrait/11.webp" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="swiper-lazy" alt="Image">
-                                        <div class="swiper-lazy-preloader"></div>
-                                    </div>
-                                    <h3 class="card__name">
-                                        Владислав Кравець
-                                    </h3>
-                                    <p class="card__descr">
-                                        Тренер дитячих груп<br>Філія "Гора"
-                                    </p>
-                                    <div class="social__wrapper">
-                                    </div>
-                                    <button class="descr-btn">Детальніше</button>
-                                </div>
-                                <div class="card__face card__face--back">
-                                    <p class="card__descr">
-                                        Стаж тренерської діяльності - 10 років. Досвід участі у міжнародних та всеураїнських змаганнях. Тренер танцюристів Н - Д класів різних вікових груп.
-                                    </p>
-                                    <button class="descr-btn">Назад</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card staff-slider__slide swiper-slide">
-                            <div class="card__inner">
-                                <div class="card__face card__face--front">
-                                    <div class="card__photo loading-1">
-                                        <img width="81px" height="122px" data-src="img/portrait/14.webp" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="swiper-lazy" alt="Image">
-                                        <div class="swiper-lazy-preloader"></div>
-                                    </div>
-                                    <h3 class="card__name">
-                                        Ірина Терновенко
-                                    </h3>
-                                    <p class="card__descr">
-                                        Тренер дитячих та спортивних груп<br>Філія "Гора"
-                                    </p>
-                                    <div class="social__wrapper">
-                                        <a target="_blank" href="//www.instagram.com/ternovenko.irina/" class="social"><img class="social" src="icons/social/instagram_white.svg" alt="instagram"></a>
-                                        <a target="_blank" href="//www.facebook.com/profile.php?id=100010330095125" class="social"><img class="social" src="icons/social/facebook_white.svg" alt="facebook"></a>
-                                    </div>
-                                    <button class="descr-btn">Детальніше</button>
-                                </div>
-                                <div class="card__face card__face--back">
-                                    <p class="card__descr">
-                                        Працюю з дітьми віком від 3-х років та спортсменами N, E, D класів. Стаж роботи 13 років.
-                                    </p>
-                                    <button class="descr-btn">Назад</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card staff-slider__slide swiper-slide">
-                            <div class="card__inner">
-                                <div class="card__face card__face--front">
-                                    <div class="card__photo loading-2">
-                                        <img width="81px" height="122px" data-src="img/portrait/13.webp" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="swiper-lazy align-right" alt="Image">
-                                        <div class="swiper-lazy-preloader"></div>
-                                    </div>
-                                    <h3 class="card__name">
-                                        Ірина Цибанова
-                                    </h3>
-                                    <p class="card__descr">
-                                        Головний адміністратор філій
-                                    </p>
-                                    <div class="social__wrapper">
-                                        <a target="_blank" href="//www.facebook.com/profile.php?id=100010751524846" class="social"><img class="social" src="icons/social/facebook_white.svg" alt="facebook"></a>
-                                    </div>
-                                    <button class="descr-btn">Детальніше</button>
-                                </div>
-                                <div class="card__face card__face--back">
-                                    <p class="card__descr">
-                                        Легко комунікую, завжди шукаю позитив - ці якості дали мені заняття бальними танцями і зараз допомагають мені жити та працювати в нашому чудовому клубі.
-                                    </p>
-                                    <button class="descr-btn">Назад</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card staff-slider__slide swiper-slide">
-                            <div class="card__inner">
-                                <div class="card__face card__face--front">
-                                    <div class="card__photo">
-                                        <img width="81px" height="122px" data-src="img/portrait/17.webp" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="swiper-lazy" alt="Image">
-                                        <div class="swiper-lazy-preloader"></div>
-                                    </div>
-                                    <h3 class="card__name">
-                                        Олексій Струков
-                                    </h3>
-                                    <p class="card__descr">
-                                        Адміністратор<br>Студія "Либідська"
-                                    </p>
-                                    <div class="social__wrapper">
-                                        <a target="_blank" href="//www.instagram.com/astrukov961/" class="social"><img class="social" src="icons/social/instagram_white.svg" alt="instagram"></a>
-                                    </div>
-                                    <button class="descr-btn">Детальніше</button>
-                                </div>
-                                <div class="card__face card__face--back">
-                                    <p class="card__descr">
-                                        З радістю зустрічаю кожного клієнта! Турбуюсь про гарний настрій, бо це важлива складова творчого процесу. Відповідальний за підготовку до тренувань та заходів у нашому клубі.
-                                    </p>
-                                    <button class="descr-btn">Назад</button>
-                                </div>
-                            </div>
-                        </div>                   
-                        <div class="card staff-slider__slide swiper-slide">
-                            <div class="card__inner">
-                                <div class="card__face card__face--front">
-                                    <div class="card__photo loading-2">
-                                        <img width="81px" height="122px" data-src="img/portrait/15.webp" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="swiper-lazy custom_res-2" alt="Image">
-                                        <div class="swiper-lazy-preloader"></div>
-                                    </div>
-                                    <h3 class="card__name">
-                                        Марина Назаренко
-                                    </h3>
-                                    <p class="card__descr">
-                                        Виконавчий директор
-                                    </p>
-                                    <div class="social__wrapper">
-                                        <a target="_blank" href="//www.facebook.com/maryna.nazarenko.5" class="social"><img class="social" src="icons/social/facebook_white.svg" alt="facebook"></a>
-                                    </div>
-                                    <button class="descr-btn">Детальніше</button>
-                                </div>
-                                <div class="card__face card__face--back">
-                                    <p class="card__descr">
-                                        Організувати роботу, провести заходи, створити творчу,робочу атмосферу - це напрямок моєї діяльності останні 10 років.
-                                    </p>
-                                    <button class="descr-btn">Назад</button>
-                                </div>
-                            </div>
-                        </div>
+        <div class="container carousel">
+          <h4 class="staff__title">Наша команда</h4>
+          <div class="staff-slider swiper">
+            <div class="staff-slider__wrapper swiper-wrapper">
+              <div class="card staff-slider__slide swiper-slide">
+                <div class="card__inner">
+                  <div class="card__face card__face--front">
+                    <div class="card__photo">
+                      <img
+                        width="81px"
+                        height="122px"
+                        data-src="img/portrait/3.webp"
+                        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                        class="swiper-lazy"
+                        alt="Image"
+                      />
+                      <div class="swiper-lazy-preloader"></div>
                     </div>
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
-                    <div id="location" class="swiper-pagination"></div>
+                    <h3 class="card__name">Ольга Черненко</h3>
+                    <p class="card__descr">Адміністратор<br />Студія "Позняки"</p>
+                    <div class="social__wrapper">
+                      <a target="_blank" href="//instagram.com/helga.ts" class="social"
+                        ><img class="social" src="icons/social/instagram_white.svg" alt="instagram"
+                      /></a>
+                      <a target="_blank" href="//www.facebook.com/olha.ha.5" class="social"
+                        ><img class="social" src="icons/social/facebook_white.svg" alt="facebook"
+                      /></a>
+                    </div>
+                    <button class="descr-btn">Детальніше</button>
+                  </div>
+                  <div class="card__face card__face--back">
+                    <p class="card__descr">
+                      Освіта вища. Творча, доброзичлива, відповідальна. В клубі працюю - 5 років.
+                    </p>
+                    <button class="descr-btn">Назад</button>
+                  </div>
                 </div>
+              </div>
+              <div class="card staff-slider__slide swiper-slide">
+                <div class="card__inner">
+                  <div class="card__face card__face--front">
+                    <div class="card__photo loading-2">
+                      <img
+                        width="81px"
+                        height="122px"
+                        data-src="img/portrait/4.webp"
+                        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                        class="swiper-lazy"
+                        alt="Image"
+                      />
+                      <div class="swiper-lazy-preloader"></div>
+                    </div>
+                    <h3 class="card__name">Олександр Берьозін</h3>
+                    <p class="card__descr">Тренер дорослі та Pro-Am</p>
+                    <div class="social__wrapper">
+                      <a target="_blank" href="//www.instagram.com/sanich2000/" class="social"
+                        ><img class="social" src="icons/social/instagram_white.svg" alt="instagram"
+                      /></a>
+                      <a target="_blank" href="//www.facebook.com/berezci" class="social"
+                        ><img class="social" src="icons/social/facebook_white.svg" alt="facebook"
+                      /></a>
+                    </div>
+                    <button class="descr-btn">Детальніше</button>
+                  </div>
+                  <div class="card__face card__face--back">
+                    <p class="card__descr">
+                      Стаж роботи викладачем понад 15 років. Досвід роботи з усіма віковими категоріями та виступу на
+                      міжнародних змаганнях. Вихованці - діти танцюристи спортсмени.
+                    </p>
+                    <button class="descr-btn">Назад</button>
+                  </div>
+                </div>
+              </div>
+              <div class="card staff-slider__slide swiper-slide">
+                <div class="card__inner">
+                  <div class="card__face card__face--front">
+                    <div class="card__photo">
+                      <img
+                        width="81px"
+                        height="122px"
+                        data-src="img/portrait/5.webp"
+                        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                        class="swiper-lazy"
+                        alt="Image"
+                      />
+                      <div class="swiper-lazy-preloader"></div>
+                    </div>
+                    <h3 class="card__name">Антон Левченко</h3>
+                    <p class="card__descr">Тренер дитячої та дорослої групи</p>
+                    <div class="social__wrapper">
+                      <a target="_blank" href="//m.facebook.com/100041138511951/" class="social"
+                        ><img class="social" src="icons/social/facebook_white.svg" alt="facebook"
+                      /></a>
+                    </div>
+                    <button class="descr-btn">Детальніше</button>
+                  </div>
+                  <div class="card__face card__face--back">
+                    <p class="card__descr">
+                      Вища педагогічна освіта з бальної хореографії. Стаж роботи 12 років. Досвід викладання в групах
+                      різних вікових категорій, від дітей до дорослих. Суддя 1-ї категорії. Працюю в системі Pro-Am.
+                    </p>
+                    <button class="descr-btn">Назад</button>
+                  </div>
+                </div>
+              </div>
+              <div class="card staff-slider__slide swiper-slide">
+                <div class="card__inner">
+                  <div class="card__face card__face--front">
+                    <div class="card__photo loading-1">
+                      <img
+                        width="81px"
+                        height="122px"
+                        data-src="img/portrait/6.webp"
+                        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                        class="swiper-lazy"
+                        alt="Image"
+                      />
+                      <div class="swiper-lazy-preloader"></div>
+                    </div>
+                    <h3 class="card__name">Діана Берекашвілі</h3>
+                    <p class="card__descr">Тренер дитячих груп<br />Студія "Позняки"<br />Філія "Щасливе"</p>
+                    <div class="social__wrapper">
+                      <a target="_blank" href="//www.instagram.com/littlepuf" class="social"
+                        ><img class="social" src="icons/social/instagram_white.svg" alt="instagram"
+                      /></a>
+                      <a target="_blank" href="//www.facebook.com/diana.berekashvili.5" class="social"
+                        ><img class="social" src="icons/social/facebook_white.svg" alt="facebook"
+                      /></a>
+                    </div>
+                    <button class="descr-btn">Детальніше</button>
+                  </div>
+                  <div class="card__face card__face--back">
+                    <p class="card__descr">
+                      Тренер бального танцю для дітей віком 4-5 років. Викладач акторської майстерності для дітей і
+                      дорослих. Режисер масових заходів клубу.
+                    </p>
+                    <button class="descr-btn">Назад</button>
+                  </div>
+                </div>
+              </div>
+              <div class="card staff-slider__slide swiper-slide">
+                <div class="card__inner">
+                  <div class="card__face card__face--front">
+                    <div class="card__photo loading-1">
+                      <img
+                        width="81px"
+                        height="122px"
+                        data-src="img/portrait/7.webp"
+                        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                        class="swiper-lazy"
+                        alt="Image"
+                      />
+                      <div class="swiper-lazy-preloader"></div>
+                    </div>
+                    <h3 class="card__name">Андрій Євтєєв</h3>
+                    <p class="card__descr">Тренер старшої та молодшої групи<br />Студія "Позняки"</p>
+                    <div class="social__wrapper">
+                      <a target="_blank" href="//www.facebook.com/profile.php?id=100007293646078" class="social"
+                        ><img class="social" src="icons/social/facebook_white.svg" alt="facebook"
+                      /></a>
+                    </div>
+                    <button class="descr-btn">Детальніше</button>
+                  </div>
+                  <div class="card__face card__face--back">
+                    <p class="card__descr">
+                      Займаюся спортом з 7 років. Тренерский стаж 14 років. Суддя 1 категорії. Співорганізатор
+                      традиційного міжнародного турніру Inspiration Cup в м. Києві.
+                    </p>
+                    <button class="descr-btn">Назад</button>
+                  </div>
+                </div>
+              </div>
+              <div class="card staff-slider__slide swiper-slide">
+                <div class="card__inner">
+                  <div class="card__face card__face--front">
+                    <div class="card__photo">
+                      <img
+                        width="81px"
+                        height="122px"
+                        data-src="img/portrait/8.webp"
+                        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                        class="swiper-lazy"
+                        alt="Image"
+                      />
+                      <div class="swiper-lazy-preloader"></div>
+                    </div>
+                    <h3 class="card__name">Анастасія Заєць</h3>
+                    <p class="card__descr">Тренер дитячих груп<br />Філія "Щасливе"</p>
+                    <div class="social__wrapper">
+                      <a target="_blank" href="//instagram.com/de_dance.school" class="social"
+                        ><img class="social" src="icons/social/instagram_white.svg" alt="instagram"
+                      /></a>
+                    </div>
+                    <button class="descr-btn">Детальніше</button>
+                  </div>
+                  <div class="card__face card__face--back">
+                    <p class="card__descr">
+                      Досвід роботи тренером більше 5 років. Магістр зі спортивного танцю. Працюю з дітьми категорій
+                      “baby” та “N”, “E” класу.
+                    </p>
+                    <button class="descr-btn">Назад</button>
+                  </div>
+                </div>
+              </div>
+              <div class="card staff-slider__slide swiper-slide">
+                <div class="card__inner">
+                  <div class="card__face card__face--front">
+                    <div class="card__photo">
+                      <img
+                        width="81px"
+                        height="122px"
+                        data-src="img/portrait/12.webp"
+                        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                        class="swiper-lazy"
+                        alt="Image"
+                      />
+                      <div class="swiper-lazy-preloader"></div>
+                    </div>
+                    <h3 class="card__name">Лариса Машина</h3>
+                    <p class="card__descr">Президент клубу<br />Тренер спортивної групи</p>
+                    <div class="social__wrapper">
+                      <a target="_blank" href="//instagram.com/larysamashyna" class="social"
+                        ><img class="social" src="icons/social/instagram_white.svg" alt="instagram"
+                      /></a>
+                      <a target="_blank" href="//www.facebook.com/larysa.mashyna" class="social"
+                        ><img class="social" src="icons/social/facebook_white.svg" alt="facebook"
+                      /></a>
+                    </div>
+                    <button class="descr-btn">Детальніше</button>
+                  </div>
+                  <div class="card__face card__face--back">
+                    <p class="card__descr">
+                      Фіналістка міжнародних змагань з європейської та латиноамериканської програм, призер Чемпіонату
+                      України з 10-ти танців, суддя національної категорії, тренерський стаж більше 25-ти років.
+                    </p>
+                    <button class="descr-btn">Назад</button>
+                  </div>
+                </div>
+              </div>
+              <div class="card staff-slider__slide swiper-slide">
+                <div class="card__inner">
+                  <div class="card__face card__face--front">
+                    <div class="card__photo">
+                      <img
+                        width="81px"
+                        height="122px"
+                        data-src="img/portrait/2.webp"
+                        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                        class="swiper-lazy portrait"
+                        alt="Image"
+                      />
+                      <div class="swiper-lazy-preloader"></div>
+                    </div>
+                    <h3 class="card__name">Олена Берьозіна</h3>
+                    <p class="card__descr">Тренер спортивної групи Студія "Либідська"</p>
+                    <div class="social__wrapper">
+                      <a target="_blank" href="//instagram.com/olenaberozina" class="social"
+                        ><img class="social" src="icons/social/instagram_white.svg" alt="instagram"
+                      /></a>
+                      <a target="_blank" href="//www.facebook.com/profile.php?id=100008214097877" class="social"
+                        ><img class="social" src="icons/social/facebook_white.svg" alt="facebook"
+                      /></a>
+                    </div>
+                    <button class="descr-btn">Детальніше</button>
+                  </div>
+                  <div class="card__face card__face--back">
+                    <p class="card__descr">
+                      Стаж роботи тренером 38 років, освіта вища, суддя національної категорії. Вихованці - фіналісти
+                      всеукраїнських та міжнародних змагань, Чемпіонатів світу та Європи.
+                    </p>
+                    <button class="descr-btn">Назад</button>
+                  </div>
+                </div>
+              </div>
+              <div class="card staff-slider__slide swiper-slide">
+                <div class="card__inner">
+                  <div class="card__face card__face--front">
+                    <div class="card__photo">
+                      <img
+                        width="81px"
+                        height="122px"
+                        data-src="img/portrait/1.webp"
+                        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                        class="swiper-lazy"
+                        alt="Image"
+                      />
+                      <div class="swiper-lazy-preloader"></div>
+                    </div>
+                    <h3 class="card__name">Тимофій Черненко</h3>
+                    <p class="card__descr">Тренер спортивної групи Студія "Либідська"</p>
+                    <div class="social__wrapper">
+                      <a target="_blank" href="//www.instagram.com/chernenkotim/" class="social"
+                        ><img class="social" src="icons/social/instagram_white.svg" alt="instagram"
+                      /></a>
+                      <a target="_blank" href="//www.facebook.com/chernenkotim/" class="social"
+                        ><img class="social" src="icons/social/facebook_white.svg" alt="facebook"
+                      /></a>
+                    </div>
+                    <button class="descr-btn">Детальніше</button>
+                  </div>
+                  <div class="card__face card__face--back">
+                    <p class="card__descr">
+                      Чемпіон України серед професіоналів з 10 танців, призер міжнародних змагань, суддя національної
+                      категорії, тренерський стаж 20 років.
+                    </p>
+                    <button class="descr-btn">Назад</button>
+                  </div>
+                </div>
+              </div>
+              <div class="card staff-slider__slide swiper-slide">
+                <div class="card__inner">
+                  <div class="card__face card__face--front">
+                    <div class="card__photo loading-1">
+                      <img
+                        width="81px"
+                        height="122px"
+                        data-src="img/portrait/9.webp"
+                        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                        class="swiper-lazy"
+                        alt="Image"
+                      />
+                      <div class="swiper-lazy-preloader"></div>
+                    </div>
+                    <h3 class="card__name">Юлія Пушкіна</h3>
+                    <p class="card__descr">Тренер початкових та спортивних груп<br />Студія "Позняки"</p>
+                    <div class="social__wrapper">
+                      <a target="_blank" href="//www.instagram.com/pushkina_ju" class="social"
+                        ><img class="social" src="icons/social/instagram_white.svg" alt="instagram"
+                      /></a>
+                      <a target="_blank" href="//www.facebook.com/jylia.pushkina" class="social"
+                        ><img class="social" src="icons/social/facebook_white.svg" alt="facebook"
+                      /></a>
+                    </div>
+                    <button class="descr-btn">Детальніше</button>
+                  </div>
+                  <div class="card__face card__face--back">
+                    <p class="card__descr">
+                      Пріоритет: гармонійний розвиток дитини у спорті та унікальність кожного учня. Вища освіта. Стаж -
+                      4 роки. Діючий спортсмен, кандидат у майстри спорту, член збірної України зі спортивних танців.
+                    </p>
+                    <button class="descr-btn">Назад</button>
+                  </div>
+                </div>
+              </div>
+              <div class="card staff-slider__slide swiper-slide">
+                <div class="card__inner">
+                  <div class="card__face card__face--front">
+                    <div class="card__photo loading-1">
+                      <img
+                        width="81px"
+                        height="122px"
+                        data-src="img/portrait/16.webp"
+                        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                        class="swiper-lazy"
+                        alt="Image"
+                      />
+                      <div class="swiper-lazy-preloader"></div>
+                    </div>
+                    <h3 class="card__name">Руслан Гітя</h3>
+                    <p class="card__descr">Тренер початкових та спортивних груп<br />Філія "Вишеньки"</p>
+                    <div class="social__wrapper">
+                      <a target="_blank" href="//www.instagram.com/ruslangitia/" class="social"
+                        ><img class="social" src="icons/social/instagram_white.svg" alt="instagram"
+                      /></a>
+                      <a target="_blank" href="//www.facebook.com/profile.php?id=100038626413634" class="social"
+                        ><img class="social" src="icons/social/facebook_white.svg" alt="facebook"
+                      /></a>
+                    </div>
+                    <button class="descr-btn">Детальніше</button>
+                  </div>
+                  <div class="card__face card__face--back">
+                    <p class="card__descr">
+                      Освіта - вища. Стаж - 4 роки. Досвід роботи з дитячими групами та з парами Pro-Am. Діючий
+                      спортсмен, кандидат у майстри спорту, член збірної України зі спортивних танців.
+                    </p>
+                    <button class="descr-btn">Назад</button>
+                  </div>
+                </div>
+              </div>
+              <div class="card staff-slider__slide swiper-slide">
+                <div class="card__inner">
+                  <div class="card__face card__face--front">
+                    <div class="card__photo">
+                      <img
+                        width="81px"
+                        height="122px"
+                        data-src="img/portrait/11.webp"
+                        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                        class="swiper-lazy"
+                        alt="Image"
+                      />
+                      <div class="swiper-lazy-preloader"></div>
+                    </div>
+                    <h3 class="card__name">Владислав Кравець</h3>
+                    <p class="card__descr">Тренер дитячих груп<br />Філія "Гора"</p>
+                    <div class="social__wrapper"></div>
+                    <button class="descr-btn">Детальніше</button>
+                  </div>
+                  <div class="card__face card__face--back">
+                    <p class="card__descr">
+                      Стаж тренерської діяльності - 10 років. Досвід участі у міжнародних та всеураїнських змаганнях.
+                      Тренер танцюристів Н - Д класів різних вікових груп.
+                    </p>
+                    <button class="descr-btn">Назад</button>
+                  </div>
+                </div>
+              </div>
+              <div class="card staff-slider__slide swiper-slide">
+                <div class="card__inner">
+                  <div class="card__face card__face--front">
+                    <div class="card__photo loading-1">
+                      <img
+                        width="81px"
+                        height="122px"
+                        data-src="img/portrait/14.webp"
+                        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                        class="swiper-lazy"
+                        alt="Image"
+                      />
+                      <div class="swiper-lazy-preloader"></div>
+                    </div>
+                    <h3 class="card__name">Ірина Терновенко</h3>
+                    <p class="card__descr">Тренер дитячих та спортивних груп<br />Філія "Гора"</p>
+                    <div class="social__wrapper">
+                      <a target="_blank" href="//www.instagram.com/ternovenko.irina/" class="social"
+                        ><img class="social" src="icons/social/instagram_white.svg" alt="instagram"
+                      /></a>
+                      <a target="_blank" href="//www.facebook.com/profile.php?id=100010330095125" class="social"
+                        ><img class="social" src="icons/social/facebook_white.svg" alt="facebook"
+                      /></a>
+                    </div>
+                    <button class="descr-btn">Детальніше</button>
+                  </div>
+                  <div class="card__face card__face--back">
+                    <p class="card__descr">
+                      Працюю з дітьми віком від 3-х років та спортсменами N, E, D класів. Стаж роботи 13 років.
+                    </p>
+                    <button class="descr-btn">Назад</button>
+                  </div>
+                </div>
+              </div>
+              <div class="card staff-slider__slide swiper-slide">
+                <div class="card__inner">
+                  <div class="card__face card__face--front">
+                    <div class="card__photo loading-2">
+                      <img
+                        width="81px"
+                        height="122px"
+                        data-src="img/portrait/13.webp"
+                        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                        class="swiper-lazy align-right"
+                        alt="Image"
+                      />
+                      <div class="swiper-lazy-preloader"></div>
+                    </div>
+                    <h3 class="card__name">Ірина Цибанова</h3>
+                    <p class="card__descr">Головний адміністратор філій</p>
+                    <div class="social__wrapper">
+                      <a target="_blank" href="//www.facebook.com/profile.php?id=100010751524846" class="social"
+                        ><img class="social" src="icons/social/facebook_white.svg" alt="facebook"
+                      /></a>
+                    </div>
+                    <button class="descr-btn">Детальніше</button>
+                  </div>
+                  <div class="card__face card__face--back">
+                    <p class="card__descr">
+                      Легко комунікую, завжди шукаю позитив - ці якості дали мені заняття бальними танцями і зараз
+                      допомагають мені жити та працювати в нашому чудовому клубі.
+                    </p>
+                    <button class="descr-btn">Назад</button>
+                  </div>
+                </div>
+              </div>
+              <div class="card staff-slider__slide swiper-slide">
+                <div class="card__inner">
+                  <div class="card__face card__face--front">
+                    <div class="card__photo loading-2">
+                      <img
+                        width="81px"
+                        height="122px"
+                        data-src="img/portrait/15.webp"
+                        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                        class="swiper-lazy custom_res-2"
+                        alt="Image"
+                      />
+                      <div class="swiper-lazy-preloader"></div>
+                    </div>
+                    <h3 class="card__name">Марина Назаренко</h3>
+                    <p class="card__descr">Виконавчий директор</p>
+                    <div class="social__wrapper">
+                      <a target="_blank" href="//www.facebook.com/maryna.nazarenko.5" class="social"
+                        ><img class="social" src="icons/social/facebook_white.svg" alt="facebook"
+                      /></a>
+                    </div>
+                    <button class="descr-btn">Детальніше</button>
+                  </div>
+                  <div class="card__face card__face--back">
+                    <p class="card__descr">
+                      Організувати роботу, провести заходи, створити творчу,робочу атмосферу - це напрямок моєї
+                      діяльності останні 10 років.
+                    </p>
+                    <button class="descr-btn">Назад</button>
+                  </div>
+                </div>
+              </div>
             </div>
-        </article>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <div id="location" class="swiper-pagination"></div>
+          </div>
+        </div>
+      </article>
     
         <article class="location">
-            <div class="container location">
-                <section class="location__wrapper">
-                    <h4 class="location__title">
-                        Зали та філії
-                    </h4>
-                    <ul class="location__list">
-                        <li class="location__mark location__mark_active">Студія "Либідська"</li>
-                        <li class="location__mark">Студія "Позняки"</li>
-                        <li class="location__mark">Філія "Чайки"</li>
-                        <li class="location__mark">Філія "Гора"</li>
-                        <li class="location__mark">Філія "Вишеньки"</li>
-                        <li class="location__mark">Філія "Щасливе"</li>
-                        <li class="location__mark">Філія "Ревне"</li>
-                    </ul>
-                    <button data-fancybox data-src="#dialog-content" class="button button__mt20">
-                        Зателефонувати
-                    </button>
-                </section>
-                <!-- Лыбедская -->
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d635.6877577831542!2d30.52615609019995!3d50.40847735984789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf380966fba5%3A0x8c5a1608e8e18a44!2sKlub%20Bal%CA%B9noho%20Tantsyu%20%22Diamant-Elit%22!5e0!3m2!1sru!2sus!4v1650437610926!5m2!1sru!2sus" width="700" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="location__map location__map_active" title="м. Київ, вулиця Залізничне шосе 3"></iframe>
-                <!-- Позняки -->
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2543.465523782726!2d30.638815315894522!3d50.395161299228015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4c44e12c44087%3A0xce3b1e336f3b21d5!2z0JTQuNCw0LzQsNC90YIg0K3Qu9C40YIuINCa0LvRg9CxINCx0LDQu9GM0L3Ri9GFINGC0LDQvdGG0LXQsg!5e0!3m2!1sru!2sua!4v1652382824581!5m2!1sru!2sua" width="700" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="location__map" title="м. Київ, вулиця Лариси Руденко 6а"></iframe>
-                <!-- Чайки -->
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d158.8029017521036!2d30.280100583376196!3d50.44396111422749!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x472b34b7d5157127%3A0xcc8a878f0e580593!2z0JrQu9GD0LEg0LHQsNC70YzQvdC-0LPQviDRgtCw0L3RhtCwICLQlNC40LDQvNCw0L3Rgi3QrdC70LjRgiI!5e0!3m2!1sru!2sua!4v1654446633163!5m2!1sru!2sua" width="700" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="location__map" title="м. Київ, вулиця Бударіна 3б"></iframe>
-                <!-- Гора -->
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12105.078769772308!2d30.85122193235847!3d50.37066898299214!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4e81726caba3b%3A0x66b45554e1431670!2z0JPQvtGA0LAsINCa0LjQtdCy0YHQutCw0Y8g0L7QsdC70LDRgdGC0YwsIDA4MzI0!5e0!3m2!1sru!2sua!4v1654445179007!5m2!1sru!2sua" width="700" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="location__map" title="Гора"></iframe>
-                <!-- Вишенки -->
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57667.94278398324!2d30.691829774329612!3d50.29963516848422!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4c1d018b6c3dd%3A0xdbf160769dcb9490!2z0JLQuNGI0LXQvdC60LgsINCa0LjQtdCy0YHQutCw0Y8g0L7QsdC70LDRgdGC0Yw!5e0!3m2!1sru!2sua!4v1654445404291!5m2!1sru!2sua" width="700" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="location__map" title="Вишеньки"></iframe>
-                <!-- Счастливое -->
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20358.189068042087!2d30.77879484054117!3d50.37077530799938!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4c2ef744dab69%3A0x5553cebb83b0f48e!2z0KHRh9Cw0YHRgtC70LjQstC-0LUsINCa0LjQtdCy0YHQutCw0Y8g0L7QsdC70LDRgdGC0Yw!5e0!3m2!1sru!2sua!4v1654445362066!5m2!1sru!2sua" width="700" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="location__map" title="Щасливе"></iframe>
-                <!-- Ревное -->
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10196.762746511347!2d30.822819394960767!3d50.28836828111247!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ebc630b1d0a3%3A0xa4cb66cb27e4aafa!2z0KDQtdCy0L3QvtC1LCDQmtC40LXQstGB0LrQsNGPINC-0LHQu9Cw0YHRgtGM!5e0!3m2!1sru!2sua!4v1654445317801!5m2!1sru!2sua" width="700" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="location__map" title="Ревне"></iframe>
-            </div>
-        </article>
+        <div class="container location">
+          <section class="location__wrapper">
+            <h4 class="location__title">Зали та філії</h4>
+            <ul class="location__list">
+              <li class="location__mark location__mark_active">Студія "Либідська"</li>
+              <li class="location__mark">Студія "Позняки"</li>
+              <li class="location__mark">Філія "Чайки"</li>
+              <li class="location__mark">Філія "Гора"</li>
+              <li class="location__mark">Філія "Вишеньки"</li>
+              <li class="location__mark">Філія "Щасливе"</li>
+              <li class="location__mark">Філія "Ревне"</li>
+            </ul>
+            <button data-fancybox data-src="#dialog-content" class="button button__mt20">Зателефонувати</button>
+          </section>
+          <!-- Лыбедская -->
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1271.2037194044824!2d30.517346979131673!3d50.414880008056755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf73d6e185c5%3A0xb7d9e409954cc6d1!2z0YPQuy4g0JrQsNC30LjQvNC40YDQsCDQnNCw0LvQtdCy0LjRh9CwLCA4NtCbLCDQmtC40LXQsiwgMDIwMDA!5e0!3m2!1sru!2sua!4v1709991979496!5m2!1sru!2sua"
+            width="700"
+            height="400"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            class="location__map location__map_active"
+            title="м. Київ, вулиця Залізничне шосе 3"
+          ></iframe>
+          <!-- Позняки -->
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2543.465523782726!2d30.638815315894522!3d50.395161299228015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4c44e12c44087%3A0xce3b1e336f3b21d5!2z0JTQuNCw0LzQsNC90YIg0K3Qu9C40YIuINCa0LvRg9CxINCx0LDQu9GM0L3Ri9GFINGC0LDQvdGG0LXQsg!5e0!3m2!1sru!2sua!4v1652382824581!5m2!1sru!2sua"
+            width="700"
+            height="400"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            class="location__map"
+            title="м. Київ, вулиця Лариси Руденко 6а"
+          ></iframe>
+          <!-- Чайки -->
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d158.8029017521036!2d30.280100583376196!3d50.44396111422749!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x472b34b7d5157127%3A0xcc8a878f0e580593!2z0JrQu9GD0LEg0LHQsNC70YzQvdC-0LPQviDRgtCw0L3RhtCwICLQlNC40LDQvNCw0L3Rgi3QrdC70LjRgiI!5e0!3m2!1sru!2sua!4v1654446633163!5m2!1sru!2sua"
+            width="700"
+            height="400"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            class="location__map"
+            title="м. Київ, вулиця Бударіна 3б"
+          ></iframe>
+          <!-- Гора -->
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12105.078769772308!2d30.85122193235847!3d50.37066898299214!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4e81726caba3b%3A0x66b45554e1431670!2z0JPQvtGA0LAsINCa0LjQtdCy0YHQutCw0Y8g0L7QsdC70LDRgdGC0YwsIDA4MzI0!5e0!3m2!1sru!2sua!4v1654445179007!5m2!1sru!2sua"
+            width="700"
+            height="400"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            class="location__map"
+            title="Гора"
+          ></iframe>
+          <!-- Вишенки -->
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57667.94278398324!2d30.691829774329612!3d50.29963516848422!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4c1d018b6c3dd%3A0xdbf160769dcb9490!2z0JLQuNGI0LXQvdC60LgsINCa0LjQtdCy0YHQutCw0Y8g0L7QsdC70LDRgdGC0Yw!5e0!3m2!1sru!2sua!4v1654445404291!5m2!1sru!2sua"
+            width="700"
+            height="400"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            class="location__map"
+            title="Вишеньки"
+          ></iframe>
+          <!-- Счастливое -->
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20358.189068042087!2d30.77879484054117!3d50.37077530799938!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4c2ef744dab69%3A0x5553cebb83b0f48e!2z0KHRh9Cw0YHRgtC70LjQstC-0LUsINCa0LjQtdCy0YHQutCw0Y8g0L7QsdC70LDRgdGC0Yw!5e0!3m2!1sru!2sua!4v1654445362066!5m2!1sru!2sua"
+            width="700"
+            height="400"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            class="location__map"
+            title="Щасливе"
+          ></iframe>
+          <!-- Ревное -->
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10196.762746511347!2d30.822819394960767!3d50.28836828111247!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ebc630b1d0a3%3A0xa4cb66cb27e4aafa!2z0KDQtdCy0L3QvtC1LCDQmtC40LXQstGB0LrQsNGPINC-0LHQu9Cw0YHRgtGM!5e0!3m2!1sru!2sua!4v1654445317801!5m2!1sru!2sua"
+            width="700"
+            height="400"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            class="location__map"
+            title="Ревне"
+          ></iframe>
+        </div>
+      </article>
         
         <article id="feedback" class="feedback">
             <div class="container">
@@ -2169,15 +2283,14 @@ $answer_obj = json_decode(file_get_contents(url . "sendmessage?text=" . $message
         </div>
     </footer>
 
-    <!-- <aside>
-        <div class="container">
-            <section>
-                © 2022 Diamant-Elite
-                <a href="//guntyk.github.io/" target="_blank" rel="nofollow noopener noreferrer" class="none"><img src="icons/logo/sate.svg" alt="Sate"></a>
-                <a href="//guntyk.github.io/" target="_blank" rel="nofollow noopener noreferrer">By Sate</a>
-            </section>
+    <aside>
+      <div class="container">
+        <div class="aside-wrapper">
+          <span id="currentYear"></span>
+          <a href="https://bento.me/sate" target="_blank" rel="noreferrer">By Sate</a>
         </div>
-    </aside> -->
+      </div>
+    </aside>
 
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
