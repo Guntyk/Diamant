@@ -1429,7 +1429,7 @@ $answer_obj = json_decode(file_get_contents(url . "sendmessage?text=" . $message
                       <div class="swiper-lazy-preloader"></div>
                     </div>
                     <h3 class="card__name">Ольга Черненко</h3>
-                    <p class="card__descr">Адміністратор<br />Студія "Позняки"</p>
+                    <p class="card__descr">Адміністратор<br />Студія "Либідська"</p>
                     <div class="social__wrapper">
                       <a target="_blank" href="//instagram.com/helga.ts" class="social"
                         ><img class="social" src="icons/social/instagram_white.svg" alt="instagram"
@@ -1510,41 +1510,6 @@ $answer_obj = json_decode(file_get_contents(url . "sendmessage?text=" . $message
                     <p class="card__descr">
                       Вища педагогічна освіта з бальної хореографії. Стаж роботи 12 років. Досвід викладання в групах
                       різних вікових категорій, від дітей до дорослих. Суддя 1-ї категорії. Працюю в системі Pro-Am.
-                    </p>
-                    <button class="descr-btn">Назад</button>
-                  </div>
-                </div>
-              </div>
-              <div class="card staff-slider__slide swiper-slide">
-                <div class="card__inner">
-                  <div class="card__face card__face--front">
-                    <div class="card__photo loading-1">
-                      <img
-                        width="81px"
-                        height="122px"
-                        data-src="img/portrait/6.webp"
-                        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                        class="swiper-lazy"
-                        alt="Image"
-                      />
-                      <div class="swiper-lazy-preloader"></div>
-                    </div>
-                    <h3 class="card__name">Діана Берекашвілі</h3>
-                    <p class="card__descr">Тренер дитячих груп<br />Студія "Позняки"<br />Філія "Щасливе"</p>
-                    <div class="social__wrapper">
-                      <a target="_blank" href="//www.instagram.com/littlepuf" class="social"
-                        ><img class="social" src="icons/social/instagram_white.svg" alt="instagram"
-                      /></a>
-                      <a target="_blank" href="//www.facebook.com/diana.berekashvili.5" class="social"
-                        ><img class="social" src="icons/social/facebook_white.svg" alt="facebook"
-                      /></a>
-                    </div>
-                    <button class="descr-btn">Детальніше</button>
-                  </div>
-                  <div class="card__face card__face--back">
-                    <p class="card__descr">
-                      Тренер бального танцю для дітей віком 4-5 років. Викладач акторської майстерності для дітей і
-                      дорослих. Режисер масових заходів клубу.
                     </p>
                     <button class="descr-btn">Назад</button>
                   </div>
@@ -1722,76 +1687,6 @@ $answer_obj = json_decode(file_get_contents(url . "sendmessage?text=" . $message
               <div class="card staff-slider__slide swiper-slide">
                 <div class="card__inner">
                   <div class="card__face card__face--front">
-                    <div class="card__photo loading-1">
-                      <img
-                        width="81px"
-                        height="122px"
-                        data-src="img/portrait/9.webp"
-                        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                        class="swiper-lazy"
-                        alt="Image"
-                      />
-                      <div class="swiper-lazy-preloader"></div>
-                    </div>
-                    <h3 class="card__name">Юлія Пушкіна</h3>
-                    <p class="card__descr">Тренер початкових та спортивних груп<br />Студія "Позняки"</p>
-                    <div class="social__wrapper">
-                      <a target="_blank" href="//www.instagram.com/pushkina_ju" class="social"
-                        ><img class="social" src="icons/social/instagram_white.svg" alt="instagram"
-                      /></a>
-                      <a target="_blank" href="//www.facebook.com/jylia.pushkina" class="social"
-                        ><img class="social" src="icons/social/facebook_white.svg" alt="facebook"
-                      /></a>
-                    </div>
-                    <button class="descr-btn">Детальніше</button>
-                  </div>
-                  <div class="card__face card__face--back">
-                    <p class="card__descr">
-                      Пріоритет: гармонійний розвиток дитини у спорті та унікальність кожного учня. Вища освіта. Стаж -
-                      4 роки. Діючий спортсмен, кандидат у майстри спорту, член збірної України зі спортивних танців.
-                    </p>
-                    <button class="descr-btn">Назад</button>
-                  </div>
-                </div>
-              </div>
-              <div class="card staff-slider__slide swiper-slide">
-                <div class="card__inner">
-                  <div class="card__face card__face--front">
-                    <div class="card__photo loading-1">
-                      <img
-                        width="81px"
-                        height="122px"
-                        data-src="img/portrait/16.webp"
-                        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                        class="swiper-lazy"
-                        alt="Image"
-                      />
-                      <div class="swiper-lazy-preloader"></div>
-                    </div>
-                    <h3 class="card__name">Руслан Гітя</h3>
-                    <p class="card__descr">Тренер початкових та спортивних груп<br />Філія "Вишеньки"</p>
-                    <div class="social__wrapper">
-                      <a target="_blank" href="//www.instagram.com/ruslangitia/" class="social"
-                        ><img class="social" src="icons/social/instagram_white.svg" alt="instagram"
-                      /></a>
-                      <a target="_blank" href="//www.facebook.com/profile.php?id=100038626413634" class="social"
-                        ><img class="social" src="icons/social/facebook_white.svg" alt="facebook"
-                      /></a>
-                    </div>
-                    <button class="descr-btn">Детальніше</button>
-                  </div>
-                  <div class="card__face card__face--back">
-                    <p class="card__descr">
-                      Освіта - вища. Стаж - 4 роки. Досвід роботи з дитячими групами та з парами Pro-Am. Діючий
-                      спортсмен, кандидат у майстри спорту, член збірної України зі спортивних танців.
-                    </p>
-                    <button class="descr-btn">Назад</button>
-                  </div>
-                </div>
-              </div>
-              <div class="card staff-slider__slide swiper-slide">
-                <div class="card__inner">
-                  <div class="card__face card__face--front">
                     <div class="card__photo">
                       <img
                         width="81px"
@@ -1831,7 +1726,7 @@ $answer_obj = json_decode(file_get_contents(url . "sendmessage?text=" . $message
                       />
                       <div class="swiper-lazy-preloader"></div>
                     </div>
-                    <h3 class="card__name">Ірина Терновенко</h3>
+                    <h3 class="card__name">Ірина Кравець</h3>
                     <p class="card__descr">Тренер дитячих та спортивних груп<br />Філія "Гора"</p>
                     <div class="social__wrapper">
                       <a target="_blank" href="//www.instagram.com/ternovenko.irina/" class="social"
